@@ -1,5 +1,5 @@
 #page title
-page_title: # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title: AnyNotes+ • Smart AI Note-Taking App # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
 ios_app_id: 6745427912 # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -14,7 +14,7 @@ app_icon: # assets/appicon.png                      # Automatically populates if
 app_name: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description: Your smart, streamlined note-taking app—capture ideas faster with voice, image, and text, powered by AI understanding and search.
-
+app_keywords: smart notes, AI note-taking, voice to text, image recognition, iCloud sync, AnyNotes+, note app
 enable_smart_app_banner: true # Set to true to show a smart app banner at top of page on mobile devices.
 
 # Information About Yourself
@@ -29,27 +29,27 @@ github_username: sakeven
 features:
   - title: Voice-to-Text Capture
     description: Speak your thoughts or to-dos anytime—AnyNotes+ automatically converts your voice into clear, editable text for effortless organization and future search.
-    fontawesome_icon_name: magic
+    fontawesome_icon_name: microphone
 
   - title: Photo Recognition & AI Insight
     description: Snap a whiteboard sketch, book page, or handwritten note. Our AI extracts key information from images and turns it into searchable, structured notes.
-    fontawesome_icon_name: mobile
+    fontawesome_icon_name: image
 
   - title: Pure Text Mode
     description: No distractions, no fuss. Open and start writing in plain text—perfect for daily journaling, brainstorming sessions, and task lists.
-    fontawesome_icon_name: play-circle
+    fontawesome_icon_name: font
 
   - title: Integrated Web Search & AI Answers
     description: Go beyond capturing. Launch web searches or prompt AI-generated content directly from your notes to deepen understanding and enrich your records.
-    fontawesome_icon_name: sync
+    fontawesome_icon_name: search
 
   - title: Private iCloud Storage
     description: All notes sync seamlessly to your personal iCloud database—no account registration required. Your data stays yours, across all your Apple devices.
-    fontawesome_icon_name: adjust
+    fontawesome_icon_name: cloud
 
   - title: Built-In iOS 18 Translation Extension
     description: Translate any voice clip or text on the fly, verify facts with web-based checks, and replace your content in place—all without leaving the app.
-    fontawesome_icon_name: star
+    fontawesome_icon_name: globe
 
 # Theme Settings
 topbar_color: "#000000"
