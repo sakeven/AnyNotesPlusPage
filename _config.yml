@@ -1,5 +1,5 @@
 #page title
-page_title: AnyNotes+ • Smart AI Note-Taking App # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title: AnyNotes+ • Personal AI Inbox for Notes, Voice, Photos, and Links # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
 ios_app_id: 6745427912 # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -13,8 +13,8 @@ presskit_download_link: # Enter a link to downloadable file or (e.g. public Drop
 app_icon: # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description: Your smart, streamlined note-taking app—capture ideas faster with voice, image, and text, powered by AI understanding and search.
-app_keywords: smart notes, AI note-taking, voice to text, image recognition, iCloud sync, AnyNotes+, note app
+app_description: Capture from note, voice, photo, share sheet, or chat. AnyNotes turns each input into an organized result, suggested next steps, and a topic you can keep moving forward.
+app_keywords: AI inbox, AI notes, voice notes, photo to text, share extension, meeting notes, summaries, reminders, AnyNotes+
 enable_smart_app_banner: true # Set to true to show a smart app banner at top of page on mobile devices.
 
 # Information About Yourself
@@ -27,59 +27,59 @@ github_username: sakeven
 
 # Feature List                            Edit, add or remove features to be presented.
 features:
-  - title: Voice-to-Text Capture
-    description: Speak your thoughts or to-dos anytime—AnyNotes+ automatically converts your voice into clear, editable text for effortless organization and future search.
-    fontawesome_icon_name: microphone
+  - title: Capture From Note, Record, Photo, Share, and Chat
+    description: Start inside the app or from the iOS share sheet. Text, voice, photos, links, and chat transcripts all enter the same inbox flow instead of living in separate silos.
+    fontawesome_icon_name: inbox
 
-  - title: Photo Recognition & AI Insight
-    description: Snap a whiteboard sketch, book page, or handwritten note. Our AI extracts key information from images and turns it into searchable, structured notes.
-    fontawesome_icon_name: image
+  - title: AI Result Cards for Every New Note
+    description: AnyNotes automatically generates a clean title, summary, structured result card, and suggested next actions for ideas, meetings, reminders, summaries, and knowledge notes.
+    fontawesome_icon_name: magic
 
-  - title: Pure Text Mode
-    description: No distractions, no fuss. Open and start writing in plain text—perfect for daily journaling, brainstorming sessions, and task lists.
-    fontawesome_icon_name: font
+  - title: Topics That Keep Evolving
+    description: Move beyond isolated notes. Group related notes into Topics and keep an up-to-date synthesis with current decisions, recent changes, and the next move to make.
+    fontawesome_icon_name: project-diagram
 
-  - title: Integrated Web Search & AI Answers
-    description: Go beyond capturing. Launch web searches or prompt AI-generated content directly from your notes to deepen understanding and enrich your records.
+  - title: Turn Notes Into Action
+    description: Draft reminders, Things tasks, and follow-up emails, continue in AI Chat, or export the main result as a shareable image instead of a noisy screenshot.
+    fontawesome_icon_name: share-square
+
+  - title: Deep Work With AI Chat
+    description: Open a note-specific chat, use your own prompts, search saved notes, and hand off bigger tasks to the built-in sandbox workspace when a quick rewrite is not enough.
+    fontawesome_icon_name: comments
+
+  - title: Search, Archive, Sync
+    description: Keep everything findable with search, tags, pinning, archive mode, batch summaries, and iCloud-backed storage tied to your own account.
     fontawesome_icon_name: search
 
-  - title: Private iCloud Storage
-    description: All notes sync seamlessly to your personal iCloud database—no account registration required. Your data stays yours, across all your Apple devices.
-    fontawesome_icon_name: cloud
-
-  - title: Built-In iOS 18 Translation Extension
-    description: Translate any voice clip or text on the fly, verify facts with web-based checks, and replace your content in place—all without leaving the app.
-    fontawesome_icon_name: globe
-
 # Theme Settings
-topbar_color: "#000000"
-topbar_transparency: 0.1
-topbar_title_color: "#ffffff"
+topbar_color: "#131917"
+topbar_transparency: 0.16
+topbar_title_color: "#f5f1e8"
 
-cover_image: assets/headerimage.png # Replace with alternative image path or image URL.
-cover_overlay_color: "#363b3d"
-cover_overlay_transparency: 0.8
+cover_image: assets/hero-background.svg # Replace with alternative image path or image URL.
+cover_overlay_color: "#131917"
+cover_overlay_transparency: 0.16
 
 device_color: black # Set to: blue, black, yellow, coral or white.
 
-body_background_color: "#ffffff"
+body_background_color: "#f6f2ea"
 
-link_color: "#1d63ea"
+link_color: "#2f6b60"
 
 app_title_color: "#ffffff"
-app_price_color: "#ffffff"
-app_description_color: "#ffffff"
+app_price_color: "#dbe7df"
+app_description_color: "#f4f2ec"
 
-feature_title_color: "#000000"
-feature_text_color: "#666666"
+feature_title_color: "#16201c"
+feature_text_color: "#5b645f"
 
-feature_icons_foreground_color: "#1d63ea"
-feature_icons_background_color: "#e6e6e6"
+feature_icons_foreground_color: "#2f6b60"
+feature_icons_background_color: "#dbe9e2"
 
-social_icons_foreground_color: "#666666"
-social_icons_background_color: "#e6e6e6"
+social_icons_foreground_color: "#5b645f"
+social_icons_background_color: "#d9dfda"
 
-footer_text_color: "#666666"
+footer_text_color: "#69716d"
 
 ####################################################
 ### Jekyll Configuration. No need to touch this. ###

@@ -9,19 +9,18 @@
                 <div class="container">
                     {% include header.html %}
                     <div class="iphonePreview">
+                        <div class="deviceShell">
+                            <div class="deviceFrame">
+                                <div class="deviceIsland"></div>
 
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 0 0" style="position: absolute;">
-                            <clipPath id="screenMask" clipPathUnits="objectBoundingBox" transform="scale(0.00257, 0.00119)">
-                                <path d="M6490.24,1234.36H6216.28c-2.57,0-10.55-.07-12.07-0.07a87.524,87.524,0,0,1-12-1.03,40.051,40.051,0,0,1-11.4-3.79,38.315,38.315,0,0,1-16.82-16.84,39.948,39.948,0,0,1-3.78-11.42,72.257,72.257,0,0,1-1.04-12.02c-0.06-1.83-.06-5.56-0.06-5.56V452.125h0s0.06-11.391.06-12.086a87.9,87.9,0,0,1,1.04-12.025,39.843,39.843,0,0,1,3.78-11.413,38.283,38.283,0,0,1,16.82-16.847,39.762,39.762,0,0,1,11.4-3.785,71.909,71.909,0,0,1,12-1.037c16.99-.567,36.32-0.061,34.51-0.061,5.02,0,6.5,3.439,6.63,6.962a35.611,35.611,0,0,0,1.2,8.156,21.326,21.326,0,0,0,19.18,15.592c2.28,0.192,6.78.355,6.78,0.355H6433.7s4.5-.059,6.79-0.251a21.348,21.348,0,0,0,19.18-15.591,35.582,35.582,0,0,0,1.19-8.154c0.13-3.523,1.61-6.962,6.64-6.962-1.81,0,17.52-.5,34.5.061a71.923,71.923,0,0,1,12.01,1.038,39.832,39.832,0,0,1,11.4,3.784,38.283,38.283,0,0,1,16.82,16.844,40.153,40.153,0,0,1,3.78,11.413,87.844,87.844,0,0,1,1.03,12.023c0,0.695.06,12.084,0.06,12.084h0V1183.64s0,3.72-.06,5.55a72.366,72.366,0,0,1-1.03,12.03,40.2,40.2,0,0,1-3.78,11.41,38.315,38.315,0,0,1-16.82,16.84,40.155,40.155,0,0,1-11.4,3.79,87.669,87.669,0,0,1-12.01,1.03c-1.52,0-9.5.07-12.07,0.07" transform="translate(-6159.12 -394.656)"/>
-                            </clipPath>
-                        </svg>
+                                <div class="videoContainer hidden">
+                                    <video class="screenvideo" autoplay="autoplay" controls="controls">
+                                    </video>
+                                </div>
 
-                        <div class="videoContainer hidden">
-                            <video class="screenvideo" autoplay="autoplay" controls="controls">
-                            </video>
+                                <img class="iphoneScreen hidden" src="" alt="">
+                            </div>
                         </div>
-
-                        <img class="iphoneScreen hidden" src="" alt="">
 
                         {% include screencontent.html %}
 
@@ -46,9 +45,18 @@
                             </h2>
                         </div>
                         <div class="appDescriptionContainer">
+                            <p class="appEyebrow">Personal AI Inbox + Topics Workspace</p>
                             <p class ="appDescription">
                                 {{ site.app_description }}
                             </p>
+                        </div>
+                        <div class="heroPillRow">
+                            <span class="heroPill">Note</span>
+                            <span class="heroPill">Record</span>
+                            <span class="heroPill">Photo</span>
+                            <span class="heroPill">Share</span>
+                            <span class="heroPill">Chat</span>
+                            <span class="heroPill">Topics</span>
                         </div>
                         <div class="downloadButtonsContainer">
                             {% if site.playstore_link %}
@@ -57,7 +65,103 @@
                             <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
                         </div>
                     </div>
-                    {% include features.html %}
+                    <main class="homeContent">
+                        <section class="homeSection featureSection">
+                            <div class="sectionIntro">
+                                <p class="sectionEyebrow">Why It Fits Real Capture Habits</p>
+                                <h2>One place for messy inputs, clear results, and work that keeps moving.</h2>
+                                <p>AnyNotes is built around the flow people actually use on a phone: collect first, let AI clarify what just came in, then keep pushing the same thread forward instead of losing it in a long list of notes.</p>
+                            </div>
+                            {% include features.html %}
+                        </section>
+
+                        <section class="homeSection workflowSection">
+                            <div class="sectionIntro">
+                                <p class="sectionEyebrow">How It Works</p>
+                                <h2>From quick capture to action-ready output.</h2>
+                            </div>
+                            <div class="workflowGrid">
+                                <article class="workflowCard">
+                                    <span class="stepTag">01</span>
+                                    <h3>Capture anywhere</h3>
+                                    <p>Use Note, Record, Photo, Chat, or the iOS share sheet for text, links, and images. Everything lands in one consistent flow.</p>
+                                </article>
+                                <article class="workflowCard">
+                                    <span class="stepTag">02</span>
+                                    <h3>Get an AI Inbox result</h3>
+                                    <p>Each new note gets a title, summary, primary result card, and suggested next actions without blocking the save step.</p>
+                                </article>
+                                <article class="workflowCard">
+                                    <span class="stepTag">03</span>
+                                    <h3>Keep related work together</h3>
+                                    <p>Move beyond one-off notes with Topics that keep the latest synthesis, changes, open questions, and next moves visible.</p>
+                                </article>
+                                <article class="workflowCard">
+                                    <span class="stepTag">04</span>
+                                    <h3>Send the outcome outward</h3>
+                                    <p>Turn results into reminder drafts, Things tasks, follow-up emails, shareable image cards, or a deeper AI chat session.</p>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="homeSection outcomeSection">
+                            <div class="sectionIntro">
+                                <p class="sectionEyebrow">What The App Produces</p>
+                                <h2>Results that are easier to use than raw notes.</h2>
+                            </div>
+                            <div class="outcomeGrid">
+                                <article class="outcomeCard">
+                                    <p class="cardEyebrow">Inbox result types</p>
+                                    <h3>Structured outputs for common note shapes.</h3>
+                                    <ul class="detailList">
+                                        <li><strong>Idea:</strong> clarify a thought, pull out key points, and suggest what to explore next.</li>
+                                        <li><strong>Meeting:</strong> summarize the discussion, decisions, action items, and unresolved questions.</li>
+                                        <li><strong>Reminder:</strong> turn a quick note into a task-ready draft instead of leaving it as text.</li>
+                                        <li><strong>Summary:</strong> compress web pages, chats, and reference material into the main takeaways.</li>
+                                        <li><strong>Knowledge:</strong> turn highlights and research notes into something easier to reuse later.</li>
+                                    </ul>
+                                </article>
+                                <article class="outcomeCard">
+                                    <p class="cardEyebrow">What you can do next</p>
+                                    <h3>Move from understanding to execution without leaving the flow.</h3>
+                                    <ul class="detailList">
+                                        <li>Continue the note in AI Chat with note context already attached.</li>
+                                        <li>Draft reminders, Things items, and follow-up emails from the AI result.</li>
+                                        <li>Generate a shareable image card instead of sending a raw screenshot.</li>
+                                        <li>Search saved notes, batch summarize multiple notes, or archive and pin for later review.</li>
+                                        <li>Use custom prompts and the sandbox workspace when the task needs more than a single reply.</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="homeSection trustSection">
+                            <div class="trustGrid">
+                                <article class="trustCard">
+                                    <p class="cardEyebrow">Private by default</p>
+                                    <h3>Your notes stay tied to your own account.</h3>
+                                    <p>Notes live in your personal iCloud-backed storage instead of a shared service database, so capture can stay lightweight without adding a new account system.</p>
+                                </article>
+                                <article class="trustCard">
+                                    <p class="cardEyebrow">Built for ongoing work</p>
+                                    <h3>Not just capture, but progression.</h3>
+                                    <p>The app keeps the quick-entry speed of a note inbox while adding search, archive, topics, AI chat, and shareable outputs for the notes that need to turn into something real.</p>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="homeSection ctaSection">
+                            <div class="ctaCopy">
+                                <p class="sectionEyebrow">Start With The Messy Version</p>
+                                <h2>Collect first. Clarify fast. Keep the thread moving.</h2>
+                                <p>Use AnyNotes when a thought, meeting, link, screenshot, or voice memo is still half-formed, but you already know you will want a clearer result later.</p>
+                            </div>
+                            <div class="ctaActions">
+                                <a class="primaryButton appStoreLink" href="{{site.appstore_link}}">Download on the App Store</a>
+                                <a class="secondaryLink" href="{{ '/support/' | relative_url }}" target="_self">Questions? Visit Support</a>
+                            </div>
+                        </section>
+                    </main>
                     {% include footer.html %}
                     {% include appstoreimages.html %}
                 </div>
