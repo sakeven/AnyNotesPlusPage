@@ -243,6 +243,15 @@ nav > ul li a:active {
 	text-transform: uppercase;
 }
 
+.appSlogan {
+	color: #fff;
+	max-width: 52rem;
+	font-size: 3.6rem;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	line-height: 1.06;
+}
+
 .appDescription {
 	color: $app-description-color;
 	max-width: 52rem;
@@ -786,8 +795,13 @@ footer {
 	}
 
 	.appEyebrow,
+	.appSlogan,
 	.appDescription {
 		text-align: center;
+	}
+
+	.appSlogan {
+		font-size: 3rem;
 	}
 
 	.heroPillRow {
