@@ -379,6 +379,48 @@ nav > ul li a:active {
 	padding: 44px 0;
 }
 
+.screensGrid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+	margin-top: 30px;
+}
+
+.screenCard {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	padding: 20px;
+	background: rgba(#fff, 0.84);
+	border: 1px solid rgba(#16201c, 0.08);
+	border-radius: 30px;
+	box-shadow: 0 24px 60px rgba(#16201c, 0.05);
+}
+
+.screenFrame {
+	overflow: hidden;
+	border-radius: 28px;
+	border: 1px solid rgba(#16201c, 0.08);
+	background: #f7f3ea;
+}
+
+.screenFrame > img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.screenCaption > h3 {
+	color: #16201c;
+	font-size: 2.6rem;
+}
+
+.screenCaption > p {
+	color: #5b645f;
+	font-size: 1.65rem;
+	margin-top: 8px;
+}
+
 .sectionIntro {
 	display: flex;
 	flex-direction: column;
@@ -639,6 +681,10 @@ footer {
 }
 
 @media only screen and (max-width: 1070px) {
+	.screensGrid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
 	.deviceFrame {
 		width: 352px;
 	}
@@ -793,6 +839,7 @@ footer {
 		font-size: 3.8rem;
 	}
 
+	.screensGrid,
 	.features,
 	.outcomeGrid,
 	.trustGrid,
