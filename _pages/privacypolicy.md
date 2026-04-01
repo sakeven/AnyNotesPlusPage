@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+description: Privacy Policy for AnyNotes+, including how notes, voice recordings, AI processing, and iCloud storage are handled.
 include_in_header: false
 ---
 

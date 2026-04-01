@@ -64,6 +64,9 @@
                                 <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
                             {% endif %}
                             <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
+                            {% if site.testflight_link %}
+                                <a class="secondaryLink" href="{{site.testflight_link}}">Join the TestFlight</a>
+                            {% endif %}
                         </div>
                     </div>
                     <main class="homeContent">
@@ -188,6 +191,32 @@
                             </div>
                         </section>
 
+                        <section class="homeSection faqSection">
+                            <div class="sectionIntro">
+                                <p class="sectionEyebrow">FAQ</p>
+                                <h2>Quick answers before you download.</h2>
+                                <p>The full help page lives in Support. This section covers the four questions most people ask before trying AnyNotes+.</p>
+                            </div>
+                            <div class="faqGrid">
+                                <article class="faqCard">
+                                    <h3>Is AnyNotes+ available on iPhone and iPad?</h3>
+                                    <p>Yes. AnyNotes+ is available on iPhone and iPad through the App Store, with one capture flow that stays consistent across devices.</p>
+                                </article>
+                                <article class="faqCard">
+                                    <h3>How are notes stored?</h3>
+                                    <p>Your notes stay in your own iCloud-backed storage through CloudKit, instead of being kept in a shared service database.</p>
+                                </article>
+                                <article class="faqCard">
+                                    <h3>Can it turn voice notes, photos, and links into summaries?</h3>
+                                    <p>Yes. You can capture from text, record, photo, or the iOS share sheet, and AI Inbox can turn that input into clearer titles, summaries, result cards, and next steps.</p>
+                                </article>
+                                <article class="faqCard">
+                                    <h3>Do AI features require a subscription?</h3>
+                                    <p>Yes. AI features require AnyNotes Pro. To use them, you also need your own OpenAI API key or a Codex sign-in inside the app.</p>
+                                </article>
+                            </div>
+                        </section>
+
                         <section class="homeSection ctaSection">
                             <div class="ctaCopy">
                                 <p class="sectionEyebrow">Start With The Messy Version</p>
@@ -196,6 +225,9 @@
                             </div>
                             <div class="ctaActions">
                                 <a class="primaryButton appStoreLink" href="{{site.appstore_link}}">Download on the App Store</a>
+                                {% if site.testflight_link %}
+                                    <a class="secondaryLink" href="{{site.testflight_link}}">Try the TestFlight beta</a>
+                                {% endif %}
                                 <a class="secondaryLink" href="{{ '/support/' | relative_url }}" target="_self">Questions? Visit Support</a>
                             </div>
                         </section>

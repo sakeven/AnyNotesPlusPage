@@ -1,0 +1,65 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="83" y1="35" x2="1111" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAF6EE"/>
+      <stop offset="1" stop-color="#E3ECE4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(908 103) rotate(110.091) scale(639.599 992.517)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.86"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="630" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="16"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0862745 0 0 0 0 0.12549 0 0 0 0 0.109804 0 0 0 0.12 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10_2" result="shape"/>
+    </filter>
+    <clipPath id="screenClip">
+      <rect x="746" y="72" width="382" height="486" rx="34" fill="white"/>
+    </clipPath>
+    <clipPath id="iconClip">
+      <rect x="84" y="78" width="88" height="88" rx="20" fill="white"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="1044" cy="518" r="180" fill="#D7E6DC" fill-opacity="0.42"/>
+  <circle cx="890" cy="67" r="124" fill="#EAF3EC"/>
+
+  <g filter="url(#shadow)">
+    <rect x="720" y="48" width="430" height="534" rx="42" fill="#FCFBF7"/>
+  </g>
+  <rect x="732" y="60" width="406" height="510" rx="38" fill="#F4F1EA"/>
+  <rect x="853" y="74" width="164" height="28" rx="14" fill="#121212"/>
+
+  <image href="assets/screenshot/inbox-home.png" x="746" y="72" width="382" height="700" preserveAspectRatio="xMidYMid slice" clip-path="url(#screenClip)"/>
+
+  <g clip-path="url(#iconClip)">
+    <image href="assets/app-icon.png" x="84" y="78" width="88" height="88"/>
+  </g>
+
+  <text x="196" y="115" fill="#234E45" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="0.08em">ANYNOTES+</text>
+  <text x="84" y="226" fill="#111714" font-family="Helvetica, Arial, sans-serif" font-size="62" font-weight="700">Ideas find a place.</text>
+  <text x="84" y="296" fill="#111714" font-family="Helvetica, Arial, sans-serif" font-size="62" font-weight="700">Outcomes take shape.</text>
+  <text x="84" y="366" fill="#3F4C46" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="400">AI notes app for iPhone for voice notes, photos,</text>
+  <text x="84" y="398" fill="#3F4C46" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="400">links, and quick text capture.</text>
+  <text x="84" y="430" fill="#3F4C46" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="400">Turn messy input into clear results.</text>
+
+  <rect x="84" y="468" width="110" height="42" rx="21" fill="#EDF3EE"/>
+  <rect x="206" y="468" width="110" height="42" rx="21" fill="#EDF3EE"/>
+  <rect x="328" y="468" width="110" height="42" rx="21" fill="#EDF3EE"/>
+  <rect x="450" y="468" width="110" height="42" rx="21" fill="#EDF3EE"/>
+  <rect x="572" y="468" width="112" height="42" rx="21" fill="#DDE9E2"/>
+  <text x="115" y="495" fill="#335F55" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Note</text>
+  <text x="227" y="495" fill="#335F55" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Voice</text>
+  <text x="353" y="495" fill="#335F55" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Photo</text>
+  <text x="476" y="495" fill="#335F55" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Links</text>
+  <text x="595" y="495" fill="#234E45" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Topics</text>
+
+  <text x="84" y="561" fill="#547369" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600">Inbox organizes each note into a summary, result card,</text>
+  <text x="84" y="591" fill="#547369" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="600">and next step while Topics keep related work evolving.</text>
+</svg>

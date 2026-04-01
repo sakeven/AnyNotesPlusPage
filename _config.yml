@@ -1,20 +1,28 @@
 #page title
 page_title: AnyNotes+ • Personal AI Inbox for Notes, Voice, Photos, and Links # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+url: "https://plus.anynotes.app"
+baseurl: ""
 
 # App Info
 ios_app_id: 6745427912 # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country: us # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-appstore_link: # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link: https://apps.apple.com/us/app/anynotes/id6745427912?uo=4
+testflight_link: https://testflight.apple.com/join/4FtzEtgM
 playstore_link: # Enter Google Play Store URL.
 presskit_download_link: # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file).
   # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
-app_icon: # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_icon: assets/app-icon.png
+app_name: AnyNotes+
+app_price: Free
 app_description: Capture from note, voice, photo, share sheet, or chat. AnyNotes turns each input into an organized result, suggested next steps, and a topic you can keep moving forward.
 app_keywords: AI inbox, AI notes, voice notes, photo to text, share extension, meeting notes, summaries, reminders, AnyNotes+
+og_image: assets/og-share.png
+app_price_value: 0
+app_price_currency: USD
+app_rating_value: 5
+app_rating_count: 1
 enable_smart_app_banner: true # Set to true to show a smart app banner at top of page on mobile devices.
 
 # Information About Yourself
@@ -88,6 +96,9 @@ footer_text_color: "#69716d"
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :compressed # You might prefer to minify using :compressed
+
+plugins:
+  - jekyll-sitemap
 
 # Exclude these files from your production _site
 exclude:

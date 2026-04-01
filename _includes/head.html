@@ -1,19 +1,57 @@
 <head>
+	{% assign site_name = site.app_name | default: "AnyNotes+" %}
+	{% if page.title and page.url != '/' %}
+		{% assign meta_title = page.title | append: " | " | append: site_name %}
+	{% else %}
+		{% assign meta_title = site.page_title %}
+	{% endif %}
+	{% assign meta_description = page.description | default: site.app_description %}
+	{% assign canonical_url = page.url | absolute_url %}
+	{% assign og_type = page.og_type | default: "website" %}
+	{% assign og_image_path = page.og_image | default: site.og_image %}
+	{% assign icon_url = site.app_icon | absolute_url %}
+	{% assign stylesheet_version = site.github.build_revision | default: site.time | date: "%s" %}
+	{% if og_image_path %}
+		{% assign og_image_url = og_image_path | absolute_url %}
+	{% endif %}
+
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base target="_blank">
 
-	<title class="pageTitle">{{ site.page_title }}</title>
-	<meta name="description" content="{{ site.app_description }}">
+	<title class="pageTitle">{{ meta_title }}</title>
+	<meta name="description" content="{{ meta_description | escape }}">
 	<meta name="keywords" content="{{ site.app_keywords }}">
 	<meta name="theme-color" content="{{ site.topbar_color }}">
+	<link rel="canonical" href="{{ canonical_url }}">
+
+	<meta property="og:site_name" content="{{ site_name }}">
+	<meta property="og:type" content="{{ og_type }}">
+	<meta property="og:title" content="{{ meta_title | escape }}">
+	<meta property="og:description" content="{{ meta_description | escape }}">
+	<meta property="og:url" content="{{ canonical_url }}">
+	<meta property="og:locale" content="en_US">
+	{% if og_image_url %}
+		<meta property="og:image" content="{{ og_image_url }}">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:image:alt" content="AnyNotes+ preview showing the Inbox experience and product slogan.">
+	{% endif %}
+
+	<meta name="twitter:card" content="{% if og_image_url %}summary_large_image{% else %}summary{% endif %}">
+	<meta name="twitter:title" content="{{ meta_title | escape }}">
+	<meta name="twitter:description" content="{{ meta_description | escape }}">
+	{% if og_image_url %}
+		<meta name="twitter:image" content="{{ og_image_url }}">
+	{% endif %}
 
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
+	<link rel="icon" href="{{ site.app_icon | relative_url }}">
+	<link rel="apple-touch-icon" href="{{ site.app_icon | relative_url }}">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-	{% assign stylesheet_version = site.github.build_revision | default: site.time | date: "%s" %}
 
 	<!-- Smart App Banner -->
 	{% if site.enable_smart_app_banner %}
@@ -22,4 +60,40 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}?v={{ stylesheet_version }}">
+
+	{% if page.url == '/' %}
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": ["MobileApplication", "SoftwareApplication"],
+		"name": {{ site_name | jsonify }},
+		"description": {{ site.app_description | jsonify }},
+		"url": {{ canonical_url | jsonify }},
+		"image": {{ icon_url | jsonify }},
+		"downloadUrl": {{ site.appstore_link | jsonify }},
+		"applicationCategory": "UtilitiesApplication",
+		"operatingSystem": "iOS 17.0 or later",
+		"offers": {
+			"@type": "Offer",
+			"price": {{ site.app_price_value }},
+			"priceCurrency": {{ site.app_price_currency | jsonify }},
+			"url": {{ site.appstore_link | jsonify }}
+		},
+		"publisher": {
+			"@type": "Person",
+			"name": {{ site.your_name | jsonify }}
+		},
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": {{ site.app_rating_value }},
+			"ratingCount": {{ site.app_rating_count }}
+		},
+		"screenshot": [
+			{{ "/assets/screenshot/inbox-home.png" | absolute_url | jsonify }},
+			{{ "/assets/screenshot/topic-home.png" | absolute_url | jsonify }},
+			{{ "/assets/screenshot/topic-detail.png" | absolute_url | jsonify }}
+		]
+	}
+	</script>
+	{% endif %}
 </head>
