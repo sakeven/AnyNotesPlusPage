@@ -284,6 +284,31 @@ nav > ul li a:active {
 	filter: $drop-shadow;
 }
 
+.heroTestflightLink {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 64px;
+	padding: 0 22px;
+	border-radius: 18px;
+	background: rgba(#101614, 0.92);
+	border: 1px solid rgba(#f8f3ea, 0.14);
+	box-shadow: 0 18px 36px rgba(#000, 0.16);
+	color: #fff !important;
+	font-size: 1.75rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.heroDownloadNote {
+	width: 100%;
+	max-width: 48rem;
+	color: #4b5651;
+	font-size: 1.45rem;
+	line-height: 1.55;
+	margin-top: -2px;
+}
+
 .playStore,
 .appStore {
 	height: 64px;
@@ -826,6 +851,23 @@ footer {
 		text-align: center;
 	}
 
+	.appEyebrow {
+		color: rgba(#16201c, 0.56);
+	}
+
+	.appName,
+	.appSlogan {
+		color: #16201c;
+	}
+
+	.appPrice {
+		color: #4d7669;
+	}
+
+	.appDescription {
+		color: #44504c;
+	}
+
 	.appSlogan {
 		font-size: 3rem;
 	}
@@ -834,8 +876,25 @@ footer {
 		justify-content: center;
 	}
 
+	.heroPill {
+		background: rgba(#16201c, 0.06);
+		border-color: rgba(#16201c, 0.10);
+		color: #24302c;
+	}
+
 	.downloadButtonsContainer {
 		justify-content: center;
+		gap: 12px;
+	}
+
+	.heroTestflightLink {
+		background: #1d2b27;
+		border-color: #1d2b27;
+	}
+
+	.heroDownloadNote {
+		color: #4b5651;
+		text-align: center;
 	}
 
 	.iphonePreview {
@@ -941,6 +1000,16 @@ footer {
 	.playStore,
 	.appStore {
 		height: 58px;
+	}
+
+	.heroTestflightLink {
+		min-height: 58px;
+		padding: 0 18px;
+		font-size: 1.6rem;
+	}
+
+	.heroDownloadNote {
+		font-size: 1.35rem;
 	}
 
 	.sectionIntro > h2,

@@ -65,9 +65,12 @@
                             {% endif %}
                             <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
                             {% if site.testflight_link %}
-                                <a class="secondaryLink" href="{{site.testflight_link}}">Join the TestFlight</a>
+                                <a class="heroTestflightLink" href="{{site.testflight_link}}">Try TestFlight</a>
                             {% endif %}
                         </div>
+                        {% if site.testflight_link %}
+                            <p class="heroDownloadNote">Subscriptions in the TestFlight build are free during beta. No extra payment is required, so feel free to subscribe in the app.</p>
+                        {% endif %}
                     </div>
                     <main class="homeContent">
                         <section class="homeSection screensSection">
