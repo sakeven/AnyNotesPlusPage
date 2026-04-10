@@ -3,18 +3,22 @@ layout: page
 title: Support
 description: Help, FAQ, and contact information for AnyNotes+ on iPhone and iPad.
 include_in_header: true
+include_in_footer: true
+lang: en
+ref: support
+nav_order: 1
+permalink: /support/
 ---
 
 # AnyNotes+ Support
 
-
-## 📬 Contact Us
-If you need support, have questions, or want to report a bug, please email us:
-
 **sakeven.jiang@gmail.com**
 
+## Contact
 
-## 📖 Frequently Asked Questions
+If you need support, have questions, or want to report a bug, please email us.
+
+## Frequently Asked Questions
 
 **Q: Is AnyNotes+ available on iPhone and iPad?**
 

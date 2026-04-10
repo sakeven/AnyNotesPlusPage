@@ -3,18 +3,21 @@
 ---
 
 <!DOCTYPE html>
-<html lang="en-us">
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.locales[lang] %}
+<html lang="{{ t.html_lang | default: lang }}">
 
-{% include head.html %}
+{% include head.html lang=lang t=t %}
 
 <body class="subPageBody">
     <div class="headerBackground subPageHeaderBackground">
         <div class="container subPageContainer">
-        {% include header.html %}
+        {% include header.html lang=lang t=t %}
             <article class="page markdown-body">
                 {{ content }}
             </article>
         </div>
+        {% include footer.html lang=lang t=t %}
         {% include appstoreimages.html %}
     </div>
 </body>

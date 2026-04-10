@@ -2,6 +2,13 @@
 page_title: AnyNotes+ • Personal AI Inbox for Notes, Voice, Photos, and Links # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 url: "https://plus.anynotes.app"
 baseurl: ""
+default_lang: en
+supported_languages:
+  - en
+  - zh-Hans
+  - zh-Hant
+  - ko
+  - ja
 
 # App Info
 ios_app_id: 6745427912 # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).

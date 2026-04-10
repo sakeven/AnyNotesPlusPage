@@ -1,0 +1,138 @@
+html_lang: zh-Hant
+hreflang: zh-Hant
+og_locale: zh_TW
+language_name_short: 繁中
+app_price: 免費
+app_keywords: AI 收件匣, AI 筆記, 語音筆記, 圖片轉文字, 分享擴充功能, 會議紀錄, 摘要, 提醒事項, AnyNotes+
+footer:
+  made_by: 由
+  in: 於
+  press_kit: 媒體資料
+home:
+  page_title: AnyNotes+ • 個人 AI 收件匣，支援筆記、語音、照片與連結
+  meta_description: 從筆記、語音、照片、分享選單或聊天快速擷取內容。AnyNotes 會把每次輸入整理成清楚結果、建議下一步，以及能持續推進的主題。
+  og_image_alt: AnyNotes+ 預覽圖，展示收件匣介面與產品標語。
+  app_description: 從筆記、語音、照片、分享選單或聊天快速擷取內容。AnyNotes 會把每次輸入整理成清楚結果、建議下一步，以及能持續推進的主題。
+  app_eyebrow: 個人 AI 收件匣 + 主題工作區
+  app_slogan: 想法有去處，結果有形狀。
+  hero_pills:
+    - 筆記
+    - 錄音
+    - 圖片
+    - 分享
+    - 對話
+    - 主題
+  app_store_badge_alt: 在 App Store 下載
+  play_store_badge_alt: 在 Google Play 取得
+  testflight_cta: 試用 TestFlight
+  hero_download_note: TestFlight 測試版中的訂閱在 Beta 期間免費，不需要額外付費，所以可以直接在 App 內訂閱體驗。
+  screens:
+    eyebrow: 產品畫面
+    title: 先看看目前的收件匣、主題首頁與主題詳情體驗。
+    description: 看看一個想法如何先進入收件匣，再被整理成可以繼續推進的主題。
+    cards:
+      - title: 收件匣
+        description: 展示今天的筆記、AI 結果卡片、標籤，以及四種主要擷取入口。
+        alt: AnyNotes 收件匣截圖
+        image: /assets/screenshot/inbox-home.png
+      - title: 主題首頁
+        description: 在主題首頁集中呈現主題的目前結論、最近變化與下一步行動。
+        alt: AnyNotes 主題首頁截圖
+        image: /assets/screenshot/topic-home.png
+      - title: 主題詳情
+        description: 更深入的主題詳情頁，包含綜合摘要、變化紀錄，以及更適合閱讀的版面。
+        alt: AnyNotes 主題詳情截圖
+        image: /assets/screenshot/topic-detail.png
+  features_intro:
+    eyebrow: 更貼近真實記錄習慣
+    title: 把雜亂輸入、清楚結果與持續推進的工作放在同一處。
+    description: AnyNotes 是依照人們在手機上的真實流程設計。先收集，再讓 AI 幫你整理剛進來的內容，然後沿著同一條脈絡繼續推進，而不是讓它淹沒在冗長的筆記清單裡。
+  features:
+    - title: 從筆記、錄音、照片、分享與聊天中擷取
+      description: 可以從 App 內開始，也可以從 iOS 分享選單進入。文字、語音、照片、連結與聊天紀錄都會進入同一套收件匣流程，而不是散落在不同地方。
+      fontawesome_icon_name: inbox
+    - title: 每則新筆記都有 AI 結果卡片
+      description: 對於想法、會議、提醒、摘要與知識型筆記，AnyNotes 會自動產生清楚標題、摘要、結構化結果卡片，以及建議的下一步。
+      fontawesome_icon_name: magic
+    - title: 持續演進的主題
+      description: 不再只有孤立筆記。把相關內容放進同一個主題中，持續更新目前結論、最近變化與下一步行動。
+      fontawesome_icon_name: project-diagram
+    - title: 把筆記真正推進成行動
+      description: 你可以起草提醒、Things 任務和跟進郵件，也可以繼續進入 AI 對話，或把主要結果匯出成可分享圖片，而不是傳送一張雜亂截圖。
+      fontawesome_icon_name: share-square
+    - title: 用 AI Chat 做更深入的工作
+      description: 開啟與單則筆記綁定的聊天，使用自訂提示詞，搜尋已儲存筆記，或把更複雜的任務交給內建沙箱工作區處理。
+      fontawesome_icon_name: comments
+    - title: 搜尋、封存、同步
+      description: 透過搜尋、標籤、置頂、封存模式、批次摘要，以及綁定你自己帳號的 iCloud 儲存，讓所有內容都保持可查找。
+      fontawesome_icon_name: search
+  workflow:
+    eyebrow: 使用流程
+    title: 從快速記錄，到可以直接行動的結果。
+    cards:
+      - step: "01"
+        title: 隨時擷取
+        description: 使用筆記、錄音、拍照、聊天或 iOS 分享選單處理文字、連結與圖片。所有內容都會進入一致流程。
+      - step: "02"
+        title: 取得 AI 收件匣結果
+        description: 每則新筆記都會得到標題、摘要、主要結果卡片與建議下一步，而且不會阻礙儲存。
+      - step: "03"
+        title: 把相關工作放在一起
+        description: 用主題取代一次性筆記，讓最新綜合結論、變化、開放問題與下一步始終可見。
+      - step: "04"
+        title: 把結果繼續往外推進
+        description: 把結果延伸成提醒草稿、Things 任務、跟進郵件、分享圖片卡片，或更深入的 AI 對話。
+  outcomes:
+    eyebrow: App 會產出什麼
+    title: 比原始筆記更容易直接使用的結果。
+    result_types:
+      eyebrow: 收件匣結果類型
+      title: 針對常見筆記情境的結構化輸出。
+      items:
+        - label: 想法
+          description: 幫你釐清一個念頭，提煉重點，並建議接下來可以探索什麼。
+        - label: 會議
+          description: 總結討論內容、結論、行動項目與尚未解決的問題。
+        - label: 提醒
+          description: 把隨手記下的文字變成可執行的任務草稿，而不是停留在一句話。
+        - label: 摘要
+          description: 將網頁、聊天與參考資料壓縮成主要資訊。
+        - label: 知識
+          description: 把摘錄與研究筆記整理成之後更容易重用的內容。
+    next_steps:
+      eyebrow: 下一步可以做什麼
+      title: 從理解直接走向執行，不必跳出目前流程。
+      items:
+        - 在已附帶筆記脈絡的 AI 對話中繼續推進。
+        - 直接從 AI 結果起草提醒、Things 項目與跟進郵件。
+        - 產生可分享的圖片卡片，而不是傳送原始截圖。
+        - 搜尋已儲存筆記、批次摘要多則筆記，或封存與置頂以便稍後回顧。
+        - 當任務不是一句回覆能解決時，使用自訂提示詞與沙箱工作區繼續處理。
+  trust:
+    cards:
+      - eyebrow: 預設更私密
+        title: 你的筆記仍然綁定在你自己的帳號下。
+        description: 筆記存放在你個人的 iCloud 儲存中，而不是共享服務資料庫，因此可以保持輕量記錄，而不必加入新的帳號系統。
+      - eyebrow: 為持續推進而設計
+        title: 不只是擷取，更是推進。
+        description: 它保留了筆記收件匣的快速輸入體驗，同時加入搜尋、封存、主題、AI Chat 與分享結果等能力，讓重要筆記真正發展成可用成果。
+  faq:
+    eyebrow: 常見問題
+    title: 下載前先看幾個簡短答案。
+    description: 更完整的說明在 Support 頁面，這裡先回答多數人在試用 AnyNotes+ 前最常問的四個問題。
+    items:
+      - question: AnyNotes+ 支援 iPhone 和 iPad 嗎？
+        answer: 支援。AnyNotes+ 已在 App Store 上提供 iPhone 與 iPad 版本，並在不同裝置上維持一致的擷取流程。
+      - question: 筆記是如何儲存的？
+        answer: 你的筆記保存在你自己的 iCloud 儲存空間中，透過 CloudKit 同步，而不是放在共享服務資料庫裡。
+      - question: 它能把語音、照片和連結整理成摘要嗎？
+        answer: 可以。你可以從文字、錄音、照片或 iOS 分享選單擷取內容，AI 收件匣會把這些輸入整理成更清楚的標題、摘要、結果卡片與下一步建議。
+      - question: AI 功能需要訂閱嗎？
+        answer: 需要。AI 功能需要 AnyNotes Pro，同時你還需要在 App 內提供自己的 OpenAI API key，或使用 Codex 登入。
+  cta:
+    eyebrow: 先從還很混亂的版本開始
+    title: 先收集，快釐清，再繼續推進。
+    description: 當一個想法、會議、連結、截圖或語音備忘還只是半成品，但你已經知道之後需要更清楚的結果時，就可以直接用 AnyNotes 先把它接住。
+    app_store: 在 App Store 下載
+    testflight: 試用 TestFlight 測試版
+    support: 有問題？查看支援頁面

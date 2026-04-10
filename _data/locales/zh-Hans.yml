@@ -1,0 +1,138 @@
+html_lang: zh-Hans
+hreflang: zh-Hans
+og_locale: zh_CN
+language_name_short: 简中
+app_price: 免费
+app_keywords: AI 收件箱, AI 笔记, 语音笔记, 图片转文字, 分享扩展, 会议纪要, 摘要, 提醒事项, AnyNotes+
+footer:
+  made_by: 由
+  in: 于
+  press_kit: 媒体资料
+home:
+  page_title: AnyNotes+ • 个人 AI 收件箱，支持笔记、语音、照片和链接
+  meta_description: 从笔记、语音、照片、分享菜单或聊天中快速捕捉内容。AnyNotes 会把每次输入整理成清晰结果、建议下一步，以及可持续推进的主题。
+  og_image_alt: AnyNotes+ 预览图，展示收件箱界面和产品标语。
+  app_description: 从笔记、语音、照片、分享菜单或聊天中快速捕捉内容。AnyNotes 会把每次输入整理成清晰结果、建议下一步，以及可持续推进的主题。
+  app_eyebrow: 个人 AI 收件箱 + 主题工作区
+  app_slogan: 想法有去处，结果有来路。
+  hero_pills:
+    - 笔记
+    - 录音
+    - 照片
+    - 分享
+    - 对话
+    - 主题
+  app_store_badge_alt: 在 App Store 下载
+  play_store_badge_alt: 在 Google Play 获取
+  testflight_cta: 试用 TestFlight
+  hero_download_note: TestFlight 测试版中的订阅在 Beta 期间免费，不需要额外付费，所以可以直接在 App 内订阅体验。
+  screens:
+    eyebrow: 产品界面
+    title: 看看当前的收件箱、主题首页和主题详情体验。
+    description: 看看一个想法如何先进入收件箱，再被整理成可以继续推进的主题。
+    cards:
+      - title: 收件箱
+        description: 展示今天的笔记、AI 结果卡片、标签，以及四种主要捕捉入口。
+        alt: AnyNotes 收件箱截图
+        image: /assets/screenshot/inbox-home.png
+      - title: 主题首页
+        description: 在主题首页集中展示主题的当前结论、最近变化和下一步行动。
+        alt: AnyNotes 主题首页截图
+        image: /assets/screenshot/topic-home.png
+      - title: 主题详情
+        description: 更深入的主题详情页，包含综合总结、变化记录，以及更适合阅读的布局。
+        alt: AnyNotes 主题详情截图
+        image: /assets/screenshot/topic-detail.png
+  features_intro:
+    eyebrow: 更贴近真实记录习惯
+    title: 把杂乱输入、清晰结果和持续推进的工作放在一个地方。
+    description: AnyNotes 围绕手机上的真实使用流程来设计。先收集，再让 AI 帮你理清刚刚进来的内容，然后继续沿着同一条线推进，而不是把它淹没在长长的笔记列表里。
+  features:
+    - title: 从笔记、录音、照片、分享和聊天中捕捉
+      description: 既可以在应用内开始，也可以从 iOS 分享菜单进入。文本、语音、照片、链接和聊天记录都会进入同一套收件箱流程，而不是分散在不同角落。
+      fontawesome_icon_name: inbox
+    - title: 每条新笔记都有 AI 结果卡片
+      description: 对于想法、会议、提醒、摘要和知识类笔记，AnyNotes 会自动生成清晰标题、摘要、结构化结果卡片以及建议的下一步。
+      fontawesome_icon_name: magic
+    - title: 持续演进的主题
+      description: 不再只有孤立笔记。把相关内容归到同一个主题中，持续更新当前结论、最近变化和下一步行动。
+      fontawesome_icon_name: project-diagram
+    - title: 把笔记真正推进成行动
+      description: 你可以起草提醒、Things 任务和跟进邮件，也可以继续进入 AI 对话，或把主要结果导出成可分享图片，而不是发一张杂乱截图。
+      fontawesome_icon_name: share-square
+    - title: 用 AI Chat 做更深入的工作
+      description: 打开和单条笔记关联的聊天，使用自定义提示词，搜索已保存笔记，或者把更复杂的任务交给内置沙箱工作区处理。
+      fontawesome_icon_name: comments
+    - title: 搜索、归档、同步
+      description: 通过搜索、标签、置顶、归档模式、批量摘要和绑定你自己账户的 iCloud 存储，让所有内容都保持可查找。
+      fontawesome_icon_name: search
+  workflow:
+    eyebrow: 工作流程
+    title: 从快速记录，到可以直接行动的结果。
+    cards:
+      - step: "01"
+        title: 随时捕捉
+        description: 使用笔记、录音、拍照、聊天或 iOS 分享菜单处理文本、链接和图片。所有内容都会进入统一流程。
+      - step: "02"
+        title: 获取 AI 收件箱结果
+        description: 每条新笔记都会得到标题、摘要、主要结果卡片和建议下一步，而且不会阻塞保存。
+      - step: "03"
+        title: 把相关工作放在一起
+        description: 用主题替代一次性笔记，让最新综合结论、变化、开放问题和下一步始终可见。
+      - step: "04"
+        title: 把结果向外推进
+        description: 把结果继续变成提醒草稿、Things 任务、跟进邮件、分享图片卡片，或者更深入的 AI 对话。
+  outcomes:
+    eyebrow: 应用会产出什么
+    title: 比原始笔记更容易直接使用的结果。
+    result_types:
+      eyebrow: 收件箱结果类型
+      title: 面向常见笔记场景的结构化输出。
+      items:
+        - label: 想法
+          description: 帮你澄清一个念头，提炼关键点，并建议接下来可以继续探索什么。
+        - label: 会议
+          description: 总结讨论内容、结论、行动项以及尚未解决的问题。
+        - label: 提醒
+          description: 把随手写下的文字变成可执行的任务草稿，而不是停留在一句话。
+        - label: 总结
+          description: 将网页、聊天和参考资料压缩成主要信息。
+        - label: 知识
+          description: 把摘录和研究笔记整理成以后更容易复用的内容。
+    next_steps:
+      eyebrow: 下一步可以做什么
+      title: 从理解直接走向执行，不必跳出当前流程。
+      items:
+        - 在已附带笔记上下文的 AI 对话中继续推进。
+        - 从 AI 结果直接起草提醒、Things 条目和跟进邮件。
+        - 生成可分享的图片卡片，而不是发送原始截图。
+        - 搜索已保存笔记、批量摘要多条笔记，或归档和置顶以便稍后查看。
+        - 当任务不是一句回复能解决时，使用自定义提示词和沙箱工作区继续处理。
+  trust:
+    cards:
+      - eyebrow: 默认更私密
+        title: 你的笔记仍然绑定在你自己的账户下。
+        description: 笔记存放在你个人的 iCloud 存储中，而不是共享服务数据库，所以可以保持轻量记录，而不必引入新的账户系统。
+      - eyebrow: 为持续推进而设计
+        title: 不只是捕捉，更是推进。
+        description: 它保留了笔记收件箱的快速输入体验，同时加入搜索、归档、主题、AI Chat 和分享结果等能力，让重要笔记真正发展成可用成果。
+  faq:
+    eyebrow: 常见问题
+    title: 下载前先看几个简短答案。
+    description: 更完整的帮助内容在 Support 页面，这里先回答大多数人体验 AnyNotes+ 之前最常问的四个问题。
+    items:
+      - question: AnyNotes+ 支持 iPhone 和 iPad 吗？
+        answer: 支持。AnyNotes+ 已在 App Store 上提供 iPhone 和 iPad 版本，并在不同设备上保持一致的捕捉流程。
+      - question: 笔记是怎么存储的？
+        answer: 你的笔记保存在你自己的 iCloud 存储中，通过 CloudKit 同步，而不是放在共享服务数据库里。
+      - question: 它能把语音、照片和链接整理成摘要吗？
+        answer: 可以。你可以从文本、录音、照片或 iOS 分享菜单捕捉内容，AI 收件箱会把这些输入整理成更清晰的标题、摘要、结果卡片和下一步建议。
+      - question: AI 功能需要订阅吗？
+        answer: 需要。AI 功能需要 AnyNotes Pro，同时你还需要在应用内提供自己的 OpenAI API key，或者使用 Codex 登录。
+  cta:
+    eyebrow: 先从还很混乱的版本开始
+    title: 先收集，快澄清，再继续推进。
+    description: 当一个想法、会议、链接、截图或语音备忘还只是半成品，但你已经知道之后需要更清晰结果时，就可以直接用 AnyNotes 先把它接住。
+    app_store: 在 App Store 下载
+    testflight: 试用 TestFlight 测试版
+    support: 有问题？查看支持页面

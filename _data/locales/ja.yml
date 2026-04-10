@@ -1,0 +1,138 @@
+html_lang: ja
+hreflang: ja
+og_locale: ja_JP
+language_name_short: 日本語
+app_price: 無料
+app_keywords: AI受信トレイ, AIノート, 音声メモ, 画像から文字起こし, 共有拡張, 会議メモ, 要約, リマインダー, AnyNotes+
+footer:
+  made_by: 制作
+  in: 所在地
+  press_kit: プレスキット
+home:
+  page_title: AnyNotes+ • ノート、音声、写真、リンクのための個人向け AI 受信トレイ
+  meta_description: ノート、音声、写真、共有シート、チャットからすばやく取り込み。AnyNotes は各入力を整理された結果、次のアクション提案、そして継続的に進められるトピックに変えます。
+  og_image_alt: 受信トレイ画面とプロダクトのスローガンを表示する AnyNotes+ のプレビュー画像。
+  app_description: ノート、音声、写真、共有シート、チャットからすばやく取り込み。AnyNotes は各入力を整理された結果、次のアクション提案、そして継続的に進められるトピックに変えます。
+  app_eyebrow: 個人向け AI受信トレイ + トピックワークスペース
+  app_slogan: アイデアには居場所を。成果には形を。
+  hero_pills:
+    - ノート
+    - 録音
+    - 写真
+    - 共有
+    - チャット
+    - トピック
+  app_store_badge_alt: App Store でダウンロード
+  play_store_badge_alt: Google Play で手に入れよう
+  testflight_cta: TestFlight を試す
+  hero_download_note: TestFlight ビルドのサブスクリプションはベータ期間中無料です。追加料金は不要なので、アプリ内でそのまま登録して試せます。
+  screens:
+    eyebrow: 製品画面
+    title: 現在の受信トレイ、トピックホーム、トピック詳細をチェックできます。
+    description: アイデアが受信トレイに入り、整理され、前に進めるトピックになっていく流れを確認できます。
+    cards:
+      - title: 受信トレイ
+        description: 今日のノート、AI 結果カード、タグ、そして 4 つの主要な取り込みアクションを表示します。
+        alt: AnyNotes 受信トレイのスクリーンショット
+        image: /assets/screenshot/inbox-home.png
+      - title: トピックホーム
+        description: トピックホームで、現在の見立て、最近の変化、次の一手をまとめて確認できます。
+        alt: AnyNotes トピックホームのスクリーンショット
+        image: /assets/screenshot/topic-home.png
+      - title: トピック詳細
+        description: 総合サマリー、変更履歴、より読みやすいレイアウトを備えた詳細ビューです。
+        alt: AnyNotes トピック詳細のスクリーンショット
+        image: /assets/screenshot/topic-detail.png
+  features_intro:
+    eyebrow: 実際の記録習慣に合う設計
+    title: 雑多な入力、整理された結果、進み続ける仕事をひとつに。
+    description: AnyNotes はスマホ上で人が実際に行う流れに合わせて作られています。まず集めて、AI が入ってきた内容を整理し、そのまま同じ流れを前に進められるようにします。
+  features:
+    - title: ノート、録音、写真、共有、チャットから取り込む
+      description: アプリ内から始めても、iOS の共有シートから入っても構いません。テキスト、音声、写真、リンク、チャット履歴が別々に散らばらず、同じ受信トレイのフローに入ります。
+      fontawesome_icon_name: inbox
+    - title: すべての新規ノートに AI 結果カード
+      description: アイデア、会議、リマインダー、要約、知識ノートに対して、AnyNotes が見やすいタイトル、要約、構造化された結果カード、次のアクション提案を自動生成します。
+      fontawesome_icon_name: magic
+    - title: 進化し続けるトピック
+      description: 孤立したノートのままにしません。関連ノートをトピックにまとめ、現在の判断、最近の変化、次の一手を更新し続けられます。
+      fontawesome_icon_name: project-diagram
+    - title: ノートを行動につなげる
+      description: リマインダー、Things タスク、フォローアップメールの下書きを作成したり、AIチャットに進んだり、雑然としたスクリーンショットの代わりに共有用画像として書き出せます。
+      fontawesome_icon_name: share-square
+    - title: AIチャットでより深く進める
+      description: ノート専用チャットを開き、自分のプロンプトを使い、保存済みノートを検索し、一度の書き換えでは足りない作業は内蔵の sandbox ワークスペースに引き渡せます。
+      fontawesome_icon_name: comments
+    - title: 検索、アーカイブ、同期
+      description: 検索、タグ、ピン留め、アーカイブモード、一括要約、そして自分のアカウントに紐づく iCloud ストレージによって、すべての情報をあとから見つけやすく保てます。
+      fontawesome_icon_name: search
+  workflow:
+    eyebrow: 使い方
+    title: 素早い取り込みから、すぐ使える結果へ。
+    cards:
+      - step: "01"
+        title: どこからでも取り込む
+        description: ノート、録音、写真、チャット、iOS 共有シートでテキスト、リンク、画像を受け取れます。すべて同じ一貫したフローに入ります。
+      - step: "02"
+        title: AI受信トレイの結果を受け取る
+        description: 保存を妨げることなく、新しいノートごとにタイトル、要約、主要な結果カード、次のアクション提案が生成されます。
+      - step: "03"
+        title: 関連する作業をまとめて保つ
+        description: 単発のノートで終わらせず、トピックによって最新の統合サマリー、変化、未解決の論点、次の一手を見える状態に保てます。
+      - step: "04"
+        title: 結果を次の行動につなげる
+        description: 結果をリマインダー下書き、Things タスク、フォローアップメール、共有用画像カード、あるいはより深い AI 対話へつなげられます。
+  outcomes:
+    eyebrow: アプリが生み出すもの
+    title: 生のノートより、ずっと使いやすい結果。
+    result_types:
+      eyebrow: 受信トレイの結果タイプ
+      title: よくあるノートの形に合わせた構造化出力。
+      items:
+        - label: アイデア
+          description: 考えを整理し、要点を抜き出し、次に掘り下げる方向を提案します。
+        - label: 会議
+          description: 議論内容、決定事項、アクション項目、未解決の質問を要約します。
+        - label: リマインダー
+          description: 走り書きのメモを、ただのテキストのまま残さず実行可能な下書きに変えます。
+        - label: 要約
+          description: Web ページ、チャット、参考資料を主要ポイントに圧縮します。
+        - label: 知識
+          description: ハイライトや調査メモを、あとで再利用しやすい形に整えます。
+    next_steps:
+      eyebrow: 次にできること
+      title: 流れを止めずに、理解から実行へ進めます。
+      items:
+        - ノートの文脈が付いたまま AIチャットを続ける。
+        - AI の結果からリマインダー、Things 項目、フォローアップメールを下書きする。
+        - 生のスクリーンショットではなく共有用の画像カードを生成する。
+        - 保存済みノートの検索、複数ノートの一括要約、アーカイブやピン留めで後から見直しやすくする。
+        - 一度の返答では足りない作業に対して、カスタムプロンプトや sandbox ワークスペースを使う。
+  trust:
+    cards:
+      - eyebrow: 既定でプライベート
+        title: ノートは自分のアカウントに紐づいたままです。
+        description: ノートは共有サービスのデータベースではなく、個人の iCloud ストレージに保存されます。新しいアカウントシステムを増やさずに、軽快な取り込みを続けられます。
+      - eyebrow: 継続する仕事のための設計
+        title: 取り込むだけで終わらず、前に進める。
+        description: このアプリはノート受信トレイの素早さを保ちながら、検索、アーカイブ、トピック、AI chat、共有可能な出力を加え、重要なノートを実際の成果へつなげます。
+  faq:
+    eyebrow: FAQ
+    title: ダウンロード前によくある質問へ短く回答します。
+    description: 詳しいヘルプは Support ページにあります。ここでは AnyNotes+ を試す前によく聞かれる 4 つの質問だけを先にまとめています。
+    items:
+      - question: AnyNotes+ は iPhone と iPad で使えますか？
+        answer: はい。AnyNotes+ は App Store で iPhone と iPad の両方に提供されており、デバイスが変わっても同じ取り込みフローを保ちます。
+      - question: ノートはどのように保存されますか？
+        answer: ノートは共有サービスのデータベースではなく、CloudKit を通じて自分の iCloud ストレージに保存されます。
+      - question: 音声メモ、写真、リンクを要約にできますか？
+        answer: はい。テキスト、録音、写真、iOS 共有シートから取り込み、AI受信トレイがより明確なタイトル、要約、結果カード、次のステップに整理します。
+      - question: AI 機能の利用にはサブスクリプションが必要ですか？
+        answer: はい。AI 機能には AnyNotes Pro が必要です。さらに、アプリ内で自分の OpenAI API key を設定するか、Codex でサインインする必要があります。
+  cta:
+    eyebrow: まだ整理されていない段階から始める
+    title: まず集めて、すばやく整理し、流れを止めずに進める。
+    description: アイデア、会議、リンク、スクリーンショット、音声メモがまだ半端な状態でも、あとでより明確な結果が必要になると分かっているなら、AnyNotes がまず受け止めてくれます。
+    app_store: App Store でダウンロード
+    testflight: TestFlight ベータを試す
+    support: 質問がありますか？ Support を見る

@@ -1,13 +1,27 @@
+---
+---
 <!DOCTYPE html>
-<html lang="en-us">
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.locales[lang] %}
+{% assign support_page = site.pages | where: "ref", "support" | where: "lang", lang | first %}
+{% assign app_store_badge_src = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg' %}
+{% case lang %}
+    {% when 'zh-Hans' %}
+        {% assign app_store_badge_src = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store-cn.svg' %}
+    {% when 'ja' %}
+        {% assign app_store_badge_src = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store-jp.svg' %}
+    {% when 'ko' %}
+        {% assign app_store_badge_src = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store-kr.svg' %}
+{% endcase %}
+<html lang="{{ t.html_lang | default: lang }}">
 
-{% include head.html %}
+{% include head.html lang=lang t=t %}
 
 <body>
     <div class="imageWrapper">
             <div class="headerBackground">
                 <div class="container">
-                    {% include header.html %}
+                    {% include header.html lang=lang t=t %}
                     <div class="iphonePreview">
                         <div class="deviceShell">
                             <div class="deviceFrame">
@@ -41,139 +55,103 @@
                                 {{ site.app_name }}
                             </h1>
                             <h2 class="appPrice">
-                                {{ site.app_price }}
+                                {{ t.app_price | default: site.app_price }}
                             </h2>
                         </div>
                         <div class="appDescriptionContainer">
-                            <p class="appEyebrow">Personal AI Inbox + Topics Workspace</p>
-                            <h2 class="appSlogan">Ideas find a place. Outcomes take shape.</h2>
-                            <p class ="appDescription">
-                                {{ site.app_description }}
+                            <p class="appEyebrow">{{ t.home.app_eyebrow }}</p>
+                            <h2 class="appSlogan">{{ t.home.app_slogan }}</h2>
+                            <p class="appDescription">
+                                {{ t.home.app_description | default: site.app_description }}
                             </p>
                         </div>
                         <div class="heroPillRow">
-                            <span class="heroPill">Note</span>
-                            <span class="heroPill">Record</span>
-                            <span class="heroPill">Photo</span>
-                            <span class="heroPill">Share</span>
-                            <span class="heroPill">Chat</span>
-                            <span class="heroPill">Topics</span>
+                            {% for pill in t.home.hero_pills %}
+                                <span class="heroPill">{{ pill }}</span>
+                            {% endfor %}
                         </div>
                         <div class="downloadButtonsContainer">
                             {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
+                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="{{ '/assets/playstore.png' | relative_url }}" alt="{{ t.home.play_store_badge_alt }}"></a>
                             {% endif %}
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
+                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="{{ app_store_badge_src }}" alt="{{ t.home.app_store_badge_alt }}"></a>
                             {% if site.testflight_link %}
-                                <a class="heroTestflightLink" href="{{site.testflight_link}}">Try TestFlight</a>
+                                <a class="heroTestflightLink" href="{{site.testflight_link}}">{{ t.home.testflight_cta }}</a>
                             {% endif %}
                         </div>
                         {% if site.testflight_link %}
-                            <p class="heroDownloadNote">Subscriptions in the TestFlight build are free during beta. No extra payment is required, so feel free to subscribe in the app.</p>
+                            <p class="heroDownloadNote">{{ t.home.hero_download_note }}</p>
                         {% endif %}
                     </div>
                     <main class="homeContent">
                         <section class="homeSection screensSection">
                             <div class="sectionIntro">
-                                <p class="sectionEyebrow">Product Screens</p>
-                                <h2>Preview the current Inbox, Topic Home, and Topic Detail experience.</h2>
-                                <p>The landing page now uses real app screenshots for the key flows instead of a generic mock screen.</p>
+                                <p class="sectionEyebrow">{{ t.home.screens.eyebrow }}</p>
+                                <h2>{{ t.home.screens.title }}</h2>
+                                <p>{{ t.home.screens.description }}</p>
                             </div>
                             <div class="screensGrid">
-                                <figure class="screenCard">
-                                    <div class="screenFrame">
-                                        <img src="{{ '/assets/screenshot/inbox-home.png' | relative_url }}" alt="AnyNotes Inbox screenshot">
-                                    </div>
-                                    <figcaption class="screenCaption">
-                                        <h3>Inbox</h3>
-                                        <p>Today&apos;s notes, AI result cards, tags, and the four primary capture actions.</p>
-                                    </figcaption>
-                                </figure>
-                                <figure class="screenCard">
-                                    <div class="screenFrame">
-                                        <img src="{{ '/assets/screenshot/topic-home.png' | relative_url }}" alt="AnyNotes Topic Home screenshot">
-                                    </div>
-                                    <figcaption class="screenCaption">
-                                        <h3>Topic Home</h3>
-                                        <p>Focused topic synthesis with current view, recent change, and next step surfaced on the Topics home screen.</p>
-                                    </figcaption>
-                                </figure>
-                                <figure class="screenCard">
-                                    <div class="screenFrame">
-                                        <img src="{{ '/assets/screenshot/topic-detail.png' | relative_url }}" alt="AnyNotes Topic Detail screenshot">
-                                    </div>
-                                    <figcaption class="screenCaption">
-                                        <h3>Topic Detail</h3>
-                                        <p>The deeper topic view with synthesis, change log, and a cleaner reading-first layout.</p>
-                                    </figcaption>
-                                </figure>
+                                {% for card in t.home.screens.cards %}
+                                    <figure class="screenCard">
+                                        <div class="screenFrame">
+                                            <img src="{{ card.image | relative_url }}" alt="{{ card.alt }}">
+                                        </div>
+                                        <figcaption class="screenCaption">
+                                            <h3>{{ card.title }}</h3>
+                                            <p>{{ card.description }}</p>
+                                        </figcaption>
+                                    </figure>
+                                {% endfor %}
                             </div>
                         </section>
 
                         <section class="homeSection featureSection">
                             <div class="sectionIntro">
-                                <p class="sectionEyebrow">Why It Fits Real Capture Habits</p>
-                                <h2>One place for messy inputs, clear results, and work that keeps moving.</h2>
-                                <p>AnyNotes is built around the flow people actually use on a phone: collect first, let AI clarify what just came in, then keep pushing the same thread forward instead of losing it in a long list of notes.</p>
+                                <p class="sectionEyebrow">{{ t.home.features_intro.eyebrow }}</p>
+                                <h2>{{ t.home.features_intro.title }}</h2>
+                                <p>{{ t.home.features_intro.description }}</p>
                             </div>
-                            {% include features.html %}
+                            {% include features.html features=t.home.features %}
                         </section>
 
                         <section class="homeSection workflowSection">
                             <div class="sectionIntro">
-                                <p class="sectionEyebrow">How It Works</p>
-                                <h2>From quick capture to action-ready output.</h2>
+                                <p class="sectionEyebrow">{{ t.home.workflow.eyebrow }}</p>
+                                <h2>{{ t.home.workflow.title }}</h2>
                             </div>
                             <div class="workflowGrid">
-                                <article class="workflowCard">
-                                    <span class="stepTag">01</span>
-                                    <h3>Capture anywhere</h3>
-                                    <p>Use Note, Record, Photo, Chat, or the iOS share sheet for text, links, and images. Everything lands in one consistent flow.</p>
-                                </article>
-                                <article class="workflowCard">
-                                    <span class="stepTag">02</span>
-                                    <h3>Get an AI Inbox result</h3>
-                                    <p>Each new note gets a title, summary, primary result card, and suggested next actions without blocking the save step.</p>
-                                </article>
-                                <article class="workflowCard">
-                                    <span class="stepTag">03</span>
-                                    <h3>Keep related work together</h3>
-                                    <p>Move beyond one-off notes with Topics that keep the latest synthesis, changes, open questions, and next moves visible.</p>
-                                </article>
-                                <article class="workflowCard">
-                                    <span class="stepTag">04</span>
-                                    <h3>Send the outcome outward</h3>
-                                    <p>Turn results into reminder drafts, Things tasks, follow-up emails, shareable image cards, or a deeper AI chat session.</p>
-                                </article>
+                                {% for card in t.home.workflow.cards %}
+                                    <article class="workflowCard">
+                                        <span class="stepTag">{{ card.step }}</span>
+                                        <h3>{{ card.title }}</h3>
+                                        <p>{{ card.description }}</p>
+                                    </article>
+                                {% endfor %}
                             </div>
                         </section>
 
                         <section class="homeSection outcomeSection">
                             <div class="sectionIntro">
-                                <p class="sectionEyebrow">What The App Produces</p>
-                                <h2>Results that are easier to use than raw notes.</h2>
+                                <p class="sectionEyebrow">{{ t.home.outcomes.eyebrow }}</p>
+                                <h2>{{ t.home.outcomes.title }}</h2>
                             </div>
                             <div class="outcomeGrid">
                                 <article class="outcomeCard">
-                                    <p class="cardEyebrow">Inbox result types</p>
-                                    <h3>Structured outputs for common note shapes.</h3>
+                                    <p class="cardEyebrow">{{ t.home.outcomes.result_types.eyebrow }}</p>
+                                    <h3>{{ t.home.outcomes.result_types.title }}</h3>
                                     <ul class="detailList">
-                                        <li><strong>Idea:</strong> clarify a thought, pull out key points, and suggest what to explore next.</li>
-                                        <li><strong>Meeting:</strong> summarize the discussion, decisions, action items, and unresolved questions.</li>
-                                        <li><strong>Reminder:</strong> turn a quick note into a task-ready draft instead of leaving it as text.</li>
-                                        <li><strong>Summary:</strong> compress web pages, chats, and reference material into the main takeaways.</li>
-                                        <li><strong>Knowledge:</strong> turn highlights and research notes into something easier to reuse later.</li>
+                                        {% for item in t.home.outcomes.result_types.items %}
+                                            <li><strong>{{ item.label }}:</strong> {{ item.description }}</li>
+                                        {% endfor %}
                                     </ul>
                                 </article>
                                 <article class="outcomeCard">
-                                    <p class="cardEyebrow">What you can do next</p>
-                                    <h3>Move from understanding to execution without leaving the flow.</h3>
+                                    <p class="cardEyebrow">{{ t.home.outcomes.next_steps.eyebrow }}</p>
+                                    <h3>{{ t.home.outcomes.next_steps.title }}</h3>
                                     <ul class="detailList">
-                                        <li>Continue the note in AI Chat with note context already attached.</li>
-                                        <li>Draft reminders, Things items, and follow-up emails from the AI result.</li>
-                                        <li>Generate a shareable image card instead of sending a raw screenshot.</li>
-                                        <li>Search saved notes, batch summarize multiple notes, or archive and pin for later review.</li>
-                                        <li>Use custom prompts and the sandbox workspace when the task needs more than a single reply.</li>
+                                        {% for item in t.home.outcomes.next_steps.items %}
+                                            <li>{{ item }}</li>
+                                        {% endfor %}
                                     </ul>
                                 </article>
                             </div>
@@ -181,61 +159,50 @@
 
                         <section class="homeSection trustSection">
                             <div class="trustGrid">
-                                <article class="trustCard">
-                                    <p class="cardEyebrow">Private by default</p>
-                                    <h3>Your notes stay tied to your own account.</h3>
-                                    <p>Notes live in your personal iCloud-backed storage instead of a shared service database, so capture can stay lightweight without adding a new account system.</p>
-                                </article>
-                                <article class="trustCard">
-                                    <p class="cardEyebrow">Built for ongoing work</p>
-                                    <h3>Not just capture, but progression.</h3>
-                                    <p>The app keeps the quick-entry speed of a note inbox while adding search, archive, topics, AI chat, and shareable outputs for the notes that need to turn into something real.</p>
-                                </article>
+                                {% for card in t.home.trust.cards %}
+                                    <article class="trustCard">
+                                        <p class="cardEyebrow">{{ card.eyebrow }}</p>
+                                        <h3>{{ card.title }}</h3>
+                                        <p>{{ card.description }}</p>
+                                    </article>
+                                {% endfor %}
                             </div>
                         </section>
 
                         <section class="homeSection faqSection">
                             <div class="sectionIntro">
-                                <p class="sectionEyebrow">FAQ</p>
-                                <h2>Quick answers before you download.</h2>
-                                <p>The full help page lives in Support. This section covers the four questions most people ask before trying AnyNotes+.</p>
+                                <p class="sectionEyebrow">{{ t.home.faq.eyebrow }}</p>
+                                <h2>{{ t.home.faq.title }}</h2>
+                                <p>{{ t.home.faq.description }}</p>
                             </div>
                             <div class="faqGrid">
-                                <article class="faqCard">
-                                    <h3>Is AnyNotes+ available on iPhone and iPad?</h3>
-                                    <p>Yes. AnyNotes+ is available on iPhone and iPad through the App Store, with one capture flow that stays consistent across devices.</p>
-                                </article>
-                                <article class="faqCard">
-                                    <h3>How are notes stored?</h3>
-                                    <p>Your notes stay in your own iCloud-backed storage through CloudKit, instead of being kept in a shared service database.</p>
-                                </article>
-                                <article class="faqCard">
-                                    <h3>Can it turn voice notes, photos, and links into summaries?</h3>
-                                    <p>Yes. You can capture from text, record, photo, or the iOS share sheet, and AI Inbox can turn that input into clearer titles, summaries, result cards, and next steps.</p>
-                                </article>
-                                <article class="faqCard">
-                                    <h3>Do AI features require a subscription?</h3>
-                                    <p>Yes. AI features require AnyNotes Pro. To use them, you also need your own OpenAI API key or a Codex sign-in inside the app.</p>
-                                </article>
+                                {% for item in t.home.faq.items %}
+                                    <article class="faqCard">
+                                        <h3>{{ item.question }}</h3>
+                                        <p>{{ item.answer }}</p>
+                                    </article>
+                                {% endfor %}
                             </div>
                         </section>
 
                         <section class="homeSection ctaSection">
                             <div class="ctaCopy">
-                                <p class="sectionEyebrow">Start With The Messy Version</p>
-                                <h2>Collect first. Clarify fast. Keep the thread moving.</h2>
-                                <p>Use AnyNotes when a thought, meeting, link, screenshot, or voice memo is still half-formed, but you already know you will want a clearer result later.</p>
+                                <p class="sectionEyebrow">{{ t.home.cta.eyebrow }}</p>
+                                <h2>{{ t.home.cta.title }}</h2>
+                                <p>{{ t.home.cta.description }}</p>
                             </div>
                             <div class="ctaActions">
-                                <a class="primaryButton appStoreLink" href="{{site.appstore_link}}">Download on the App Store</a>
+                                <a class="primaryButton appStoreLink" href="{{site.appstore_link}}">{{ t.home.cta.app_store }}</a>
                                 {% if site.testflight_link %}
-                                    <a class="secondaryLink" href="{{site.testflight_link}}">Try the TestFlight beta</a>
+                                    <a class="secondaryLink" href="{{site.testflight_link}}">{{ t.home.cta.testflight }}</a>
                                 {% endif %}
-                                <a class="secondaryLink" href="{{ '/support/' | relative_url }}" target="_self">Questions? Visit Support</a>
+                                {% if support_page %}
+                                    <a class="secondaryLink" href="{{ support_page.url | relative_url }}" target="_self">{{ t.home.cta.support }}</a>
+                                {% endif %}
                             </div>
                         </section>
                     </main>
-                    {% include footer.html %}
+                    {% include footer.html lang=lang t=t %}
                     {% include appstoreimages.html %}
                 </div>
             </div>

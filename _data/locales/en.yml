@@ -1,0 +1,138 @@
+html_lang: en
+hreflang: en
+og_locale: en_US
+language_name_short: EN
+app_price: Free
+app_keywords: AI inbox, AI notes, voice notes, photo to text, share extension, meeting notes, summaries, reminders, AnyNotes+
+footer:
+  made_by: Made by
+  in: in
+  press_kit: Press Kit
+home:
+  page_title: AnyNotes+ • Personal AI Inbox for Notes, Voice, Photos, and Links
+  meta_description: Capture from note, voice, photo, share sheet, or chat. AnyNotes turns each input into an organized result, suggested next steps, and a topic you can keep moving forward.
+  og_image_alt: AnyNotes+ preview showing the Inbox experience and product slogan.
+  app_description: Capture from note, voice, photo, share sheet, or chat. AnyNotes turns each input into an organized result, suggested next steps, and a topic you can keep moving forward.
+  app_eyebrow: Personal AI Inbox + Topics Workspace
+  app_slogan: Ideas find a place. Outcomes take shape.
+  hero_pills:
+    - Note
+    - Record
+    - Photo
+    - Share
+    - Chat
+    - Topics
+  app_store_badge_alt: Download on the App Store
+  play_store_badge_alt: Get it on Google Play
+  testflight_cta: Try TestFlight
+  hero_download_note: Subscriptions in the TestFlight build are free during beta. No extra payment is required, so feel free to subscribe in the app.
+  screens:
+    eyebrow: Product Screens
+    title: Preview the current Inbox, Topic Home, and Topic Detail experience.
+    description: See how a quick capture becomes a clearer Inbox result, then turns into a topic you can keep moving forward.
+    cards:
+      - title: Inbox
+        description: Today's notes, AI result cards, tags, and the four primary capture actions.
+        alt: AnyNotes Inbox screenshot
+        image: /assets/screenshot/inbox-home.png
+      - title: Topic Home
+        description: Focused topic synthesis with current view, recent change, and next step surfaced on the Topics home screen.
+        alt: AnyNotes Topic Home screenshot
+        image: /assets/screenshot/topic-home.png
+      - title: Topic Detail
+        description: The deeper topic view with synthesis, change log, and a cleaner reading-first layout.
+        alt: AnyNotes Topic Detail screenshot
+        image: /assets/screenshot/topic-detail.png
+  features_intro:
+    eyebrow: Why It Fits Real Capture Habits
+    title: One place for messy inputs, clear results, and work that keeps moving.
+    description: AnyNotes is built around the flow people actually use on a phone. Capture first, let AI clarify what just came in, then keep pushing the same thread forward instead of losing it in a long list of notes.
+  features:
+    - title: Capture From Note, Record, Photo, Share, and Chat
+      description: Start inside the app or from the iOS share sheet. Text, voice, photos, links, and chat transcripts all enter the same inbox flow instead of living in separate silos.
+      fontawesome_icon_name: inbox
+    - title: AI Result Cards for Every New Note
+      description: AnyNotes automatically generates a clean title, summary, structured result card, and suggested next actions for ideas, meetings, reminders, summaries, and knowledge notes.
+      fontawesome_icon_name: magic
+    - title: Topics That Keep Evolving
+      description: Move beyond isolated notes. Group related notes into Topics and keep an up-to-date synthesis with current decisions, recent changes, and the next move to make.
+      fontawesome_icon_name: project-diagram
+    - title: Turn Notes Into Action
+      description: Draft reminders, Things tasks, and follow-up emails, continue in AI Chat, or export the main result as a shareable image instead of a noisy screenshot.
+      fontawesome_icon_name: share-square
+    - title: Deep Work With AI Chat
+      description: Open a note-specific chat, use your own prompts, search saved notes, and hand off bigger tasks to the built-in sandbox workspace when a quick rewrite is not enough.
+      fontawesome_icon_name: comments
+    - title: Search, Archive, Sync
+      description: Keep everything findable with search, tags, pinning, archive mode, batch summaries, and iCloud-backed storage tied to your own account.
+      fontawesome_icon_name: search
+  workflow:
+    eyebrow: How It Works
+    title: From quick capture to action-ready output.
+    cards:
+      - step: "01"
+        title: Capture anywhere
+        description: Use Note, Record, Photo, Chat, or the iOS share sheet for text, links, and images. Everything lands in one consistent flow.
+      - step: "02"
+        title: Get an AI Inbox result
+        description: Each new note gets a title, summary, primary result card, and suggested next actions without blocking the save step.
+      - step: "03"
+        title: Keep related work together
+        description: Move beyond one-off notes with Topics that keep the latest synthesis, changes, open questions, and next moves visible.
+      - step: "04"
+        title: Send the outcome outward
+        description: Turn results into reminder drafts, Things tasks, follow-up emails, shareable image cards, or a deeper AI chat session.
+  outcomes:
+    eyebrow: What The App Produces
+    title: Results that are easier to use than raw notes.
+    result_types:
+      eyebrow: Inbox result types
+      title: Structured outputs for common note shapes.
+      items:
+        - label: Idea
+          description: Clarify a thought, pull out key points, and suggest what to explore next.
+        - label: Meeting
+          description: Summarize the discussion, decisions, action items, and unresolved questions.
+        - label: Reminder
+          description: Turn a quick note into a task-ready draft instead of leaving it as text.
+        - label: Summary
+          description: Compress web pages, chats, and reference material into the main takeaways.
+        - label: Knowledge
+          description: Turn highlights and research notes into something easier to reuse later.
+    next_steps:
+      eyebrow: What you can do next
+      title: Move from understanding to execution without leaving the flow.
+      items:
+        - Continue the note in AI Chat with note context already attached.
+        - Draft reminders, Things items, and follow-up emails from the AI result.
+        - Generate a shareable image card instead of sending a raw screenshot.
+        - Search saved notes, batch summarize multiple notes, or archive and pin for later review.
+        - Use custom prompts and the sandbox workspace when the task needs more than a single reply.
+  trust:
+    cards:
+      - eyebrow: Private by default
+        title: Your notes stay tied to your own account.
+        description: Notes live in your personal iCloud-backed storage instead of a shared service database, so capture can stay lightweight without adding a new account system.
+      - eyebrow: Built for ongoing work
+        title: Not just capture, but progression.
+        description: The app keeps the quick-entry speed of a note inbox while adding search, archive, topics, AI chat, and shareable outputs for the notes that need to turn into something real.
+  faq:
+    eyebrow: FAQ
+    title: Quick answers before you download.
+    description: The full help page lives in Support. This section covers the four questions most people ask before trying AnyNotes+.
+    items:
+      - question: Is AnyNotes+ available on iPhone and iPad?
+        answer: Yes. AnyNotes+ is available on iPhone and iPad through the App Store, with one capture flow that stays consistent across devices.
+      - question: How are notes stored?
+        answer: Your notes stay in your own iCloud-backed storage through CloudKit, instead of being kept in a shared service database.
+      - question: Can it turn voice notes, photos, and links into summaries?
+        answer: Yes. You can capture from text, record, photo, or the iOS share sheet, and AI Inbox can turn that input into clearer titles, summaries, result cards, and next steps.
+      - question: Do AI features require a subscription?
+        answer: Yes. AI features require AnyNotes Pro. To use them, you also need your own OpenAI API key or a Codex sign-in inside the app.
+  cta:
+    eyebrow: Start With The Messy Version
+    title: Collect first. Clarify fast. Keep the thread moving.
+    description: Use AnyNotes when a thought, meeting, link, screenshot, or voice memo is still half-formed, but you already know you will want a clearer result later.
+    app_store: Download on the App Store
+    testflight: Try the TestFlight beta
+    support: Questions? Visit Support
