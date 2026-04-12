@@ -100,79 +100,8 @@
 	<script>
 	(function() {
 		var storageKey = "anynotesplus.language";
-		var currentLang = {{ current_lang | jsonify }};
-		var defaultLang = {{ site.default_lang | jsonify }};
-		{% if page.ref == "home" %}
-		var translatedPages = {
-			{% for locale in site.supported_languages %}
-				{% if locale == site.default_lang %}
-					{{ locale | jsonify }}: {{ "/" | relative_url | jsonify }},
-				{% else %}
-					{% capture locale_home_path %}/{{ locale }}/{% endcapture %}
-					{{ locale | jsonify }}: {{ locale_home_path | relative_url | jsonify }},
-				{% endif %}
-			{% endfor %}
-		};
-		{% else %}
-		var translatedPages = {
-			{% for locale in site.supported_languages %}
-				{% assign alternate_page = translated_pages | where: "lang", locale | first %}
-				{% if alternate_page %}
-					{{ locale | jsonify }}: {{ alternate_page.url | relative_url | jsonify }},
-				{% endif %}
-			{% endfor %}
-		};
-		{% endif %}
-
-		function resolveSupportedLanguage(tag) {
-			var normalized = (tag || "").toLowerCase();
-			if (!normalized) {
-				return null;
-			}
-			if (normalized.indexOf("zh-hant") === 0 || normalized.indexOf("zh-tw") === 0 || normalized.indexOf("zh-hk") === 0 || normalized.indexOf("zh-mo") === 0) {
-				return "zh-Hant";
-			}
-			if (normalized.indexOf("zh-hans") === 0 || normalized.indexOf("zh-cn") === 0 || normalized.indexOf("zh-sg") === 0 || normalized === "zh") {
-				return "zh-Hans";
-			}
-			if (normalized.indexOf("ja") === 0) {
-				return "ja";
-			}
-			if (normalized.indexOf("ko") === 0) {
-				return "ko";
-			}
-			if (normalized.indexOf("en") === 0) {
-				return "en";
-			}
-			return null;
-		}
-
-		function detectBrowserLanguage() {
-			var candidates = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language, navigator.userLanguage];
-			for (var i = 0; i < candidates.length; i += 1) {
-				var resolved = resolveSupportedLanguage(candidates[i]);
-				if (resolved) {
-					return resolved;
-				}
-			}
-			return null;
-		}
-
-		var savedLanguage = null;
-		try {
-			savedLanguage = window.localStorage.getItem(storageKey);
-		} catch (error) {}
-
-		var preferredLanguage = savedLanguage || detectBrowserLanguage();
-		if (currentLang === defaultLang && preferredLanguage && preferredLanguage !== currentLang && translatedPages[preferredLanguage]) {
-			window.location.replace(translatedPages[preferredLanguage]);
-			return;
-		}
-
 		window.AnyNotesPlusLanguage = {
-			storageKey: storageKey,
-			currentLang: currentLang,
-			translatedPages: translatedPages
+			storageKey: storageKey
 		};
 	})();
 	</script>

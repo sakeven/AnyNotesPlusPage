@@ -1,5 +1,6 @@
 {% assign current_lang = include.lang | default: page.lang | default: site.default_lang %}
 {% assign current_locale = include.t %}
+{% assign current_locale_data = site.data.locales[current_lang] %}
 {% assign header_pages = site.pages | where: "lang", current_lang | where: "include_in_header", true | sort: "nav_order" %}
 {% assign translated_pages = site.pages | where: "ref", page.ref %}
 {% if current_lang == site.default_lang %}
@@ -37,6 +38,40 @@
 					<li><a class="navLink" href="{{ site.presskit_download_link }}">{{ current_locale.footer.press_kit }}</a></li>
 				{% endif %}
 			</ul>
+			<details class="languageMenu">
+				<summary class="languageMenuSummary">{{ current_locale_data.language_name_short | default: current_lang }}</summary>
+				<ul class="languageMenuList">
+					{% if page.ref == "home" %}
+						{% for locale in site.supported_languages %}
+							{% assign locale_data = site.data.locales[locale] %}
+							{% if locale == site.default_lang %}
+								{% assign locale_page_url = "/" | relative_url %}
+							{% else %}
+								{% capture locale_home_path %}/{{ locale }}/{% endcapture %}
+								{% assign locale_page_url = locale_home_path | relative_url %}
+							{% endif %}
+							{% if locale_data %}
+								<li>
+									<a class="languageMenuLink{% if locale == current_lang %} is-current{% endif %}" href="{{ locale_page_url }}" target="_self" data-language-link="true" data-lang="{{ locale }}"{% if locale == current_lang %} aria-current="page"{% endif %}>{{ locale_data.language_name_short }}</a>
+								</li>
+							{% endif %}
+						{% endfor %}
+					{% else %}
+					{% for locale in site.supported_languages %}
+						{% assign locale_data = site.data.locales[locale] %}
+						{% assign locale_page = translated_pages | where: "lang", locale | first %}
+						{% if locale_page %}
+							{% assign locale_page_url = locale_page.url | relative_url %}
+						{% endif %}
+						{% if locale_page_url and locale_data %}
+							<li>
+								<a class="languageMenuLink{% if locale == current_lang %} is-current{% endif %}" href="{{ locale_page_url }}" target="_self" data-language-link="true" data-lang="{{ locale }}"{% if locale == current_lang %} aria-current="page"{% endif %}>{{ locale_data.language_name_short }}</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+					{% endif %}
+				</ul>
+			</details>
 			<ul class="languageLinks">
 				{% if page.ref == "home" %}
 					{% for locale in site.supported_languages %}
