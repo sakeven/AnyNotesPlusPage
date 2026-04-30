@@ -374,8 +374,8 @@ nav ul li:first-child {
 
 .appName {
 	color: $app-title-color;
-	font-size: 6rem;
-	max-width: 46rem;
+	font-size: 5.2rem;
+	max-width: 54rem;
 }
 
 .appPrice {
@@ -438,9 +438,9 @@ nav ul li:first-child {
 	flex: 0 0 auto;
 	padding: 8px 12px;
 	border-radius: 999px;
-	background: rgba(#f5f1e8, 0.12);
-	border: 1px solid rgba(#f5f1e8, 0.16);
-	color: rgba(#fff, 0.9);
+	background: rgba(#16201c, 0.06);
+	border: 1px solid rgba(#16201c, 0.10);
+	color: #24302c;
 	font-size: 1.35rem;
 	font-weight: 600;
 	letter-spacing: -0.01em;
@@ -1031,7 +1031,9 @@ footer {
 
 	.appName {
 		margin-top: 24px;
-		font-size: 5rem;
+		width: 100%;
+		max-width: calc(100vw - 40px);
+		font-size: 3.6rem;
 		text-align: center;
 	}
 

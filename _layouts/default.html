@@ -52,7 +52,7 @@
                         </div>
                         <div class="appNamePriceContainer">
                             <h1 class="appName">
-                                {{ site.app_name }}
+                                {{ t.home.app_headline | default: site.app_name }}
                             </h1>
                             <h2 class="appPrice">
                                 {{ t.app_price | default: site.app_price }}
