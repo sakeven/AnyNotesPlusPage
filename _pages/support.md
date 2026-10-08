@@ -63,3 +63,15 @@ A: Yes. You can export or delete notes anytime in the app.
 **Q: Can I search, pin, or archive notes later?**
 
 A: Yes. AnyNotes+ includes search, tags, pinning, and archive mode so saved notes stay easier to review and find again.
+
+## AI Chat Linux Sandbox
+
+AI Chat includes an on-device Alpine Linux emulator that can run shell commands and scripts to process files, perform calculations, and create charts and documents. View executed commands and their output in a read-only terminal-style panel, stop running commands, and preview or share generated files. The runtime supports downloading Linux packages and importing AI Skills from ZIP files or GitHub. Manage local workspace storage in Settings > AI Runtime > Sandbox. AI services and downloads require network access.
+
+**Where do I find it?**
+
+Open Settings > AI Runtime > Sandbox for runtime and workspace status. In AI Chat, tap a Sandbox command activity to inspect the executed command, live output, status, and runtime. The terminal panel is read-only; requests are entered through AI Chat. Commands can be stopped. Settings > AI Runtime > Skills manages imported skills and their scripts.
+
+**Where are files stored, and what does cleanup remove?**
+
+Scripts, inputs, generated files, and recoverable conversations are saved in local AI workspaces. These workspaces do not sync through iCloud. Deleting a workspace removes those files and its saved conversation, but does not delete the original notes or Topics. Reset Rootfs replaces the Linux environment with the bundled copy and discards changes made to that environment.

@@ -59,7 +59,7 @@ features:
     fontawesome_icon_name: share-square
 
   - title: Deep Work With AI Chat
-    description: Open a note-specific chat, use your own prompts, search saved notes, and hand off bigger tasks to the built-in sandbox workspace when a quick rewrite is not enough.
+    description: AI Chat includes an on-device Alpine Linux emulator for file processing, calculations, charts, and documents. Inspect real command output in a read-only terminal panel. See Support for package downloads, Skills, and workspace controls.
     fontawesome_icon_name: comments
 
   - title: Search, Archive, Sync

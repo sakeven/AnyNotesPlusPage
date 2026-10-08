@@ -62,7 +62,7 @@ home:
       description: 你可以起草提醒、Things 任务和跟进邮件，也可以继续进入 AI 对话，或把主要结果导出成可分享图片，而不是发一张杂乱截图。
       fontawesome_icon_name: share-square
     - title: 用 AI Chat 做更深入的工作
-      description: 打开和单条笔记关联的聊天，使用自定义提示词，搜索已保存笔记，或者把更复杂的任务交给内置沙箱工作区处理。
+      description: AI Chat 内置设备端 Alpine Linux 模拟器，用于文件处理、计算和生成图表、文档。可在只读终端面板查看真实命令输出；软件包下载、Skills 和工作区管理方式详见支持页。
       fontawesome_icon_name: comments
     - title: 搜索、归档、同步
       description: 通过搜索、标签、置顶、归档模式、批量摘要和绑定你自己账户的 iCloud 存储，让所有内容都保持可查找。

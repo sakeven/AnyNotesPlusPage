@@ -14,6 +14,7 @@ AnyNotes+ helps turn raw inputs into clearer, more useful outcomes.
 - Turn each new note into an AI Inbox result with a title, summary, structured result card, and suggested next actions.
 - Organize related notes into Topics that keep an evolving synthesis, current view, open questions, and next moves.
 - Continue deeper work in AI Chat with note or Topic context.
+- AI Chat includes an on-device Alpine Linux runtime for AI Chat commands and scripts, a read-only command output panel, package downloads, and imported Skills. Local AI workspaces are separate from iCloud note sync; see the localized Support pages for access, networking, and cleanup details.
 - Create reminder drafts, Things tasks, follow-up email drafts, and shareable result images.
 - Keep notes tied to the user's own iCloud-backed storage.
 
