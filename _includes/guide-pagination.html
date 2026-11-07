@@ -1,0 +1,8 @@
+{% assign previous_order = page.chapter_order | minus: 1 %}
+{% assign next_order = page.chapter_order | plus: 1 %}
+{% assign previous_chapter = guide_chapters | where: 'chapter_order', previous_order | first %}
+{% assign next_chapter = guide_chapters | where: 'chapter_order', next_order | first %}
+<nav class="guidePagination" aria-label="{{ t.guide.navigation }}">
+  {% if previous_chapter %}<a href="{{ previous_chapter.url | relative_url }}" target="_self"><span>← {{ t.guide.previous }}</span><strong>{{ previous_chapter.chapter_title | default: previous_chapter.title }}</strong></a>{% else %}<a href="{{ guide_index.url | relative_url }}" target="_self"><span>← {{ t.guide.title }}</span><strong>{{ t.guide.title }}</strong></a>{% endif %}
+  {% if next_chapter %}<a href="{{ next_chapter.url | relative_url }}" target="_self"><span>{{ t.guide.next }} →</span><strong>{{ next_chapter.chapter_title | default: next_chapter.title }}</strong></a>{% endif %}
+</nav>

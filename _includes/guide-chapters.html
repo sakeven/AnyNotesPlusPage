@@ -1,0 +1,15 @@
+<nav aria-label="{{ t.guide.navigation }}">
+  <a class="guideIndexLink" href="{{ guide_index.url | relative_url }}" target="_self">{{ t.guide.title }}</a>
+  <p class="guideSectionTitle">{{ t.guide.features_section }}</p>
+  <ol>
+    {% for chapter in guide_chapters %}{% unless chapter.guide_section == 'practice' %}
+    <li><a href="{{ chapter.url | relative_url }}" target="_self"{% if chapter.url == page.url %} aria-current="page"{% endif %}>{{ chapter.chapter_title | default: chapter.title }}</a></li>
+    {% endunless %}{% endfor %}
+  </ol>
+  <p class="guideSectionTitle">{{ t.guide.practice_section }}</p>
+  <ol>
+    {% for chapter in guide_chapters %}{% if chapter.guide_section == 'practice' %}
+    <li><a href="{{ chapter.url | relative_url }}" target="_self"{% if chapter.url == page.url %} aria-current="page"{% endif %}>{{ chapter.title }}</a></li>
+    {% endif %}{% endfor %}
+  </ol>
+</nav>

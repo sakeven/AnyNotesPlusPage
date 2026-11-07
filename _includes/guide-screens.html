@@ -1,0 +1,10 @@
+{% assign guide_locale = site.data.locales[page.lang] %}
+<div class="guideScreens">
+    {% for shot in guide_locale.guide.screens[include.group] %}
+    {% capture shot_path %}/assets/screenshot/{{ page.lang }}/{{ shot.file }}.png{% endcapture %}
+    <figure>
+        <img src="{{ shot_path | relative_url }}" alt="{{ shot.title }} — {{ shot.caption }}" width="1206" height="2622" loading="lazy">
+        <figcaption><strong>{{ shot.title }}</strong>{{ shot.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+</div>

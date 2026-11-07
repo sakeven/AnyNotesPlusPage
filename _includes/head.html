@@ -33,7 +33,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<base target="_blank">
+	<base target="{% if page.guide %}_self{% else %}_blank{% endif %}">
 
 	<title class="pageTitle">{{ meta_title }}</title>
 	<meta name="description" content="{{ meta_description | escape }}">
@@ -88,7 +88,18 @@
 	<link rel="apple-touch-icon" href="{{ site.app_icon | relative_url }}">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+	{% if page.ref == 'home' or page.guide %}
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+		{% case current_lang %}
+			{% when 'zh-Hans' %}{% assign font_region = 'SC' %}
+			{% when 'zh-Hant' %}{% assign font_region = 'TC' %}
+			{% when 'ja' %}{% assign font_region = 'JP' %}
+			{% when 'ko' %}{% assign font_region = 'KR' %}
+		{% endcase %}
+		{% if font_region %}<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+{{ font_region }}:wght@400;500;600;700&family=Noto+Serif+{{ font_region }}:wght@600&display=swap" rel="stylesheet">{% endif %}
+	{% else %}
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+	{% endif %}
 
 	{% if site.enable_smart_app_banner %}
 		<meta name="apple-itunes-app" content="app-id={{ site.ios_app_id }}">
@@ -155,9 +166,9 @@
 			"ratingCount": {{ site.app_rating_count }}
 		},
 		"screenshot": [
-			{{ "/assets/screenshot/inbox-home.png" | absolute_url | jsonify }},
-			{{ "/assets/screenshot/topic-home.png" | absolute_url | jsonify }},
-			{{ "/assets/screenshot/topic-detail.png" | absolute_url | jsonify }}
+			{% for card in t.home.screens.cards %}
+				{{ card.image | absolute_url | jsonify }}{% unless forloop.last %},{% endunless %}
+			{% endfor %}
 		]
 	}
 	</script>

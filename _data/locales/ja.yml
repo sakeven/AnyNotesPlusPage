@@ -9,80 +9,89 @@ footer:
   in: 所在地
   press_kit: プレスキット
 home:
-  page_title: AnyNotes+ • ノート、音声、写真、リンクのための個人向け AI 受信トレイ
-  meta_description: ノート、音声、写真、共有シート、チャットからすばやく取り込み。AnyNotes は各入力を整理された結果、次のアクション提案、そして継続的に進められるトピックに変えます。
+  page_title: "AnyNotes+ • AIノート、リアルタイム音声、トピックワークスペース"
+  meta_description: "ノート、録音、写真、ファイル、リンクを集めて AI で整理。リアルタイム音声で考えを深め、トピックから知識や使える成果を育てましょう。"
   og_image_alt: 受信トレイ画面とプロダクトのスローガンを表示する AnyNotes+ のプレビュー画像。
-  app_description: ノート、音声、写真、共有シート、チャットからすばやく取り込み。AnyNotes は各入力を整理された結果、次のアクション提案、そして継続的に進められるトピックに変えます。
-  app_eyebrow: 個人向け AI受信トレイ + トピックワークスペース
-  app_headline: AnyNotes+ AI ノート受信トレイ
-  app_slogan: アイデアには居場所を。成果には形を。
+  app_description: "ノート、録音、写真、ファイル、リンクを集めて AI で整理。リアルタイム音声で考えを深め、トピックから知識や使える成果を育てましょう。"
+  app_eyebrow: "AIノート · リアルタイム音声 · トピック"
+  app_headline: "AnyNotes+ AIワークスペース"
+  app_slogan: "思いつきを残し、次へつなげる。"
+  guide_link: "使い方ガイドと活用例を読む"
   hero_pills:
-    - ノート
-    - 録音
-    - 写真
-    - 共有
-    - チャット
-    - トピック
+    - "ノート"
+    - "録音"
+    - "音声会話"
+    - "トピック"
+    - "Appツール"
   app_store_badge_alt: App Store でダウンロード
   play_store_badge_alt: Google Play で手に入れよう
   testflight_cta: TestFlight を試す
-  hero_download_note: TestFlight ビルドのサブスクリプションはベータ期間中無料です。追加料金は不要なので、アプリ内でそのまま登録して試せます。
+  hero_download_note: "TestFlight のサブスクリプションはベータ期間中無料です。AI サービスの利用分は別途扱われ、設定したアカウントに依存します。"
   screens:
     eyebrow: 製品画面
-    title: 現在の受信トレイ、トピックホーム、トピック詳細をチェックできます。
-    description: アイデアが受信トレイに入り、整理され、前に進めるトピックになっていく流れを確認できます。
+    title: "ノートからトピックへつながる画面。"
+    description: "集めた資料が役立つ成果になる流れを確認できます。"
     cards:
       - title: 受信トレイ
         description: 今日のノート、AI 結果カード、タグ、そして 4 つの主要な取り込みアクションを表示します。
         alt: AnyNotes 受信トレイのスクリーンショット
-        image: /assets/screenshot/inbox-home.png
+        image: /assets/screenshot/ja/inbox-home.png
       - title: トピックホーム
         description: トピックホームで、現在の見立て、最近の変化、次の一手をまとめて確認できます。
         alt: AnyNotes トピックホームのスクリーンショット
-        image: /assets/screenshot/topic-home.png
-      - title: トピック詳細
-        description: 総合サマリー、変更履歴、より読みやすいレイアウトを備えた詳細ビューです。
-        alt: AnyNotes トピック詳細のスクリーンショット
-        image: /assets/screenshot/topic-detail.png
+        image: /assets/screenshot/ja/topic-home.png
+      - title: "トピックの成果"
+        description: "トピックをブリーフ、タスクリスト、文書にまとめます。"
+        alt: "AnyNotes トピックの成果画面"
+        image: /assets/screenshot/ja/topic-outcomes.png
   features_intro:
     eyebrow: 実際の記録習慣に合う設計
-    title: 雑多な入力、整理された結果、進み続ける仕事をひとつに。
-    description: AnyNotes はスマホ上で人が実際に行う流れに合わせて作られています。まず集めて、AI が入ってきた内容を整理し、そのまま同じ流れを前に進められるようにします。
+    title: "小さな思いつきから、使える成果へ。"
+    description: "素材を集め、AI と内容を整理し、同じノート、トピック、会話の中で作業を続けられます。"
   features:
-    - title: ノート、録音、写真、共有、チャットから取り込む
-      description: アプリ内から始めても、iOS の共有シートから入っても構いません。テキスト、音声、写真、リンク、チャット履歴が別々に散らばらず、同じ受信トレイのフローに入ります。
+    - title: "取り込んで整理"
+      description: "テキストや録音を残し、写真、PDF、テキストファイル、共有したWebページを取り込めます。AI がタイトル、要約、結果カード、次のステップを整理します。"
       fontawesome_icon_name: inbox
-    - title: すべての新規ノートに AI 結果カード
-      description: アイデア、会議、リマインダー、要約、知識ノートに対して、AnyNotes が見やすいタイトル、要約、構造化された結果カード、次のアクション提案を自動生成します。
-      fontawesome_icon_name: magic
-    - title: 進化し続けるトピック
-      description: 孤立したノートのままにしません。関連ノートをトピックにまとめ、現在の判断、最近の変化、次の一手を更新し続けられます。
-      fontawesome_icon_name: project-diagram
-    - title: ノートを行動につなげる
-      description: リマインダー、Things タスク、フォローアップメールの下書きを作成したり、AIチャットに進んだり、雑然としたスクリーンショットの代わりに共有用画像として書き出せます。
-      fontawesome_icon_name: share-square
-    - title: AIチャットでより深く進める
-      description: AI Chatは、ファイル処理、計算、グラフや文書の作成に使うデバイス上のAlpine Linuxエミュレータを搭載。実際のコマンド出力を読み取り専用パネルで確認できます。パッケージのダウンロード、Skills、ワークスペース管理はサポートをご覧ください。
+    - title: "話しながら考えを整理"
+      description: "iOS の録音中に要点、未解決の問い、次のステップを整理。提案された操作は確認後に実行します。リアルタイム整理には API キーが必要です。"
+      fontawesome_icon_name: microphone
+    - title: "音声で会話を続ける"
+      description: "新しい会話や既存のチャットから音声会話へ。文脈を引き継ぎ、字幕を読み、チャットで利用できるツールを AI に依頼できます。"
       fontawesome_icon_name: comments
-    - title: 検索、アーカイブ、同期
-      description: 検索、タグ、ピン留め、アーカイブモード、一括要約、そして自分のアカウントに紐づく iCloud ストレージによって、すべての情報をあとから見つけやすく保てます。
+    - title: "トピックを知識に育てる"
+      description: "関連ノートをまとめ、方向性を決め、出典ノート付きの Topic Wiki を作成。ブリーフ、タスクリスト、文書をトピックの成果として保存できます。"
+      fontawesome_icon_name: project-diagram
+    - title: "端末の情報で次を計画"
+      description: "iOS で予定やリマインダーを確認し、変更を確認して保存。許可した写真、活動データ、現在地も利用できます。アラームとタイマーには iOS 26 が必要です。"
+      fontawesome_icon_name: calendar-check
+    - title: "アプリとショートカットを接続"
+      description: "Appツールを有効にするか Apple ショートカットのファイルを読み込み、AI Chat から呼び出せます。書き込み前に確認し、対応するショートカットはテキスト結果を返せます。"
+      fontawesome_icon_name: external-link-alt
+    - title: "ファイルと画像を作成"
+      description: "AI Chat で添付を処理し、文書やグラフを作成、画像を生成・編集できます。できた成果物をプレビューして共有できます。"
+      fontawesome_icon_name: images
+    - title: "いつもの手順を再利用"
+      description: "ZIP や GitHub から Skills を読み込み、端末上の Linux Sandbox でスクリプト、計算、ファイル処理を実行。出力の確認や作業領域の管理もできます。"
+      fontawesome_icon_name: terminal
+    - title: "探して、続きから再開"
+      description: "検索、タグ、ピン留め、アーカイブでノートを管理し、端末内の会話履歴を再開。ノートとトピックは iCloud、チャットの作業領域は各端末に保存します。"
       fontawesome_icon_name: search
   workflow:
-    eyebrow: 使い方
-    title: 素早い取り込みから、すぐ使える結果へ。
+    eyebrow: "使い方"
+    title: "素早い取り込みから、すぐ使える結果へ。"
     cards:
       - step: "01"
-        title: どこからでも取り込む
-        description: ノート、録音、写真、チャット、iOS 共有シートでテキスト、リンク、画像を受け取れます。すべて同じ一貫したフローに入ります。
+        title: "大切な内容を取り込む"
+        description: "ノート、読み込み、録音、チャット、iOS 共有シートから開始。ウィジェットやクイック記録のショートカットで入力画面も開けます。"
       - step: "02"
-        title: AI受信トレイの結果を受け取る
-        description: 保存を妨げることなく、新しいノートごとにタイトル、要約、主要な結果カード、次のアクション提案が生成されます。
+        title: "素材を理解する"
+        description: "AI の結果と元の資料を確認するか、録音しながら要点を整理します。"
       - step: "03"
-        title: 関連する作業をまとめて保つ
-        description: 単発のノートで終わらせず、トピックによって最新の統合サマリー、変化、未解決の論点、次の一手を見える状態に保てます。
+        title: "トピックを育てる"
+        description: "関連ノートを追加し、方向性を設定。Wiki を作るか、ブリーフ、タスクリスト、文書を保存します。"
       - step: "04"
-        title: 結果を次の行動につなげる
-        description: 結果をリマインダー下書き、Things タスク、フォローアップメール、共有用画像カード、あるいはより深い AI 対話へつなげられます。
+        title: "次の行動につなげる"
+        description: "文字や音声で会話を続け、ファイルを作成し、予定・リマインダー・アプリの操作を確認して実行します。"
   outcomes:
     eyebrow: アプリが生み出すもの
     title: 生のノートより、ずっと使いやすい結果。
@@ -104,32 +113,32 @@ home:
       eyebrow: 次にできること
       title: 流れを止めずに、理解から実行へ進めます。
       items:
-        - ノートの文脈が付いたまま AIチャットを続ける。
-        - AI の結果からリマインダー、Things 項目、フォローアップメールを下書きする。
-        - 生のスクリーンショットではなく共有用の画像カードを生成する。
-        - 保存済みノートの検索、複数ノートの一括要約、アーカイブやピン留めで後から見直しやすくする。
-        - 一度の返答では足りない作業に対して、カスタムプロンプトや sandbox ワークスペースを使う。
+        - "ノートやトピックの文脈を使って文字・音声で会話する。"
+        - "予定、リマインダー、有効なアプリ操作を確認して実行する。"
+        - "文書、グラフ、画像、共有用のノートカードを作る。"
+        - "端末の会話履歴を再開し、添付や生成ファイルを再利用する。"
+        - "返答だけでは完結しない作業には Skills と Sandbox を使う。"
   trust:
     cards:
-      - eyebrow: 既定でプライベート
-        title: ノートは自分のアカウントに紐づいたままです。
-        description: ノートは共有サービスのデータベースではなく、個人の iCloud ストレージに保存されます。新しいアカウントシステムを増やさずに、軽快な取り込みを続けられます。
-      - eyebrow: 継続する仕事のための設計
-        title: 取り込むだけで終わらず、前に進める。
-        description: このアプリはノート受信トレイの素早さを保ちながら、検索、アーカイブ、トピック、AI chat、共有可能な出力を加え、重要なノートを実際の成果へつなげます。
+      - eyebrow: "既定でプライベート"
+        title: "自分のノートを、自分の iCloud に。"
+        description: "ノートとトピックは個人の iCloud を使用します。会話履歴、生成ファイル、Skills、Appツール設定は各端末に保存します。"
+      - eyebrow: "継続する仕事のための設計"
+        title: "AI に渡す情報を選べます。"
+        description: "関連内容は設定した AI サービスへ送信されます。端末データへのアクセスは任意で、予定、リマインダー、連携アプリへの書き込みは事前に確認できます。"
   faq:
-    eyebrow: FAQ
-    title: ダウンロード前によくある質問へ短く回答します。
-    description: 詳しいヘルプは Support ページにあります。ここでは AnyNotes+ を試す前によく聞かれる 4 つの質問だけを先にまとめています。
+    eyebrow: "FAQ"
+    title: "ダウンロード前によくある質問へ短く回答します。"
+    description: "使い方ガイドと活用例を読む"
     items:
-      - question: AnyNotes+ は iPhone と iPad で使えますか？
-        answer: はい。AnyNotes+ は App Store で iPhone と iPad の両方に提供されており、デバイスが変わっても同じ取り込みフローを保ちます。
-      - question: ノートはどのように保存されますか？
-        answer: ノートは共有サービスのデータベースではなく、CloudKit を通じて自分の iCloud ストレージに保存されます。
-      - question: 音声メモ、写真、リンクを要約にできますか？
-        answer: はい。テキスト、録音、写真、iOS 共有シートから取り込み、AI受信トレイがより明確なタイトル、要約、結果カード、次のステップに整理します。
-      - question: AI 機能の利用にはサブスクリプションが必要ですか？
-        answer: はい。AI 機能には AnyNotes Pro が必要です。さらに、アプリ内で自分の OpenAI API key を設定するか、Codex でサインインする必要があります。
+      - question: "どのプラットフォームに対応していますか？"
+        answer: "iPhone、iPad、ネイティブ Mac 版があります。端末データツールと録音中のリアルタイム整理は iOS の機能です。詳しくはガイドをご覧ください。"
+      - question: "端末間で何が同期されますか？"
+        answer: "ノートとトピックは個人の iCloud で同期します。会話履歴、AI 作業領域のファイル、Skills、Appツール設定は端末ごとに保存します。"
+      - question: "録音とリアルタイム音声会話の違いは？"
+        answer: "録音は自分の音声をノートに残す機能で、API キー利用時は録音中の整理も可能です。音声会話は AI との双方向のやりとりで、既存チャットを引き継げます。"
+      - question: "AI 機能には何が必要ですか？"
+        answer: "iPhone・iPad では AnyNotes Pro と API キーまたは Codex ログインが必要です。Mac 版は AnyNotes Pro 不要です。AI サービスの利用分は別途扱われ、利用できる機能はアカウントによって異なります。"
   cta:
     eyebrow: まだ整理されていない段階から始める
     title: まず集めて、すばやく整理し、流れを止めずに進める。
@@ -137,3 +146,173 @@ home:
     app_store: App Store でダウンロード
     testflight: TestFlight ベータを試す
     support: 質問がありますか？ Support を見る
+  landing:
+    skip: 本文へ移動
+    headline: ひらめきを、
+    headline_accent: その先へ。
+    lead: 思いつきを残し、AI と整理して、次へ進む。ノートや声、集めた素材を、使える知識や成果に育てるワークスペース。
+    see_guide: 使い方を見る
+    download_note: 無料ダウンロード · iOS の AI は Pro と AI アカウントが必要
+    product_label: ひらめきから、次の一歩へ
+    capture_label: どんな形のひらめきも、ここへ
+    experience_eyebrow: "CAPTURE → CONNECT → CREATE"
+    experience_title: "ひとつのノートから、"
+    experience_accent: "可能性が広がる。"
+    scene_link: "詳しい手順を見る"
+    guide_eyebrow: 使い方ガイド
+    guide_title: 暮らしに合う使い方を。
+    guide_description: "最初のメモから会議、調査、日々の計画まで。操作手順と活用例をガイドにまとめました。"
+    faq_title: 使う前に知りたいこと。
+    final_title: 次のひらめきは、
+    final_accent: ここから。
+    final_description: 浮かんだ考えを残して、AnyNotes とその先を育てましょう。
+    capture_entries:
+    - icon: "✎"
+      text: ノート
+    - icon: "〰"
+      text: 音声
+    - icon: "▧"
+      text: 写真
+    - icon: "▤"
+      text: ファイル
+    - icon: "↗"
+      text: リンク
+    scenes:
+    - tab: "ひらめきを残す"
+      eyebrow: "01 / AI受信トレイ"
+      title: "まず残して、"
+      accent: "考えをクリアに。"
+      description: "音声メモ、写真、Webページを整理されたノートに。元の素材と AI の結果を一緒に保ち、必要な時に読み返せます。"
+      points:
+      - "テキスト・写真・PDF・Webページを集約"
+      - "録音、文字起こし、リアルタイム整理"
+      - "ノートから文字や音声で会話を続ける"
+      anchor: "capture"
+      sticker: "断片から、分かる形へ"
+    - tab: "素材をつなぐ"
+      eyebrow: "02 / トピック"
+      title: "つながる考えを、"
+      accent: "ひとつの流れに。"
+      description: "プロジェクトや長く考えたい問いのノートを集めます。現在の見立て、変化、次の一手を追いながら理解を深められます。"
+      points:
+      - "関連ノートをトピックにまとめる"
+      - "方向性と未解決の問いを整理する"
+      - "出典付きの Wiki に知識を蓄積する"
+      anchor: "topics"
+      sticker: "少しずつ、つながる"
+    - tab: "成果をつくる"
+      eyebrow: "03 / 理解から行動へ"
+      title: "考えたことを、"
+      accent: "使える成果に。"
+      description: "トピックからブリーフ、タスクリスト、文書を作成。AI Chat でファイルや画像を作り、次の操作を確認して実行できます。"
+      points:
+      - "トピックの成果を生成して保存"
+      - "チャットでファイルや画像を処理"
+      - "予定・リマインダー・アプリ操作を確認"
+      anchor: "outputs"
+      sticker: "素材から、成果へ"
+    guide_routes:
+    - text: "録音・音声会話"
+      anchor: recording
+    - text: "調査・トピック"
+      anchor: topics
+    - text: "アプリ・ショートカット"
+      anchor: app-tools
+    - text: "ファイル・画像"
+      anchor: outputs
+guide:
+  screens:
+    capture:
+      - file: "inbox-home"
+        title: "受信トレイ"
+        caption: "AI の結果とタグを確認し、下部からチャット、読み込み、録音、ノート作成へ進めます。"
+      - file: "note-detail"
+        title: "ノートの詳細"
+        caption: "整理された結果を読み、元の文章、画像、Webページを確認できます。"
+    topics:
+      - file: "topic-home"
+        title: "トピック一覧"
+        caption: "進行中のトピックと、現在の見立て、最近の変化、次の一手を確認します。"
+      - file: "topic-detail"
+        title: "現在の理解を確認"
+        caption: "関連ノートをまとめ、現在の見立てを確認しながら資料を追加します。"
+      - file: "topic-wiki"
+        title: "Topic Wiki を育てる"
+        caption: "知識ブロックを展開し、出典をたどりながら継続して知識を蓄積します。"
+      - file: "topic-outcomes"
+        title: "トピックから成果へ"
+        caption: "ブリーフ、タスクリスト、文書を選び、保存・編集できる成果にまとめます。"
+    recording:
+      - file: "recording"
+        title: "録音しながら整理"
+        caption: "要点、未解決の問い、次のステップを確認。下部で一時停止、完了、ヒントの依頼ができます。"
+      - file: "recording-transcript"
+        title: "原文を確認"
+        caption: "文字起こしに切り替え、発言を AI の整理結果と分けて確認します。"
+    chat:
+      - file: "chat"
+        title: "文脈を引き継ぐ対話"
+        caption: "資料について具体的に質問し、追加で相談。必要な会話はノートとして保存できます。"
+    voice:
+      - file: "voice"
+        title: "字幕付きの音声会話"
+        caption: "返答の字幕を読みながら、下部でミュート、一時停止、終了、字幕表示を操作します。"
+    device:
+      - file: "data-usage"
+        title: "データごとに許可"
+        caption: "AI と今日の進捗が利用する情報源を個別に管理。"
+      - file: "today"
+        title: "今日の進捗"
+        caption: "トピックの変化や再開できる項目を確認。トピックの内容は専用の章で紹介します。"
+    apps:
+      - file: "app-tools"
+        title: "アプリツールの入口"
+        caption: "ツールや .shortcut ファイルを読み込み、設定と有効化の状態を確認します。"
+      - file: "shortcut"
+        title: "ショートカットを確認"
+        caption: "Apple ショートカット内の名前と一致させてから分析。読み込みだけでは実行されません。"
+    outputs:
+      - file: "files"
+        title: "成果ファイルのプレビュー"
+        caption: "生成したファイルを開き、内容を確認してから共有・書き出しできます。"
+      - file: "skills"
+        title: "Skills を管理"
+        caption: "端末内のスキルを確認し、ZIP や GitHub から手順を読み込みます。"
+    storage:
+      - file: "sandbox"
+        title: "端末内の作業領域"
+        caption: "Sandbox とファイル数を確認し、必要なら作業領域の一覧を開いて整理します。"
+    practice-meetings:
+      - file: "practice-meeting-live"
+        title: "決定事項と残りの作業"
+        caption: "今回は検索改善を公開。テストは担当が決まり、ヘルプは分担待ちです。"
+      - file: "practice-meeting-transcript"
+        title: "発言を原文で確認"
+        caption: "公開範囲、テストの日程、担当者を文字起こしで確認します。"
+    practice-research:
+      - file: "practice-research-wiki"
+        title: "知識庫選定の Wiki"
+        caption: "チームの条件と試用で確かめる問いを整理します。"
+      - file: "practice-research-chat"
+        title: "候補の比較を続ける"
+        caption: "集めた資料で二つの候補を比較し、根拠の不足を確認します。"
+    practice-planning:
+      - file: "topic-detail"
+        title: "旅行と日々の計画"
+        caption: "解きたい問いと判断基準を先に決める"
+      - file: "files"
+        title: "共有できる旅程"
+        caption: "旅程をプレビューし、日付、場所、未予約の項目を確認します。"
+    practice-delivery:
+      - file: "practice-delivery-outcome"
+        title: "説明資料を下書きで保存"
+        caption: "検索改善の説明をトピックに残し、あとで編集や完了設定ができます。"
+      - file: "practice-delivery-file"
+        title: "共有するファイルを確認"
+        caption: "検索改善の説明を開き、範囲、テスト、未確定事項を点検します。"
+  title: "使い方ガイド"
+  previous: "前の章"
+  next: "次の章"
+  navigation: "章の一覧"
+  features_section: "機能紹介"
+  practice_section: "実践ガイド"

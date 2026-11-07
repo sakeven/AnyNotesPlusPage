@@ -1,5 +1,5 @@
 #page title
-page_title: AnyNotes+ • Personal AI Inbox for Notes, Voice, Photos, and Links # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title: "AnyNotes+ • AI Notes, Live Voice, and a Workspace for Your Ideas"
 url: "https://plus.anynotes.app"
 baseurl: ""
 default_lang: en
@@ -23,7 +23,7 @@ presskit_download_link: # Enter a link to downloadable file or (e.g. public Drop
 app_icon: assets/app-icon.png
 app_name: AnyNotes+
 app_price: Free
-app_description: Capture from note, voice, photo, share sheet, or chat. AnyNotes turns each input into an organized result, suggested next steps, and a topic you can keep moving forward.
+app_description: "Capture notes, recordings, photos, files, and links. Organize them with AI, talk through ideas in live voice, and turn Topics into knowledge and useful results."
 app_keywords: AI inbox, AI notes, voice notes, photo to text, share extension, meeting notes, summaries, reminders, AnyNotes+
 og_image: assets/og-share.png
 app_price_value: 0
@@ -42,28 +42,40 @@ github_username: sakeven
 
 # Feature List                            Edit, add or remove features to be presented.
 features:
-  - title: Capture From Note, Record, Photo, Share, and Chat
-    description: Start inside the app or from the iOS share sheet. Text, voice, photos, links, and chat transcripts all enter the same inbox flow instead of living in separate silos.
+  - title: "Capture and organize"
+    description: "Write a note, record audio, import photos or PDF and text files, or share a web page. AI creates a title, summary, result card, and suggested next steps."
     fontawesome_icon_name: inbox
 
-  - title: AI Result Cards for Every New Note
-    description: AnyNotes automatically generates a clean title, summary, structured result card, and suggested next actions for ideas, meetings, reminders, summaries, and knowledge notes.
-    fontawesome_icon_name: magic
+  - title: "Think while you record"
+    description: "On iOS, live recording can organize key points, open questions, and next steps as you speak. Review suggested actions before running them. Live insights require an API key."
+    fontawesome_icon_name: microphone
 
-  - title: Topics That Keep Evolving
-    description: Move beyond isolated notes. Group related notes into Topics and keep an up-to-date synthesis with current decisions, recent changes, and the next move to make.
-    fontawesome_icon_name: project-diagram
-
-  - title: Turn Notes Into Action
-    description: Draft reminders, Things tasks, and follow-up emails, continue in AI Chat, or export the main result as a shareable image instead of a noisy screenshot.
-    fontawesome_icon_name: share-square
-
-  - title: Deep Work With AI Chat
-    description: AI Chat includes an on-device Alpine Linux emulator for file processing, calculations, charts, and documents. Inspect real command output in a read-only terminal panel. See Support for package downloads, Skills, and workspace controls.
+  - title: "Continue in live voice"
+    description: "Talk with AI from a new conversation or an existing chat. Keep the conversation context, read captions, and ask it to work with the tools available in your chat."
     fontawesome_icon_name: comments
 
-  - title: Search, Archive, Sync
-    description: Keep everything findable with search, tags, pinning, archive mode, batch summaries, and iCloud-backed storage tied to your own account.
+  - title: "Build knowledge with Topics"
+    description: "Bring related notes together, define a direction, and develop a Topic Wiki with source notes. Save briefs, task lists, and longer drafts as Topic outcomes."
+    fontawesome_icon_name: project-diagram
+
+  - title: "Plan with your device"
+    description: "On iOS, ask about your calendar and reminders or prepare changes to review. With permission, AI can also use photos, activity data, and your current location. Alarms and timers require iOS 26."
+    fontawesome_icon_name: calendar-check
+
+  - title: "Connect apps and Shortcuts"
+    description: "Enable App Tools or import an Apple Shortcut file for use in AI Chat. Review writes before execution; supported shortcuts can return text to the conversation."
+    fontawesome_icon_name: external-link-alt
+
+  - title: "Create files and images"
+    description: "Use AI Chat to work with attachments, prepare documents and charts, and generate or edit images. Preview the results and share the files you need."
+    fontawesome_icon_name: images
+
+  - title: "Reuse your workflows"
+    description: "Import Skills from ZIP or GitHub and use the on-device Linux Sandbox for scripts, calculations, and file processing. Inspect command output and manage local workspaces."
+    fontawesome_icon_name: terminal
+
+  - title: "Find it and pick up later"
+    description: "Search notes, filter by tags, pin or archive, and resume local chat history. Notes and Topics sync through your iCloud account; chat workspaces stay on the device."
     fontawesome_icon_name: search
 
 # Theme Settings

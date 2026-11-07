@@ -3,209 +3,75 @@
 <!DOCTYPE html>
 {% assign lang = page.lang | default: site.default_lang %}
 {% assign t = site.data.locales[lang] %}
-{% assign support_page = site.pages | where: "ref", "support" | where: "lang", lang | first %}
-{% assign app_store_badge_src = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg' %}
-{% case lang %}
-    {% when 'zh-Hans' %}
-        {% assign app_store_badge_src = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store-cn.svg' %}
-    {% when 'ja' %}
-        {% assign app_store_badge_src = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store-jp.svg' %}
-    {% when 'ko' %}
-        {% assign app_store_badge_src = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store-kr.svg' %}
-{% endcase %}
+{% assign l = t.home.landing %}
+{% assign guide_page = site.pages | where: "ref", "guide" | where: "lang", lang | first %}
+{% assign screens = t.home.screens.cards %}
 <html lang="{{ t.html_lang | default: lang }}">
-
 {% include head.html lang=lang t=t %}
-
-<body>
-    <div class="imageWrapper">
-            <div class="headerBackground">
-                <div class="container">
-                    {% include header.html lang=lang t=t %}
-                    <div class="iphonePreview">
-                        <div class="deviceShell">
-                            <div class="deviceFrame">
-                                <div class="deviceIsland"></div>
-
-                                <div class="videoContainer hidden">
-                                    <video class="screenvideo" autoplay="autoplay" controls="controls">
-                                    </video>
-                                </div>
-
-                                <img class="iphoneScreen hidden" src="" alt="">
-                            </div>
-                        </div>
-
-                        {% include screencontent.html %}
-
-                    </div>
-                    <div class="appInfo">
-                        <div class="appIconShadow">
-                            <svg width="0" height="0">
-                                <defs>
-                                    <clipPath id="shape120">
-                                        <path id="shape" class="cls-1" d="M6821,495.533v-4.281c0-1.2-.04-2.4-0.04-3.642a57.7,57.7,0,0,0-.68-7.882,26.144,26.144,0,0,0-2.48-7.483,25.115,25.115,0,0,0-11.04-11.044,26.118,26.118,0,0,0-7.49-2.481,47.28,47.28,0,0,0-7.88-.68c-1.2-.04-2.4-0.04-3.64-0.04h-53.5c-1.2,0-2.4.04-3.64,0.04a57.813,57.813,0,0,0-7.88.68,26.323,26.323,0,0,0-7.49,2.481,25.115,25.115,0,0,0-11.04,11.044,26.144,26.144,0,0,0-2.48,7.483,47.313,47.313,0,0,0-.68,7.882c-0.04,1.2-.04,2.4-0.04,3.642v53.5c0,1.2.04,2.4,0.04,3.641a57.7,57.7,0,0,0,.68,7.883,26.137,26.137,0,0,0,2.48,7.482,25.115,25.115,0,0,0,11.04,11.044,26.261,26.261,0,0,0,7.49,2.481,47.28,47.28,0,0,0,7.88.68c1.2,0.04,2.4.04,3.64,0.04h53.5c1.2,0,2.4-.04,3.64-0.04a57.654,57.654,0,0,0,7.88-.68,26.057,26.057,0,0,0,7.49-2.481,25.115,25.115,0,0,0,11.04-11.044,26.137,26.137,0,0,0,2.48-7.482,47.316,47.316,0,0,0,.68-7.883c0.04-1.2.04-2.4,0.04-3.641V495.533h0Z" transform="translate(-6701 -458)" filter="url(#f1)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <img class="appIconLarge" src="{{ site.app_icon | relative_url }}">
-                        </div>
-                        <div class="appNamePriceContainer">
-                            <h1 class="appName">
-                                {{ t.home.app_headline | default: site.app_name }}
-                            </h1>
-                            <h2 class="appPrice">
-                                {{ t.app_price | default: site.app_price }}
-                            </h2>
-                        </div>
-                        <div class="appDescriptionContainer">
-                            <p class="appEyebrow">{{ t.home.app_eyebrow }}</p>
-                            <h2 class="appSlogan">{{ t.home.app_slogan }}</h2>
-                            <p class="appDescription">
-                                {{ t.home.app_description | default: site.app_description }}
-                            </p>
-                        </div>
-                        <div class="heroPillRow">
-                            {% for pill in t.home.hero_pills %}
-                                <span class="heroPill">{{ pill }}</span>
-                            {% endfor %}
-                        </div>
-                        <div class="downloadButtonsContainer">
-                            {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="{{ '/assets/playstore.png' | relative_url }}" alt="{{ t.home.play_store_badge_alt }}"></a>
-                            {% endif %}
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="{{ app_store_badge_src }}" alt="{{ t.home.app_store_badge_alt }}"></a>
-                            {% if site.testflight_link %}
-                                <a class="heroTestflightLink" href="{{site.testflight_link}}">{{ t.home.testflight_cta }}</a>
-                            {% endif %}
-                        </div>
-                        {% if site.testflight_link %}
-                            <p class="heroDownloadNote">{{ t.home.hero_download_note }}</p>
-                        {% endif %}
-                    </div>
-                    <main class="homeContent">
-                        <section class="homeSection screensSection">
-                            <div class="sectionIntro">
-                                <p class="sectionEyebrow">{{ t.home.screens.eyebrow }}</p>
-                                <h2>{{ t.home.screens.title }}</h2>
-                                <p>{{ t.home.screens.description }}</p>
-                            </div>
-                            <div class="screensGrid">
-                                {% for card in t.home.screens.cards %}
-                                    <figure class="screenCard">
-                                        <div class="screenFrame">
-                                            <img src="{{ card.image | relative_url }}" alt="{{ card.alt }}">
-                                        </div>
-                                        <figcaption class="screenCaption">
-                                            <h3>{{ card.title }}</h3>
-                                            <p>{{ card.description }}</p>
-                                        </figcaption>
-                                    </figure>
-                                {% endfor %}
-                            </div>
-                        </section>
-
-                        <section class="homeSection featureSection">
-                            <div class="sectionIntro">
-                                <p class="sectionEyebrow">{{ t.home.features_intro.eyebrow }}</p>
-                                <h2>{{ t.home.features_intro.title }}</h2>
-                                <p>{{ t.home.features_intro.description }}</p>
-                            </div>
-                            {% include features.html features=t.home.features %}
-                        </section>
-
-                        <section class="homeSection workflowSection">
-                            <div class="sectionIntro">
-                                <p class="sectionEyebrow">{{ t.home.workflow.eyebrow }}</p>
-                                <h2>{{ t.home.workflow.title }}</h2>
-                            </div>
-                            <div class="workflowGrid">
-                                {% for card in t.home.workflow.cards %}
-                                    <article class="workflowCard">
-                                        <span class="stepTag">{{ card.step }}</span>
-                                        <h3>{{ card.title }}</h3>
-                                        <p>{{ card.description }}</p>
-                                    </article>
-                                {% endfor %}
-                            </div>
-                        </section>
-
-                        <section class="homeSection outcomeSection">
-                            <div class="sectionIntro">
-                                <p class="sectionEyebrow">{{ t.home.outcomes.eyebrow }}</p>
-                                <h2>{{ t.home.outcomes.title }}</h2>
-                            </div>
-                            <div class="outcomeGrid">
-                                <article class="outcomeCard">
-                                    <p class="cardEyebrow">{{ t.home.outcomes.result_types.eyebrow }}</p>
-                                    <h3>{{ t.home.outcomes.result_types.title }}</h3>
-                                    <ul class="detailList">
-                                        {% for item in t.home.outcomes.result_types.items %}
-                                            <li><strong>{{ item.label }}:</strong> {{ item.description }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </article>
-                                <article class="outcomeCard">
-                                    <p class="cardEyebrow">{{ t.home.outcomes.next_steps.eyebrow }}</p>
-                                    <h3>{{ t.home.outcomes.next_steps.title }}</h3>
-                                    <ul class="detailList">
-                                        {% for item in t.home.outcomes.next_steps.items %}
-                                            <li>{{ item }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </article>
-                            </div>
-                        </section>
-
-                        <section class="homeSection trustSection">
-                            <div class="trustGrid">
-                                {% for card in t.home.trust.cards %}
-                                    <article class="trustCard">
-                                        <p class="cardEyebrow">{{ card.eyebrow }}</p>
-                                        <h3>{{ card.title }}</h3>
-                                        <p>{{ card.description }}</p>
-                                    </article>
-                                {% endfor %}
-                            </div>
-                        </section>
-
-                        <section class="homeSection faqSection">
-                            <div class="sectionIntro">
-                                <p class="sectionEyebrow">{{ t.home.faq.eyebrow }}</p>
-                                <h2>{{ t.home.faq.title }}</h2>
-                                <p>{{ t.home.faq.description }}</p>
-                            </div>
-                            <div class="faqGrid">
-                                {% for item in t.home.faq.items %}
-                                    <article class="faqCard">
-                                        <h3>{{ item.question }}</h3>
-                                        <p>{{ item.answer }}</p>
-                                    </article>
-                                {% endfor %}
-                            </div>
-                        </section>
-
-                        <section class="homeSection ctaSection">
-                            <div class="ctaCopy">
-                                <p class="sectionEyebrow">{{ t.home.cta.eyebrow }}</p>
-                                <h2>{{ t.home.cta.title }}</h2>
-                                <p>{{ t.home.cta.description }}</p>
-                            </div>
-                            <div class="ctaActions">
-                                <a class="primaryButton appStoreLink" href="{{site.appstore_link}}">{{ t.home.cta.app_store }}</a>
-                                {% if site.testflight_link %}
-                                    <a class="secondaryLink" href="{{site.testflight_link}}">{{ t.home.cta.testflight }}</a>
-                                {% endif %}
-                                {% if support_page %}
-                                    <a class="secondaryLink" href="{{ support_page.url | relative_url }}" target="_self">{{ t.home.cta.support }}</a>
-                                {% endif %}
-                            </div>
-                        </section>
-                    </main>
-                    {% include footer.html lang=lang t=t %}
-                    {% include appstoreimages.html %}
+<body class="landingPage">
+    <a class="skipLink" href="#main" target="_self">{{ l.skip }}</a>
+    <div class="landingNav landingWidth">{% include header.html lang=lang t=t %}</div>
+    <main id="main">
+        <section class="landingHero landingWidth" aria-labelledby="hero-title">
+            <div class="heroCopy">
+                <p class="eyebrow"><span class="liveDot" aria-hidden="true"></span>{{ t.home.app_eyebrow }}</p>
+                <h1 id="hero-title" class="heroTitle">{{ l.headline }}<br><em>{{ l.headline_accent }}</em></h1>
+                <p class="heroLead">{{ l.lead }}</p>
+                <div class="heroActions">
+                    <a class="downloadButton appStoreLink" href="{{ site.appstore_link }}"><i class="fab fa-apple" aria-hidden="true"></i><span>{{ t.home.cta.app_store }}</span><span class="buttonArrow" aria-hidden="true">↗</span></a>
+                    <a class="heroTextLink" href="{{ guide_page.url | relative_url }}" target="_self">{{ l.see_guide }} <span aria-hidden="true">→</span></a>
+                </div>
+                <p class="heroFinePrint">{{ l.download_note }}</p>
+                <div class="heroPlatforms"><span>iPhone</span><span>iPad</span><span>Mac</span></div>
+            </div>
+            <div class="heroProduct">
+                <div class="productOrbit" aria-hidden="true"></div>
+                <div class="productPhone phoneBack"><img src="{{ screens[1].image | relative_url }}" alt="{{ screens[1].alt }}" width="1206" height="2622"></div>
+                <div class="productPhone phoneFront"><img src="{{ screens[0].image | relative_url }}" alt="{{ screens[0].alt }}" width="1206" height="2622" fetchpriority="high"></div>
+                <div class="productLabel"><span aria-hidden="true">✦</span> {{ l.product_label }}</div>
+            </div>
+        </section>
+        <section class="captureStrip landingWidth" aria-label="{{ l.capture_label }}">
+            <p>{{ l.capture_label }}</p>
+            <ul>{% for entry in l.capture_entries %}<li><span aria-hidden="true">{{ entry.icon }}</span>{{ entry.text }}</li>{% endfor %}</ul>
+        </section>
+        <section class="experienceSection landingWidth" aria-labelledby="experience-title">
+            <div class="experienceHeading"><p class="eyebrow">{{ l.experience_eyebrow }}</p><h2 id="experience-title">{{ l.experience_title }} <em>{{ l.experience_accent }}</em></h2></div>
+            <div class="experienceTabs" role="tablist" aria-label="{{ l.experience_title }}">
+                {% for scene in l.scenes %}<button type="button" role="tab" id="tab-{{ forloop.index }}" aria-controls="scene-{{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"><span>0{{ forloop.index }}</span>{{ scene.tab }}</button>{% endfor %}
+            </div>
+            {% for scene in l.scenes %}
+            {% assign shot = screens[forloop.index0] %}
+            <div class="experiencePanel scene-{{ forloop.index }}" role="tabpanel" id="scene-{{ forloop.index }}" aria-labelledby="tab-{{ forloop.index }}" tabindex="0"{% unless forloop.first %} hidden{% endunless %}>
+                <div class="experienceCopy">
+                    <p class="eyebrow">{{ scene.eyebrow }}</p><h3>{{ scene.title }}<br><em>{{ scene.accent }}</em></h3>
+                    <p>{{ scene.description }}</p>
+                    <ul>{% for point in scene.points %}<li><span aria-hidden="true">↗</span>{{ point }}</li>{% endfor %}</ul>
+                    <a class="textLink" href="{{ guide_page.url | append: scene.anchor | append: "/" | relative_url }}" target="_self">{{ l.scene_link }} <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="experienceVisual">
+                    <span class="sceneOrbit" aria-hidden="true"></span>
+                    <div class="productPhone experiencePhone"><img src="{{ shot.image | relative_url }}" alt="{{ shot.alt }}" width="1206" height="2622" loading="lazy"></div>
+                    <span class="sceneSticker">{{ scene.sticker }}</span>
                 </div>
             </div>
-        </div>
+            {% endfor %}
+        </section>
+        <section class="guideBanner landingWidth">
+            <div class="guideIntro"><p class="eyebrow">{{ l.guide_eyebrow }}</p><h2>{{ l.guide_title }}</h2><p>{{ l.guide_description }}</p><a class="textLink" href="{{ guide_page.url | relative_url }}" target="_self">{{ l.see_guide }} <span aria-hidden="true">→</span></a></div>
+            <div class="guideRoutes">{% for route in l.guide_routes %}<a href="{% if route.anchor == "quick-start" %}{{ guide_page.url | relative_url }}{% else %}{{ guide_page.url | append: route.anchor | append: "/" | relative_url }}{% endif %}" target="_self"><span>{{ route.text }}</span><span aria-hidden="true">↗</span></a>{% endfor %}</div>
+        </section>
+        <section class="faqSectionNew landingWidth" aria-labelledby="faq-title">
+            <div class="sectionHeading"><p class="eyebrow">{{ t.home.faq.eyebrow }}</p><h2 id="faq-title">{{ l.faq_title }}</h2></div>
+            <div class="faqList">{% for item in t.home.faq.items %}<details class="faqItem"><summary>{{ item.question }}<span aria-hidden="true">+</span></summary><p>{{ item.answer }}</p></details>{% endfor %}</div>
+        </section>
+        <section class="finalCta landingWidth" aria-labelledby="download-title">
+            <p class="eyebrow">AnyNotes+</p><h2 id="download-title">{{ l.final_title }}<br><em>{{ l.final_accent }}</em></h2><p>{{ l.final_description }}</p>
+            <a class="downloadButton appStoreLink" href="{{ site.appstore_link }}"><i class="fab fa-apple" aria-hidden="true"></i><span>{{ t.home.cta.app_store }}</span><span class="buttonArrow" aria-hidden="true">↗</span></a>
+            <p class="betaLine"><a href="{{ site.testflight_link }}">{{ t.home.testflight_cta }} <span aria-hidden="true">↗</span></a><span>{{ t.home.hero_download_note }}</span></p>
+        </section>
+    </main>
+    <div class="landingWidth">{% include footer.html lang=lang t=t %}</div>
+    <script src="{{ '/assets/home.js' | relative_url }}" defer></script>
 </body>
 </html>

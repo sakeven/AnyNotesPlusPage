@@ -9,80 +9,89 @@ footer:
   in: 于
   press_kit: 媒体资料
 home:
-  page_title: AnyNotes+ • 个人 AI 收件箱，支持笔记、语音、照片和链接
-  meta_description: 从笔记、语音、照片、分享菜单或聊天中快速捕捉内容。AnyNotes 会把每次输入整理成清晰结果、建议下一步，以及可持续推进的主题。
+  page_title: "AnyNotes+ • AI 笔记、实时语音与主题工作区"
+  meta_description: "收集笔记、录音、照片、文件和链接，让 AI 帮你整理。通过实时语音继续讨论，用主题沉淀知识，再把想法变成可用成果。"
   og_image_alt: AnyNotes+ 预览图，展示收件箱界面和产品标语。
-  app_description: 从笔记、语音、照片、分享菜单或聊天中快速捕捉内容。AnyNotes 会把每次输入整理成清晰结果、建议下一步，以及可持续推进的主题。
-  app_eyebrow: 个人 AI 收件箱 + 主题工作区
-  app_headline: AnyNotes+ AI 笔记收件箱
-  app_slogan: 想法有去处，结果有来路。
+  app_description: "收集笔记、录音、照片、文件和链接，让 AI 帮你整理。通过实时语音继续讨论，用主题沉淀知识，再把想法变成可用成果。"
+  app_eyebrow: "AI 笔记 · 实时语音 · 主题工作区"
+  app_headline: "AnyNotes+ AI 工作区"
+  app_slogan: "随手记录，持续推进。"
+  guide_link: "阅读使用手册与场景示例"
   hero_pills:
-    - 笔记
-    - 录音
-    - 照片
-    - 分享
-    - 对话
-    - 主题
+    - "笔记"
+    - "实时录音"
+    - "语音对话"
+    - "主题"
+    - "应用工具"
   app_store_badge_alt: 在 App Store 下载
   play_store_badge_alt: 在 Google Play 获取
   testflight_cta: 试用 TestFlight
-  hero_download_note: TestFlight 测试版中的订阅在 Beta 期间免费，不需要额外付费，所以可以直接在 App 内订阅体验。
+  hero_download_note: "TestFlight 测试版中的订阅在 Beta 期间免费。AI 服务用量单独计算，取决于你配置的账号。"
   screens:
     eyebrow: 产品界面
-    title: 看看当前的收件箱、主题首页和主题详情体验。
-    description: 看看一个想法如何先进入收件箱，再被整理成可以继续推进的主题。
+    title: "看看笔记与主题如何衔接。"
+    description: "看看收集的材料如何变成可以使用的成果。"
     cards:
       - title: 收件箱
         description: 展示今天的笔记、AI 结果卡片、标签，以及四种主要捕捉入口。
         alt: AnyNotes 收件箱截图
-        image: /assets/screenshot/inbox-home.png
+        image: /assets/screenshot/zh-Hans/inbox-home.png
       - title: 主题首页
         description: 在主题首页集中展示主题的当前结论、最近变化和下一步行动。
         alt: AnyNotes 主题首页截图
-        image: /assets/screenshot/topic-home.png
-      - title: 主题详情
-        description: 更深入的主题详情页，包含综合总结、变化记录，以及更适合阅读的布局。
-        alt: AnyNotes 主题详情截图
-        image: /assets/screenshot/topic-detail.png
+        image: /assets/screenshot/zh-Hans/topic-home.png
+      - title: "主题成果"
+        description: "把主题转成简报、任务清单或正式文稿。"
+        alt: "AnyNotes 主题成果截图"
+        image: /assets/screenshot/zh-Hans/topic-outcomes.png
   features_intro:
     eyebrow: 更贴近真实记录习惯
-    title: 把杂乱输入、清晰结果和持续推进的工作放在一个地方。
-    description: AnyNotes 围绕手机上的真实使用流程来设计。先收集，再让 AI 帮你理清刚刚进来的内容，然后继续沿着同一条线推进，而不是把它淹没在长长的笔记列表里。
+    title: "从一个念头，到可以使用的成果。"
+    description: "先收集材料，再用 AI 理清思路，沿着同一条笔记、主题或对话继续推进。"
   features:
-    - title: 从笔记、录音、照片、分享和聊天中捕捉
-      description: 既可以在应用内开始，也可以从 iOS 分享菜单进入。文本、语音、照片、链接和聊天记录都会进入同一套收件箱流程，而不是分散在不同角落。
+    - title: "随手收集，自动整理"
+      description: "写笔记、录音，导入照片、PDF 或文本文件，也能从分享菜单保存网页。AI 会生成标题、摘要、结果卡片和下一步建议。"
       fontawesome_icon_name: inbox
-    - title: 每条新笔记都有 AI 结果卡片
-      description: 对于想法、会议、提醒、摘要和知识类笔记，AnyNotes 会自动生成清晰标题、摘要、结构化结果卡片以及建议的下一步。
-      fontawesome_icon_name: magic
-    - title: 持续演进的主题
-      description: 不再只有孤立笔记。把相关内容归到同一个主题中，持续更新当前结论、最近变化和下一步行动。
-      fontawesome_icon_name: project-diagram
-    - title: 把笔记真正推进成行动
-      description: 你可以起草提醒、Things 任务和跟进邮件，也可以继续进入 AI 对话，或把主要结果导出成可分享图片，而不是发一张杂乱截图。
-      fontawesome_icon_name: share-square
-    - title: 用 AI Chat 做更深入的工作
-      description: AI Chat 内置设备端 Alpine Linux 模拟器，用于文件处理、计算和生成图表、文档。可在只读终端面板查看真实命令输出；软件包下载、Skills 和工作区管理方式详见支持页。
+    - title: "边说边整理"
+      description: "在 iOS 录音时持续整理要点、待解决问题和下一步。建议的操作经你查看确认后才会执行；实时整理需要 API Key。"
+      fontawesome_icon_name: microphone
+    - title: "用实时语音继续讨论"
+      description: "从新对话或已有聊天进入语音，带着上下文继续交流、查看字幕，并让 AI 使用当前聊天中可用的工具。"
       fontawesome_icon_name: comments
-    - title: 搜索、归档、同步
-      description: 通过搜索、标签、置顶、归档模式、批量摘要和绑定你自己账户的 iCloud 存储，让所有内容都保持可查找。
+    - title: "让主题沉淀为知识"
+      description: "把相关笔记放在一起，设定演进方向，建立带来源笔记的 Topic Wiki，再把简报、任务清单或正式文稿保存为主题成果。"
+      fontawesome_icon_name: project-diagram
+    - title: "结合设备安排下一步"
+      description: "在 iOS 查询日程和提醒，审阅后再创建或修改。授权后还能使用照片、健康与运动数据及当前位置；闹钟和倒计时需要 iOS 26。"
+      fontawesome_icon_name: calendar-check
+    - title: "连接应用与快捷指令"
+      description: "启用应用工具，或导入 Apple 快捷指令文件供 AI 对话调用。写操作先审阅确认，支持的快捷指令可把文字结果带回对话。"
+      fontawesome_icon_name: external-link-alt
+    - title: "产出文件与图片"
+      description: "在 AI 对话中处理附件、制作文档和图表、生成或编辑图片。查看实际产物，再预览或分享需要的文件。"
+      fontawesome_icon_name: images
+    - title: "复用熟悉的工作流程"
+      description: "从 ZIP 或 GitHub 导入 Skills，借助设备端 Linux 沙箱执行脚本、计算和文件处理，并查看命令输出、管理本地工作区。"
+      fontawesome_icon_name: terminal
+    - title: "找得到，也接得上"
+      description: "搜索、标签筛选、置顶和归档让笔记保持有序，本机聊天历史让讨论能够继续。笔记与主题通过 iCloud 同步，聊天工作区保存在设备上。"
       fontawesome_icon_name: search
   workflow:
-    eyebrow: 工作流程
-    title: 从快速记录，到可以直接行动的结果。
+    eyebrow: "工作流程"
+    title: "从快速记录，到可以直接行动的结果。"
     cards:
       - step: "01"
-        title: 随时捕捉
-        description: 使用笔记、录音、拍照、聊天或 iOS 分享菜单处理文本、链接和图片。所有内容都会进入统一流程。
+        title: "收集重要内容"
+        description: "从笔记、导入、录音、对话或 iOS 分享菜单开始，也能用小组件和快速记录快捷入口打开文字编辑器。"
       - step: "02"
-        title: 获取 AI 收件箱结果
-        description: 每条新笔记都会得到标题、摘要、主要结果卡片和建议下一步，而且不会阻塞保存。
+        title: "理清材料"
+        description: "查看 AI 结果并回看原始来源，或在录音时边说边整理要点。"
       - step: "03"
-        title: 把相关工作放在一起
-        description: 用主题替代一次性笔记，让最新综合结论、变化、开放问题和下一步始终可见。
+        title: "持续发展主题"
+        description: "加入相关笔记，明确演进方向，建立 Wiki，或保存简报、任务清单和文稿。"
       - step: "04"
-        title: 把结果向外推进
-        description: 把结果继续变成提醒草稿、Things 任务、跟进邮件、分享图片卡片，或者更深入的 AI 对话。
+        title: "推进下一步"
+        description: "继续文字或语音对话，生成文件，或确认日历、提醒事项和已安装应用中的操作。"
   outcomes:
     eyebrow: 应用会产出什么
     title: 比原始笔记更容易直接使用的结果。
@@ -104,32 +113,32 @@ home:
       eyebrow: 下一步可以做什么
       title: 从理解直接走向执行，不必跳出当前流程。
       items:
-        - 在已附带笔记上下文的 AI 对话中继续推进。
-        - 从 AI 结果直接起草提醒、Things 条目和跟进邮件。
-        - 生成可分享的图片卡片，而不是发送原始截图。
-        - 搜索已保存笔记、批量摘要多条笔记，或归档和置顶以便稍后查看。
-        - 当任务不是一句回复能解决时，使用自定义提示词和沙箱工作区继续处理。
+        - "带着笔记或主题上下文，继续文字与实时语音对话。"
+        - "先审阅，再执行日历、提醒事项和已启用的应用操作。"
+        - "制作文档、图表、生成图片或可分享的笔记结果卡。"
+        - "继续本机历史对话，复用其中的附件和生成文件。"
+        - "需要执行多步任务时，使用 Skills 和沙箱工作区。"
   trust:
     cards:
-      - eyebrow: 默认更私密
-        title: 你的笔记仍然绑定在你自己的账户下。
-        description: 笔记存放在你个人的 iCloud 存储中，而不是共享服务数据库，所以可以保持轻量记录，而不必引入新的账户系统。
-      - eyebrow: 为持续推进而设计
-        title: 不只是捕捉，更是推进。
-        description: 它保留了笔记收件箱的快速输入体验，同时加入搜索、归档、主题、AI Chat 和分享结果等能力，让重要笔记真正发展成可用成果。
+      - eyebrow: "默认更私密"
+        title: "你的笔记，你的 iCloud。"
+        description: "笔记与主题使用你的个人 iCloud 账户；聊天记录、生成文件、Skills 和应用工具配置保存在各自设备上。"
+      - eyebrow: "为持续推进而设计"
+        title: "由你选择 AI 可以使用什么。"
+        description: "相关内容会发送给你配置的 AI 服务。设备数据按需授权，写入日历、提醒事项或连接的应用前会展示内容供你核对。"
   faq:
-    eyebrow: 常见问题
-    title: 下载前先看几个简短答案。
-    description: 更完整的帮助内容在 Support 页面，这里先回答大多数人体验 AnyNotes+ 之前最常问的四个问题。
+    eyebrow: "常见问题"
+    title: "下载前先看几个简短答案。"
+    description: "阅读使用手册与场景示例"
     items:
-      - question: AnyNotes+ 支持 iPhone 和 iPad 吗？
-        answer: 支持。AnyNotes+ 已在 App Store 上提供 iPhone 和 iPad 版本，并在不同设备上保持一致的捕捉流程。
-      - question: 笔记是怎么存储的？
-        answer: 你的笔记保存在你自己的 iCloud 存储中，通过 CloudKit 同步，而不是放在共享服务数据库里。
-      - question: 它能把语音、照片和链接整理成摘要吗？
-        answer: 可以。你可以从文本、录音、照片或 iOS 分享菜单捕捉内容，AI 收件箱会把这些输入整理成更清晰的标题、摘要、结果卡片和下一步建议。
-      - question: AI 功能需要订阅吗？
-        answer: 需要。AI 功能需要 AnyNotes Pro，同时你还需要在应用内提供自己的 OpenAI API key，或者使用 Codex 登录。
+      - question: "AnyNotes+ 支持哪些平台？"
+        answer: "提供 iPhone、iPad 和原生 Mac 使用体验。设备数据工具与录音实时整理属于 iOS 功能，具体差异可查看使用手册。"
+      - question: "哪些内容会跨设备同步？"
+        answer: "笔记与主题通过个人 iCloud 同步；聊天历史、AI 工作区文件、Skills 和应用工具配置保存在各自设备上。"
+      - question: "录音和实时语音对话有什么区别？"
+        answer: "录音用于把你的声音保存成笔记，API Key 模式还能实时整理；实时语音则是与 AI 双向交流，可以接着已有聊天继续。"
+      - question: "使用 AI 功能需要什么？"
+        answer: "iPhone 和 iPad 需要 AnyNotes Pro，并配置 API Key 或登录 Codex；Mac 版无需 AnyNotes Pro。AI 服务用量单独计算，功能可用性取决于你的账号。"
   cta:
     eyebrow: 先从还很混乱的版本开始
     title: 先收集，快澄清，再继续推进。
@@ -137,3 +146,173 @@ home:
     app_store: 在 App Store 下载
     testflight: 试用 TestFlight 测试版
     support: 有问题？查看支持页面
+  landing:
+    skip: 跳到主要内容
+    headline: 让想法
+    headline_accent: 不止于记录。
+    lead: 随手记下，用 AI 理清，再继续推进。让零散的笔记、声音与资料，慢慢长成有用的知识和成果。
+    see_guide: 看看怎么用
+    download_note: 免费下载 · iOS AI 功能需 Pro 与自备 AI 账号
+    product_label: 从一个念头，到下一步
+    capture_label: 想法从哪里来，都接得住
+    experience_eyebrow: "CAPTURE → CONNECT → CREATE"
+    experience_title: "一条笔记，"
+    experience_accent: "更多可能。"
+    scene_link: "查看完整用法"
+    guide_eyebrow: 使用手册
+    guide_title: 找到适合你的用法。
+    guide_description: "从第一次记录，到会议、研究和日常安排。操作步骤和更多场景，都在手册里。"
+    faq_title: 开始前，你可能想知道。
+    final_title: 下一个好想法，
+    final_accent: 从这里开始。
+    final_description: 记下此刻的灵感，让 AnyNotes 陪你继续想、继续做。
+    capture_entries:
+    - icon: "✎"
+      text: 笔记
+    - icon: "〰"
+      text: 声音
+    - icon: "▧"
+      text: 照片
+    - icon: "▤"
+      text: 文件
+    - icon: "↗"
+      text: 链接
+    scenes:
+    - tab: "收集灵感"
+      eyebrow: "01 / AI 收件箱"
+      title: "先记下来，"
+      accent: "让思路清楚起来。"
+      description: "一段口述、一张照片、一篇网页，都可以成为一条整理好的笔记。原始材料和 AI 结果放在一起，需要时随时回看。"
+      points:
+      - "文字、照片、PDF 与网页统一收集"
+      - "录音、转写与实时整理"
+      - "从笔记继续文字或语音对话"
+      anchor: "capture"
+      sticker: "零散输入 → 清晰结果"
+    - tab: "串起资料"
+      eyebrow: "02 / 主题工作区"
+      title: "把相关的想法，"
+      accent: "放在同一条线上。"
+      description: "围绕一个项目或长期问题积累笔记。主题帮你看清当前结论、最近变化和下一步，让每次记录都有后续。"
+      points:
+      - "将笔记归入同一主题"
+      - "明确方向，保留开放问题"
+      - "用 Wiki 沉淀带来源的知识"
+      anchor: "topics"
+      sticker: "线索，慢慢连起来"
+    - tab: "形成成果"
+      eyebrow: "03 / 从理解到行动"
+      title: "不止想清楚，"
+      accent: "还可以做出来。"
+      description: "从主题材料整理简报、任务清单或文稿，也可以继续到 AI 对话中制作文件、生成图片，或核对并执行下一步操作。"
+      points:
+      - "生成并保存主题成果"
+      - "在对话中处理文件和图片"
+      - "日程、提醒与应用操作先确认再执行"
+      anchor: "outputs"
+      sticker: "从材料，到成果"
+    guide_routes:
+    - text: "录音与语音"
+      anchor: recording
+    - text: "研究与主题"
+      anchor: topics
+    - text: "应用与快捷指令"
+      anchor: app-tools
+    - text: "文件与图片"
+      anchor: outputs
+guide:
+  screens:
+    capture:
+      - file: "inbox-home"
+        title: "收件箱"
+        caption: "查看 AI 结果与标签，从底部进入对话、导入、录音或新建笔记。"
+      - file: "note-detail"
+        title: "笔记详情"
+        caption: "先读整理结果，再回看原始文字、图片或网页来源。"
+    topics:
+      - file: "topic-home"
+        title: "主题总览"
+        caption: "查看正在推进的主题，以及每个主题的当前判断、最近变化和下一步。"
+      - file: "topic-detail"
+        title: "主题的当前进展"
+        caption: "把相关笔记集中到同一主题，查看当前判断，并继续补充材料。"
+      - file: "topic-wiki"
+        title: "积累 Topic Wiki"
+        caption: "展开知识块查看稳定信息与来源入口，让零散材料形成可以持续更新的知识。"
+      - file: "topic-outcomes"
+        title: "从主题形成成果"
+        caption: "选择简报、任务清单或正式文稿，将讨论转成可以保存与继续编辑的成果。"
+    recording:
+      - file: "recording"
+        title: "边录边整理"
+        caption: "查看正在形成的要点、开放问题和下一步；底部可以暂停、完成或请求启发。"
+      - file: "recording-transcript"
+        title: "对照转录原文"
+        caption: "切换到「转写稿」查看讲话内容，与 AI 整理的结论分开核对。"
+    chat:
+      - file: "chat"
+        title: "带着上下文讨论"
+        caption: "把已有材料变成具体问题，继续追问，再把需要保留的讨论保存为笔记。"
+    voice:
+      - file: "voice"
+        title: "实时语音与字幕"
+        caption: "AI 回复时显示字幕，底部提供静音、暂停、结束和字幕开关。"
+    device:
+      - file: "data-usage"
+        title: "逐项授权数据"
+        caption: "在「数据使用」分别管理 AI 和今日推进可以使用哪些来源。"
+      - file: "today"
+        title: "今日推进"
+        caption: "集中查看主题变化与可继续处理的事项。它是日常入口，主题本身的内容见主题章节。"
+    apps:
+      - file: "app-tools"
+        title: "应用工具入口"
+        caption: "从这里导入应用工具或 .shortcut 文件；安装后还需核对配置与启用状态。"
+      - file: "shortcut"
+        title: "先核对快捷指令"
+        caption: "确认名称与系统「快捷指令」一致，再发起分析；导入本身不会运行指令。"
+    outputs:
+      - file: "files"
+        title: "预览生成文件"
+        caption: "打开生成的文件，检查内容后分享或导出到其他应用。"
+      - file: "skills"
+        title: "管理 Skills"
+        caption: "查看本机技能，或从 ZIP、GitHub 导入可复用的任务说明。"
+    storage:
+      - file: "sandbox"
+        title: "管理本机工作区"
+        caption: "查看 Sandbox 与文件统计，需要时展开工作区列表进行清理。"
+    practice-meetings:
+      - file: "practice-meeting-live"
+        title: "讨论中的决定与待办"
+        caption: "本次先发布搜索改进；测试已有负责人，帮助文档还需要分工。"
+      - file: "practice-meeting-transcript"
+        title: "对照转写原文"
+        caption: "回到原话核对发布范围、测试时间和谁来负责。"
+    practice-research:
+      - file: "practice-research-wiki"
+        title: "知识库选型的 Wiki"
+        caption: "按团队需求整理选型标准，保留试用时需要验证的问题。"
+      - file: "practice-research-chat"
+        title: "继续比较候选方案"
+        caption: "从已有资料讨论两个候选方案，明确哪些判断还缺证据。"
+    practice-planning:
+      - file: "topic-detail"
+        title: "旅行与日常规划"
+        caption: "先写清楚要解决的问题与判断标准"
+      - file: "files"
+        title: "可分享的行程"
+        caption: "预览行程文件，核对日期、地点和待预订事项。"
+    practice-delivery:
+      - file: "practice-delivery-outcome"
+        title: "保存项目简报草稿"
+        caption: "将搜索改进的讨论保存为简报，后续仍可编辑或标记完成。"
+      - file: "practice-delivery-file"
+        title: "检查准备分享的文件"
+        caption: "打开搜索改进简报，核对发布范围、测试安排和未定事项。"
+  title: "使用手册"
+  previous: "上一章"
+  next: "下一章"
+  navigation: "章节目录"
+  features_section: "功能介绍"
+  practice_section: "最佳实践"

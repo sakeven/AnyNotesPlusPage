@@ -9,80 +9,89 @@ footer:
   in: 於
   press_kit: 媒體資料
 home:
-  page_title: AnyNotes+ • 個人 AI 收件匣，支援筆記、語音、照片與連結
-  meta_description: 從筆記、語音、照片、分享選單或聊天快速擷取內容。AnyNotes 會把每次輸入整理成清楚結果、建議下一步，以及能持續推進的主題。
+  page_title: "AnyNotes+ • AI 筆記、即時語音與主題工作區"
+  meta_description: "收集筆記、錄音、照片、檔案和連結，讓 AI 協助整理。透過即時語音繼續討論，用主題累積知識，再把想法變成實用成果。"
   og_image_alt: AnyNotes+ 預覽圖，展示收件匣介面與產品標語。
-  app_description: 從筆記、語音、照片、分享選單或聊天快速擷取內容。AnyNotes 會把每次輸入整理成清楚結果、建議下一步，以及能持續推進的主題。
-  app_eyebrow: 個人 AI 收件匣 + 主題工作區
-  app_headline: AnyNotes+ AI 筆記收件匣
-  app_slogan: 想法有去處，結果有形狀。
+  app_description: "收集筆記、錄音、照片、檔案和連結，讓 AI 協助整理。透過即時語音繼續討論，用主題累積知識，再把想法變成實用成果。"
+  app_eyebrow: "AI 筆記 · 即時語音 · 主題工作區"
+  app_headline: "AnyNotes+ AI 工作區"
+  app_slogan: "隨手記錄，持續推進。"
+  guide_link: "閱讀使用手冊與情境範例"
   hero_pills:
-    - 筆記
-    - 錄音
-    - 圖片
-    - 分享
-    - 對話
-    - 主題
+    - "筆記"
+    - "即時錄音"
+    - "語音對話"
+    - "主題"
+    - "App 工具"
   app_store_badge_alt: 在 App Store 下載
   play_store_badge_alt: 在 Google Play 取得
   testflight_cta: 試用 TestFlight
-  hero_download_note: TestFlight 測試版中的訂閱在 Beta 期間免費，不需要額外付費，所以可以直接在 App 內訂閱體驗。
+  hero_download_note: "TestFlight 測試版中的訂閱在 Beta 期間免費。AI 服務用量另計，取決於你設定的帳號。"
   screens:
     eyebrow: 產品畫面
-    title: 先看看目前的收件匣、主題首頁與主題詳情體驗。
-    description: 看看一個想法如何先進入收件匣，再被整理成可以繼續推進的主題。
+    title: "看看筆記與主題如何銜接。"
+    description: "看看收集的資料如何變成可以使用的成果。"
     cards:
       - title: 收件匣
         description: 展示今天的筆記、AI 結果卡片、標籤，以及四種主要擷取入口。
         alt: AnyNotes 收件匣截圖
-        image: /assets/screenshot/inbox-home.png
+        image: /assets/screenshot/zh-Hant/inbox-home.png
       - title: 主題首頁
         description: 在主題首頁集中呈現主題的目前結論、最近變化與下一步行動。
         alt: AnyNotes 主題首頁截圖
-        image: /assets/screenshot/topic-home.png
-      - title: 主題詳情
-        description: 更深入的主題詳情頁，包含綜合摘要、變化紀錄，以及更適合閱讀的版面。
-        alt: AnyNotes 主題詳情截圖
-        image: /assets/screenshot/topic-detail.png
+        image: /assets/screenshot/zh-Hant/topic-home.png
+      - title: "主題成果"
+        description: "把主題轉成簡報、工作清單或正式文稿。"
+        alt: "AnyNotes 主題成果截圖"
+        image: /assets/screenshot/zh-Hant/topic-outcomes.png
   features_intro:
     eyebrow: 更貼近真實記錄習慣
-    title: 把雜亂輸入、清楚結果與持續推進的工作放在同一處。
-    description: AnyNotes 是依照人們在手機上的真實流程設計。先收集，再讓 AI 幫你整理剛進來的內容，然後沿著同一條脈絡繼續推進，而不是讓它淹沒在冗長的筆記清單裡。
+    title: "從一個念頭，到可以使用的成果。"
+    description: "先收集素材，再用 AI 釐清思路，沿著同一則筆記、主題或對話繼續推進。"
   features:
-    - title: 從筆記、錄音、照片、分享與聊天中擷取
-      description: 可以從 App 內開始，也可以從 iOS 分享選單進入。文字、語音、照片、連結與聊天紀錄都會進入同一套收件匣流程，而不是散落在不同地方。
+    - title: "隨手收集，自動整理"
+      description: "寫筆記、錄音，匯入照片、PDF 或文字檔案，也能從分享選單儲存網頁。AI 會產生標題、摘要、結果卡片和下一步建議。"
       fontawesome_icon_name: inbox
-    - title: 每則新筆記都有 AI 結果卡片
-      description: 對於想法、會議、提醒、摘要與知識型筆記，AnyNotes 會自動產生清楚標題、摘要、結構化結果卡片，以及建議的下一步。
-      fontawesome_icon_name: magic
-    - title: 持續演進的主題
-      description: 不再只有孤立筆記。把相關內容放進同一個主題中，持續更新目前結論、最近變化與下一步行動。
-      fontawesome_icon_name: project-diagram
-    - title: 把筆記真正推進成行動
-      description: 你可以起草提醒、Things 任務和跟進郵件，也可以繼續進入 AI 對話，或把主要結果匯出成可分享圖片，而不是傳送一張雜亂截圖。
-      fontawesome_icon_name: share-square
-    - title: 用 AI Chat 做更深入的工作
-      description: AI Chat 內建裝置端 Alpine Linux 模擬器，用於檔案處理、計算及產生圖表、文件。可在唯讀終端機面板查看實際指令輸出；軟體套件下載、Skills 與工作區管理方式詳見支援頁。
+    - title: "邊說邊整理"
+      description: "在 iOS 錄音時持續整理重點、待解問題和下一步。建議的操作經你檢視確認後才會執行；即時整理需要 API Key。"
+      fontawesome_icon_name: microphone
+    - title: "用即時語音繼續討論"
+      description: "從新對話或既有聊天進入語音，帶著上下文繼續交流、查看字幕，並讓 AI 使用目前聊天中可用的工具。"
       fontawesome_icon_name: comments
-    - title: 搜尋、封存、同步
-      description: 透過搜尋、標籤、置頂、封存模式、批次摘要，以及綁定你自己帳號的 iCloud 儲存，讓所有內容都保持可查找。
+    - title: "讓主題累積成知識"
+      description: "把相關筆記放在一起，設定演進方向，建立附有來源筆記的 Topic Wiki，再把簡報、任務清單或正式文稿儲存為主題成果。"
+      fontawesome_icon_name: project-diagram
+    - title: "結合裝置安排下一步"
+      description: "在 iOS 查詢行程與提醒事項，檢視後再建立或修改。授權後還能使用照片、健康與運動資料及目前位置；鬧鐘和倒數計時需要 iOS 26。"
+      fontawesome_icon_name: calendar-check
+    - title: "連接 App 與捷徑"
+      description: "啟用 App 工具，或匯入 Apple 捷徑檔案供 AI 對話呼叫。寫入操作先檢視確認，支援的捷徑可將文字結果帶回對話。"
+      fontawesome_icon_name: external-link-alt
+    - title: "產出檔案與圖片"
+      description: "在 AI 對話中處理附件、製作文書和圖表、產生或編輯圖片。查看實際產物，再預覽或分享需要的檔案。"
+      fontawesome_icon_name: images
+    - title: "重用熟悉的工作流程"
+      description: "從 ZIP 或 GitHub 匯入 Skills，使用裝置端 Linux 沙箱執行腳本、計算和檔案處理，並查看指令輸出、管理本機工作區。"
+      fontawesome_icon_name: terminal
+    - title: "找得到，也接得上"
+      description: "搜尋、標籤篩選、釘選與封存讓筆記保持有序，本機聊天記錄讓討論能夠繼續。筆記與主題透過 iCloud 同步，聊天工作區保存在裝置上。"
       fontawesome_icon_name: search
   workflow:
-    eyebrow: 使用流程
-    title: 從快速記錄，到可以直接行動的結果。
+    eyebrow: "使用流程"
+    title: "從快速記錄，到可以直接行動的結果。"
     cards:
       - step: "01"
-        title: 隨時擷取
-        description: 使用筆記、錄音、拍照、聊天或 iOS 分享選單處理文字、連結與圖片。所有內容都會進入一致流程。
+        title: "收集重要內容"
+        description: "從筆記、匯入、錄音、對話或 iOS 分享選單開始，也能用小工具和快速記錄捷徑開啟文字編輯器。"
       - step: "02"
-        title: 取得 AI 收件匣結果
-        description: 每則新筆記都會得到標題、摘要、主要結果卡片與建議下一步，而且不會阻礙儲存。
+        title: "釐清素材"
+        description: "查看 AI 結果並回看原始來源，或在錄音時邊說邊整理重點。"
       - step: "03"
-        title: 把相關工作放在一起
-        description: 用主題取代一次性筆記，讓最新綜合結論、變化、開放問題與下一步始終可見。
+        title: "持續發展主題"
+        description: "加入相關筆記，明確設定演進方向，建立 Wiki，或儲存簡報、任務清單和文稿。"
       - step: "04"
-        title: 把結果繼續往外推進
-        description: 把結果延伸成提醒草稿、Things 任務、跟進郵件、分享圖片卡片，或更深入的 AI 對話。
+        title: "推進下一步"
+        description: "繼續文字或語音對話，產生檔案，或確認行事曆、提醒事項和已安裝 App 中的操作。"
   outcomes:
     eyebrow: App 會產出什麼
     title: 比原始筆記更容易直接使用的結果。
@@ -104,32 +113,32 @@ home:
       eyebrow: 下一步可以做什麼
       title: 從理解直接走向執行，不必跳出目前流程。
       items:
-        - 在已附帶筆記脈絡的 AI 對話中繼續推進。
-        - 直接從 AI 結果起草提醒、Things 項目與跟進郵件。
-        - 產生可分享的圖片卡片，而不是傳送原始截圖。
-        - 搜尋已儲存筆記、批次摘要多則筆記，或封存與置頂以便稍後回顧。
-        - 當任務不是一句回覆能解決時，使用自訂提示詞與沙箱工作區繼續處理。
+        - "帶著筆記或主題上下文，繼續文字與即時語音對話。"
+        - "先檢視，再執行行事曆、提醒事項和已啟用的 App 操作。"
+        - "製作文書、圖表、產生圖片或可分享的筆記結果卡。"
+        - "繼續本機歷史對話，重用其中的附件和產生的檔案。"
+        - "需要執行多步驟任務時，使用 Skills 和沙箱工作區。"
   trust:
     cards:
-      - eyebrow: 預設更私密
-        title: 你的筆記仍然綁定在你自己的帳號下。
-        description: 筆記存放在你個人的 iCloud 儲存中，而不是共享服務資料庫，因此可以保持輕量記錄，而不必加入新的帳號系統。
-      - eyebrow: 為持續推進而設計
-        title: 不只是擷取，更是推進。
-        description: 它保留了筆記收件匣的快速輸入體驗，同時加入搜尋、封存、主題、AI Chat 與分享結果等能力，讓重要筆記真正發展成可用成果。
+      - eyebrow: "預設更私密"
+        title: "你的筆記，你的 iCloud。"
+        description: "筆記與主題使用你的個人 iCloud 帳號；聊天記錄、產生的檔案、Skills 和 App 工具設定保存在各自裝置上。"
+      - eyebrow: "為持續推進而設計"
+        title: "由你選擇 AI 可以使用什麼。"
+        description: "相關內容會傳送給你設定的 AI 服務。裝置資料按需授權，寫入行事曆、提醒事項或連接的 App 前會顯示內容供你核對。"
   faq:
-    eyebrow: 常見問題
-    title: 下載前先看幾個簡短答案。
-    description: 更完整的說明在 Support 頁面，這裡先回答多數人在試用 AnyNotes+ 前最常問的四個問題。
+    eyebrow: "常見問題"
+    title: "下載前先看幾個簡短答案。"
+    description: "閱讀使用手冊與情境範例"
     items:
-      - question: AnyNotes+ 支援 iPhone 和 iPad 嗎？
-        answer: 支援。AnyNotes+ 已在 App Store 上提供 iPhone 與 iPad 版本，並在不同裝置上維持一致的擷取流程。
-      - question: 筆記是如何儲存的？
-        answer: 你的筆記保存在你自己的 iCloud 儲存空間中，透過 CloudKit 同步，而不是放在共享服務資料庫裡。
-      - question: 它能把語音、照片和連結整理成摘要嗎？
-        answer: 可以。你可以從文字、錄音、照片或 iOS 分享選單擷取內容，AI 收件匣會把這些輸入整理成更清楚的標題、摘要、結果卡片與下一步建議。
-      - question: AI 功能需要訂閱嗎？
-        answer: 需要。AI 功能需要 AnyNotes Pro，同時你還需要在 App 內提供自己的 OpenAI API key，或使用 Codex 登入。
+      - question: "AnyNotes+ 支援哪些平台？"
+        answer: "提供 iPhone、iPad 和原生 Mac 使用體驗。裝置資料工具與錄音即時整理屬於 iOS 功能，差異可查看使用手冊。"
+      - question: "哪些內容會跨裝置同步？"
+        answer: "筆記與主題透過個人 iCloud 同步；聊天記錄、AI 工作區檔案、Skills 和 App 工具設定保存在各自裝置上。"
+      - question: "錄音和即時語音對話有什麼差別？"
+        answer: "錄音用於把你的聲音儲存成筆記，API Key 模式還能即時整理；即時語音則是與 AI 雙向交流，可以接著既有聊天繼續。"
+      - question: "使用 AI 功能需要什麼？"
+        answer: "iPhone 和 iPad 需要 AnyNotes Pro，並設定 API Key 或登入 Codex；Mac 版無需 AnyNotes Pro。AI 服務用量另計，功能可用性取決於你的帳號。"
   cta:
     eyebrow: 先從還很混亂的版本開始
     title: 先收集，快釐清，再繼續推進。
@@ -137,3 +146,173 @@ home:
     app_store: 在 App Store 下載
     testflight: 試用 TestFlight 測試版
     support: 有問題？查看支援頁面
+  landing:
+    skip: 跳到主要內容
+    headline: 讓想法
+    headline_accent: 不止於記錄。
+    lead: 隨手記下，用 AI 釐清，再繼續推進。讓零散的筆記、聲音與素材，慢慢累積成實用的知識和成果。
+    see_guide: 看看怎麼用
+    download_note: 免費下載 · iOS AI 功能需 Pro 與自備 AI 帳號
+    product_label: 從一個念頭，到下一步
+    capture_label: 想法從哪裡來，都接得住
+    experience_eyebrow: "CAPTURE → CONNECT → CREATE"
+    experience_title: "一則筆記，"
+    experience_accent: "更多可能。"
+    scene_link: "查看完整用法"
+    guide_eyebrow: 使用手冊
+    guide_title: 找到適合你的用法。
+    guide_description: "從第一次記錄，到會議、研究和日常安排。操作步驟和更多情境，都在手冊裡。"
+    faq_title: 開始前，你可能想知道。
+    final_title: 下一個好想法，
+    final_accent: 從這裡開始。
+    final_description: 記下此刻的靈感，讓 AnyNotes 陪你繼續想、繼續做。
+    capture_entries:
+    - icon: "✎"
+      text: 筆記
+    - icon: "〰"
+      text: 聲音
+    - icon: "▧"
+      text: 照片
+    - icon: "▤"
+      text: 檔案
+    - icon: "↗"
+      text: 連結
+    scenes:
+    - tab: "收集靈感"
+      eyebrow: "01 / AI 收件匣"
+      title: "先記下來，"
+      accent: "讓思路清楚起來。"
+      description: "一段口述、一張照片、一篇網頁，都能成為整理好的筆記。原始素材和 AI 結果放在一起，需要時隨時回看。"
+      points:
+      - "文字、照片、PDF 與網頁統一收集"
+      - "錄音、轉寫與即時整理"
+      - "從筆記繼續文字或語音對話"
+      anchor: "capture"
+      sticker: "零散輸入 → 清晰結果"
+    - tab: "串起素材"
+      eyebrow: "02 / 主題工作區"
+      title: "把相關的想法，"
+      accent: "放在同一條線上。"
+      description: "圍繞一個專案或長期問題累積筆記。主題協助你看清目前結論、最近變化和下一步，讓每次記錄都有後續。"
+      points:
+      - "將筆記歸入同一主題"
+      - "明確方向，保留開放問題"
+      - "用 Wiki 累積附有來源的知識"
+      anchor: "topics"
+      sticker: "線索，慢慢連起來"
+    - tab: "形成成果"
+      eyebrow: "03 / 從理解到行動"
+      title: "不止想清楚，"
+      accent: "還可以做出來。"
+      description: "從主題素材整理簡報、任務清單或文稿，也能繼續到 AI 對話中製作檔案、產生圖片，或核對並執行下一步操作。"
+      points:
+      - "產生並儲存主題成果"
+      - "在對話中處理檔案和圖片"
+      - "行程、提醒與 App 操作先確認再執行"
+      anchor: "outputs"
+      sticker: "從素材，到成果"
+    guide_routes:
+    - text: "錄音與語音"
+      anchor: recording
+    - text: "研究與主題"
+      anchor: topics
+    - text: "App 與捷徑"
+      anchor: app-tools
+    - text: "檔案與圖片"
+      anchor: outputs
+guide:
+  screens:
+    capture:
+      - file: "inbox-home"
+        title: "收件匣"
+        caption: "查看 AI 結果與標籤，從底部進入對話、匯入、錄音或新增筆記。"
+      - file: "note-detail"
+        title: "筆記詳情"
+        caption: "先讀整理結果，再回看原始文字、圖片或網頁來源。"
+    topics:
+      - file: "topic-home"
+        title: "主題總覽"
+        caption: "檢視正在推進的主題，以及各主題的目前判斷、最近變化和下一步。"
+      - file: "topic-detail"
+        title: "主題的目前進展"
+        caption: "把相關筆記集中至同一主題，查看目前判斷，並繼續補充資料。"
+      - file: "topic-wiki"
+        title: "累積 Topic Wiki"
+        caption: "展開知識區塊查看穩定資訊與來源入口，讓資料形成可持續更新的知識。"
+      - file: "topic-outcomes"
+        title: "從主題形成成果"
+        caption: "選擇簡報、工作清單或正式文稿，將討論轉成可儲存與編輯的成果。"
+    recording:
+      - file: "recording"
+        title: "邊錄邊整理"
+        caption: "檢視正在形成的要點、開放問題和下一步；底部可暫停、完成或請求啟發。"
+      - file: "recording-transcript"
+        title: "對照轉錄原文"
+        caption: "切換到「轉寫內容」檢視發言，與 AI 整理的結論分開核對。"
+    chat:
+      - file: "chat"
+        title: "帶著脈絡討論"
+        caption: "把已有資料變成具體問題，繼續追問，再將需要保留的討論儲存為筆記。"
+    voice:
+      - file: "voice"
+        title: "即時語音與字幕"
+        caption: "AI 回覆時顯示字幕，底部提供靜音、暫停、結束和字幕開關。"
+    device:
+      - file: "data-usage"
+        title: "逐項授權資料"
+        caption: "在「資料使用」分別管理 AI 和今日推進可使用的來源。"
+      - file: "today"
+        title: "今日推進"
+        caption: "集中查看主題變化與可繼續處理的事項。主題本身的內容請見主題章節。"
+    apps:
+      - file: "app-tools"
+        title: "應用工具入口"
+        caption: "從這裡匯入應用工具或 .shortcut 檔案；安裝後仍需核對設定與啟用狀態。"
+      - file: "shortcut"
+        title: "先核對捷徑"
+        caption: "確認名稱與系統「捷徑」一致，再發起分析；匯入本身不會執行捷徑。"
+    outputs:
+      - file: "files"
+        title: "預覽產生的檔案"
+        caption: "開啟產生的檔案，檢查內容後分享或匯出至其他 App。"
+      - file: "skills"
+        title: "管理 Skills"
+        caption: "檢視本機技能，或從 ZIP、GitHub 匯入可重用的任務說明。"
+    storage:
+      - file: "sandbox"
+        title: "管理本機工作區"
+        caption: "檢視 Sandbox 與檔案統計，需要時展開工作區清單進行清理。"
+    practice-meetings:
+      - file: "practice-meeting-live"
+        title: "討論中的決定與待辦"
+        caption: "本次先發布搜尋改進；測試已有負責人，說明文件還需要分工。"
+      - file: "practice-meeting-transcript"
+        title: "對照轉寫原文"
+        caption: "回到原話核對發布範圍、測試時間與負責人。"
+    practice-research:
+      - file: "practice-research-wiki"
+        title: "知識庫選型的 Wiki"
+        caption: "依團隊需求整理選型標準，保留試用時需要驗證的問題。"
+      - file: "practice-research-chat"
+        title: "繼續比較候選方案"
+        caption: "根據資料討論兩個候選方案，指出還缺乏依據的判斷。"
+    practice-planning:
+      - file: "topic-detail"
+        title: "旅行與日常規劃"
+        caption: "先寫清楚要解決的問題與判斷標準"
+      - file: "files"
+        title: "可分享的行程"
+        caption: "預覽行程檔案，核對日期、地點和待預訂事項。"
+    practice-delivery:
+      - file: "practice-delivery-outcome"
+        title: "儲存專案簡報草稿"
+        caption: "將搜尋改進的討論儲存為簡報，之後可編輯或標記完成。"
+      - file: "practice-delivery-file"
+        title: "檢查準備分享的檔案"
+        caption: "開啟搜尋改進簡報，核對發布範圍、測試安排與未定事項。"
+  title: "使用手冊"
+  previous: "上一章"
+  next: "下一章"
+  navigation: "章節目錄"
+  features_section: "功能介紹"
+  practice_section: "最佳實踐"

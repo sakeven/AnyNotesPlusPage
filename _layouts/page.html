@@ -9,17 +9,34 @@
 
 {% include head.html lang=lang t=t %}
 
-<body class="subPageBody">
+<body class="subPageBody{% if page.guide %} guideBody{% endif %}">
     <div class="headerBackground subPageHeaderBackground">
         <div class="container subPageContainer">
         {% include header.html lang=lang t=t %}
-            <article class="page markdown-body">
+            {% if page.guide_chapter %}
+            {% assign guide_index = site.pages | where: 'ref', 'guide' | where: 'lang', lang | first %}
+            {% assign guide_chapters = site.pages | where: 'guide', true | where: 'lang', lang | sort: 'chapter_order' %}
+            <div class="guideReader">
+                <aside class="guideSidebar">{% include guide-chapters.html %}</aside>
+                <div class="guideArticle">
+                    <details class="guideMobileNav"><summary>{{ t.guide.navigation }}</summary>{% include guide-chapters.html %}</details>
+                    <article class="markdown-body guidePage">
+                        <a class="guideBreadcrumb" href="{{ guide_index.url | relative_url }}" target="_self">{{ t.guide.title }} <span aria-hidden="true">/</span> {{ page.chapter_order }}</a>
+                        {{ content }}
+                    </article>
+                    {% include guide-pagination.html %}
+                </div>
+            </div>
+            {% else %}
+            <article class="page markdown-body{% if page.guide %} guidePage{% endif %}">
                 {{ content }}
             </article>
+            {% endif %}
         </div>
         {% include footer.html lang=lang t=t %}
         {% include appstoreimages.html %}
     </div>
+    {% if page.guide %}<script src="{{ '/assets/guide.js' | relative_url }}" defer></script>{% endif %}
 </body>
 
 </html>

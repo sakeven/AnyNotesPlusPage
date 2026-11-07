@@ -9,80 +9,89 @@ footer:
   in: 위치
   press_kit: 프레스 키트
 home:
-  page_title: AnyNotes+ • 노트, 음성, 사진, 링크를 위한 개인 AI 받은편지함
-  meta_description: 노트, 음성, 사진, 공유 시트, 채팅에서 바로 수집하세요. AnyNotes는 각 입력을 정리된 결과, 다음 단계 제안, 그리고 계속 발전하는 토픽으로 바꿔 줍니다.
+  page_title: "AnyNotes+ • AI 노트, 실시간 음성, 주제 작업 공간"
+  meta_description: "노트, 녹음, 사진, 파일, 링크를 모아 AI로 정리하세요. 실시간 음성으로 생각을 이어 가고, 주제를 지식과 활용할 수 있는 결과로 발전시키세요."
   og_image_alt: 인박스 화면과 제품 슬로건을 보여 주는 AnyNotes+ 미리보기 이미지.
-  app_description: 노트, 음성, 사진, 공유 시트, 채팅에서 바로 수집하세요. AnyNotes는 각 입력을 정리된 결과, 다음 단계 제안, 그리고 계속 발전하는 토픽으로 바꿔 줍니다.
-  app_eyebrow: 개인 AI 받은편지함 + 주제 워크스페이스
-  app_headline: "AnyNotes+ AI 노트 받은편지함"
-  app_slogan: 아이디어는 자리를 찾고, 결과는 형태를 갖춥니다.
+  app_description: "노트, 녹음, 사진, 파일, 링크를 모아 AI로 정리하세요. 실시간 음성으로 생각을 이어 가고, 주제를 지식과 활용할 수 있는 결과로 발전시키세요."
+  app_eyebrow: "AI 노트 · 실시간 음성 · 주제"
+  app_headline: "AnyNotes+ AI 작업 공간"
+  app_slogan: "생각을 기록하고, 다음으로 이어 가세요."
+  guide_link: "사용 설명서와 활용 사례 보기"
   hero_pills:
-    - 노트
-    - 녹음
-    - 사진
-    - 공유
-    - 채팅
-    - 주제
+    - "노트"
+    - "실시간 녹음"
+    - "음성 대화"
+    - "주제"
+    - "앱 도구"
   app_store_badge_alt: App Store에서 다운로드
   play_store_badge_alt: Google Play에서 받기
   testflight_cta: TestFlight 사용해 보기
-  hero_download_note: TestFlight 빌드의 구독은 베타 기간 동안 무료입니다. 추가 결제가 필요 없으니 앱 안에서 바로 구독해 보셔도 됩니다.
+  hero_download_note: "TestFlight 구독은 베타 기간 동안 무료입니다. AI 서비스 사용량은 별도로 적용되며 설정한 계정에 따라 달라집니다."
   screens:
     eyebrow: 제품 화면
-    title: 현재 받은편지함, 주제 홈, 주제 상세 화면을 미리 살펴보세요.
-    description: 떠오른 생각이 받은편지함으로 들어오고, 다시 계속 발전시킬 수 있는 주제로 정리되는 흐름을 보여 줍니다.
+    title: "노트와 주제가 이어지는 화면."
+    description: "수집한 자료가 유용한 결과로 이어지는 과정을 살펴보세요."
     cards:
       - title: 받은편지함
         description: 오늘의 노트, AI 결과 카드, 태그, 그리고 네 가지 주요 캡처 동작을 보여 줍니다.
         alt: AnyNotes 받은편지함 스크린샷
-        image: /assets/screenshot/inbox-home.png
+        image: /assets/screenshot/ko/inbox-home.png
       - title: 주제 홈
         description: 주제 홈 화면에서 현재 관점, 최근 변화, 다음 단계를 한눈에 보여 주는 집중형 요약입니다.
         alt: AnyNotes 주제 홈 스크린샷
-        image: /assets/screenshot/topic-home.png
-      - title: 주제 상세
-        description: 종합 요약, 변경 로그, 더 읽기 쉬운 레이아웃을 담은 심화 토픽 화면입니다.
-        alt: AnyNotes 주제 상세 스크린샷
-        image: /assets/screenshot/topic-detail.png
+        image: /assets/screenshot/ko/topic-home.png
+      - title: "토픽 결과물"
+        description: "토픽을 요약, 작업 목록, 문서로 정리합니다."
+        alt: "AnyNotes 토픽 결과물 화면"
+        image: /assets/screenshot/ko/topic-outcomes.png
   features_intro:
     eyebrow: 실제 기록 습관에 맞춘 구조
-    title: 뒤섞인 입력, 명확한 결과, 계속 이어지는 작업을 한곳에.
-    description: AnyNotes는 사람들이 실제로 휴대폰에서 일하는 흐름을 기준으로 만들어졌습니다. 먼저 수집하고, AI가 방금 들어온 내용을 정리해 주고, 긴 노트 목록 속에 묻히지 않도록 같은 흐름을 계속 앞으로 밀어 줍니다.
+    title: "떠오른 생각을 활용할 수 있는 결과로."
+    description: "자료를 모으고 AI로 정리한 뒤 같은 노트, 주제, 대화에서 작업을 이어 가세요."
   features:
-    - title: 노트, 녹음, 사진, 공유, 채팅에서 캡처
-      description: 앱 안에서 시작해도 되고 iOS 공유 시트에서 들어와도 됩니다. 텍스트, 음성, 사진, 링크, 채팅 기록이 서로 다른 공간에 흩어지지 않고 하나의 인박스 흐름으로 들어옵니다.
+    - title: "수집하고 정리하기"
+      description: "노트와 녹음을 남기고 사진, PDF, 텍스트 파일이나 공유한 웹페이지를 가져오세요. AI가 제목, 요약, 결과 카드와 다음 단계를 정리합니다."
       fontawesome_icon_name: inbox
-    - title: 모든 새 노트에 AI 결과 카드
-      description: 아이디어, 회의, 리마인더, 요약, 지식 노트에 대해 AnyNotes가 깔끔한 제목, 요약, 구조화된 결과 카드, 그리고 다음 행동 제안을 자동으로 만들어 줍니다.
-      fontawesome_icon_name: magic
-    - title: 계속 진화하는 주제
-      description: 고립된 노트에서 벗어나세요. 관련 노트를 하나의 주제로 묶고 현재 결정, 최근 변화, 다음 행동을 최신 상태로 유지할 수 있습니다.
-      fontawesome_icon_name: project-diagram
-    - title: 노트를 행동으로 전환
-      description: 리마인더, Things 작업, 후속 이메일 초안을 만들고, AI 채팅으로 이어 가거나, 지저분한 스크린샷 대신 공유용 이미지로 결과를 내보낼 수 있습니다.
-      fontawesome_icon_name: share-square
-    - title: AI Chat으로 깊이 있는 작업
-      description: AI Chat에는 파일 처리, 계산, 차트 및 문서 생성에 사용하는 기기 내 Alpine Linux 에뮬레이터가 내장되어 있습니다. 읽기 전용 패널에서 실제 명령 출력을 확인할 수 있습니다. 패키지 다운로드, Skills 및 작업 공간 관리는 지원 페이지를 참고하세요.
+    - title: "말하면서 생각 정리하기"
+      description: "iOS에서 녹음하는 동안 핵심 내용, 열린 질문과 다음 단계를 정리합니다. 제안된 작업은 검토 후 실행하며, 실시간 정리에는 API 키가 필요합니다."
+      fontawesome_icon_name: microphone
+    - title: "실시간 음성으로 이어 가기"
+      description: "새 대화나 기존 채팅에서 음성 대화를 시작하세요. 맥락을 유지하고 자막을 보며 현재 채팅에서 사용할 수 있는 도구로 작업을 요청할 수 있습니다."
       fontawesome_icon_name: comments
-    - title: 검색, 보관, 동기화
-      description: 검색, 태그, 고정, 아카이브 모드, 일괄 요약, 그리고 내 계정에 연결된 iCloud 저장소로 모든 내용을 쉽게 다시 찾을 수 있습니다.
+    - title: "주제를 지식으로 발전시키기"
+      description: "관련 노트를 모아 방향을 설정하고 출처 노트가 연결된 Topic Wiki를 만드세요. 브리프, 작업 목록, 문서를 주제 결과물로 저장할 수 있습니다."
+      fontawesome_icon_name: project-diagram
+    - title: "기기 정보로 다음 계획 세우기"
+      description: "iOS에서 일정과 미리 알림을 조회하고 변경 내용을 검토한 뒤 저장하세요. 허용한 사진, 활동 데이터와 현재 위치도 사용할 수 있습니다. 알람과 타이머에는 iOS 26이 필요합니다."
+      fontawesome_icon_name: calendar-check
+    - title: "앱과 단축어 연결하기"
+      description: "앱 도구를 활성화하거나 Apple 단축어 파일을 가져와 AI Chat에서 호출하세요. 쓰기 작업은 먼저 확인하며, 지원하는 단축어는 텍스트 결과를 대화로 돌려줍니다."
+      fontawesome_icon_name: external-link-alt
+    - title: "파일과 이미지 만들기"
+      description: "AI Chat에서 첨부 파일을 처리하고 문서와 차트를 만들거나 이미지를 생성·편집하세요. 실제 결과물을 미리 보고 필요한 파일을 공유할 수 있습니다."
+      fontawesome_icon_name: images
+    - title: "익숙한 작업 방식 재사용하기"
+      description: "ZIP이나 GitHub에서 Skills를 가져오고 기기의 Linux Sandbox로 스크립트, 계산, 파일 처리를 실행하세요. 명령 출력을 확인하고 로컬 작업 공간을 관리할 수 있습니다."
+      fontawesome_icon_name: terminal
+    - title: "찾고, 이어서 작업하기"
+      description: "검색, 태그, 고정, 보관으로 노트를 관리하고 로컬 채팅 기록을 다시 여세요. 노트와 주제는 iCloud로 동기화되며 채팅 작업 공간은 각 기기에 저장됩니다."
       fontawesome_icon_name: search
   workflow:
-    eyebrow: 사용 방식
-    title: 빠른 캡처에서 바로 실행 가능한 결과까지.
+    eyebrow: "사용 방식"
+    title: "빠른 캡처에서 바로 실행 가능한 결과까지."
     cards:
       - step: "01"
-        title: 어디서든 캡처
-        description: 노트, 녹음, 사진, 채팅, iOS 공유 시트로 텍스트, 링크, 이미지를 받아 보세요. 모든 입력이 하나의 일관된 흐름으로 들어옵니다.
+        title: "중요한 내용 수집하기"
+        description: "노트, 가져오기, 녹음, 채팅, iOS 공유 시트에서 시작하세요. 위젯이나 빠른 기록 단축어로 텍스트 편집기를 열 수도 있습니다."
       - step: "02"
-        title: AI 받은편지함 결과 받기
-        description: 새 노트마다 저장을 막지 않으면서 제목, 요약, 핵심 결과 카드, 다음 단계 제안을 받게 됩니다.
+        title: "자료 이해하기"
+        description: "AI 결과와 원본을 확인하거나 녹음하면서 핵심 내용을 정리하세요."
       - step: "03"
-        title: 관련 작업을 함께 유지
-        description: 일회성 노트에서 벗어나 주제로 최신 종합, 변화, 열린 질문, 다음 행동을 함께 볼 수 있습니다.
+        title: "주제 발전시키기"
+        description: "관련 노트를 추가하고 방향을 설정하세요. Wiki를 만들거나 브리프, 작업 목록, 문서를 저장하세요."
       - step: "04"
-        title: 결과를 바깥으로 이어 보내기
-        description: 결과를 리마인더 초안, Things 작업, 후속 이메일, 공유용 이미지 카드, 또는 더 깊은 AI 대화로 이어 갈 수 있습니다.
+        title: "다음 단계 실행하기"
+        description: "텍스트나 음성으로 대화하고 파일을 만들거나 일정, 미리 알림, 설치된 앱의 작업을 확인하세요."
   outcomes:
     eyebrow: 앱이 만들어 주는 것
     title: 원본 노트보다 바로 활용하기 쉬운 결과.
@@ -104,32 +113,32 @@ home:
       eyebrow: 다음에 할 수 있는 일
       title: 흐름을 벗어나지 않고 이해에서 실행으로 넘어가세요.
       items:
-        - 노트 문맥이 이미 붙어 있는 AI 채팅으로 계속 이어 가기.
-        - AI 결과에서 바로 리마인더, Things 항목, 후속 이메일 초안 만들기.
-        - 원본 스크린샷 대신 공유용 이미지 카드 생성하기.
-        - 저장된 노트를 검색하고 여러 노트를 일괄 요약하거나, 나중을 위해 보관 및 고정하기.
-        - 한 번의 답변으로 끝나지 않는 작업에는 사용자 프롬프트와 샌드박스 워크스페이스 활용하기.
+        - "노트나 주제의 맥락을 활용해 텍스트와 실시간 음성으로 대화하세요."
+        - "일정, 미리 알림, 활성화한 앱 작업을 검토한 뒤 실행하세요."
+        - "문서, 차트, 이미지, 공유용 노트 카드를 만드세요."
+        - "로컬 대화를 다시 열어 첨부 파일과 생성한 파일을 재사용하세요."
+        - "답변만으로 끝나지 않는 작업에는 Skills와 Sandbox를 사용하세요."
   trust:
     cards:
-      - eyebrow: 기본적으로 더 비공개
-        title: 내 노트는 내 계정에 그대로 연결됩니다.
-        description: 노트는 공유 서비스 데이터베이스가 아니라 개인 iCloud 저장소에 머물기 때문에, 새로운 계정 시스템 없이도 가볍게 캡처를 시작할 수 있습니다.
-      - eyebrow: 계속 이어지는 작업을 위한 설계
-        title: 캡처에서 끝나지 않고 진행됩니다.
-        description: 이 앱은 노트 인박스의 빠른 입력 속도를 유지하면서도 검색, 보관, 주제, AI chat, 공유 가능한 결과를 더해 중요한 노트가 실제 결과물로 이어지게 합니다.
+      - eyebrow: "기본적으로 더 비공개"
+        title: "내 노트를 내 iCloud에."
+        description: "노트와 주제는 개인 iCloud를 사용합니다. 채팅 기록, 생성한 파일, Skills와 앱 도구 설정은 각 기기에 저장됩니다."
+      - eyebrow: "계속 이어지는 작업을 위한 설계"
+        title: "AI가 사용할 정보를 선택하세요."
+        description: "관련 내용은 설정한 AI 서비스로 전송됩니다. 기기 데이터 접근은 선택 사항이며 일정, 미리 알림, 연결한 앱에 쓰기 전에 내용을 검토할 수 있습니다."
   faq:
-    eyebrow: FAQ
-    title: 다운로드 전에 자주 묻는 질문을 먼저 확인하세요.
-    description: 전체 도움말은 Support 페이지에 있습니다. 여기서는 AnyNotes+를 시도하기 전에 가장 많이 묻는 네 가지 질문만 먼저 답합니다.
+    eyebrow: "FAQ"
+    title: "다운로드 전에 자주 묻는 질문을 먼저 확인하세요."
+    description: "사용 설명서와 활용 사례 보기"
     items:
-      - question: AnyNotes+는 iPhone과 iPad에서 사용할 수 있나요?
-        answer: 네. AnyNotes+는 App Store에서 iPhone과 iPad 모두 제공되며, 기기 간에도 같은 캡처 흐름을 유지합니다.
-      - question: 노트는 어떻게 저장되나요?
-        answer: 노트는 공유 서비스 데이터베이스가 아니라 CloudKit을 통해 내 iCloud 저장소에 보관됩니다.
-      - question: 음성 메모, 사진, 링크를 요약으로 바꿀 수 있나요?
-        answer: 네. 텍스트, 녹음, 사진, iOS 공유 시트에서 입력을 받아 AI 받은편지함이 더 명확한 제목, 요약, 결과 카드, 다음 단계를 만들어 줍니다.
-      - question: AI 기능은 구독이 필요한가요?
-        answer: 네. AI 기능은 AnyNotes Pro가 필요합니다. 또한 앱 안에서 본인의 OpenAI API key를 제공하거나 Codex로 로그인해야 합니다.
+      - question: "어떤 플랫폼을 지원하나요?"
+        answer: "iPhone, iPad와 네이티브 Mac 환경을 제공합니다. 기기 데이터 도구와 녹음 중 실시간 정리는 iOS 기능입니다. 자세한 차이는 사용 설명서에서 확인하세요."
+      - question: "기기 간에 무엇이 동기화되나요?"
+        answer: "노트와 주제는 개인 iCloud로 동기화됩니다. 채팅 기록, AI 작업 공간 파일, Skills와 앱 도구 설정은 각 기기에 저장됩니다."
+      - question: "녹음과 실시간 음성 대화는 어떻게 다른가요?"
+        answer: "녹음은 내 음성을 노트로 저장하며 API 키 모드에서는 실시간 정리도 가능합니다. 실시간 음성은 AI와 양방향으로 대화하며 기존 채팅을 이어 갈 수 있습니다."
+      - question: "AI 기능에는 무엇이 필요한가요?"
+        answer: "iPhone과 iPad에는 AnyNotes Pro와 API 키 또는 Codex 로그인이 필요합니다. Mac 앱은 AnyNotes Pro가 필요하지 않습니다. AI 서비스 사용량은 별도로 적용되며 기능은 계정에 따라 달라집니다."
   cta:
     eyebrow: 아직 정리되지 않은 상태에서 시작하세요
     title: 먼저 모으고, 빠르게 정리하고, 흐름을 이어 가세요.
@@ -137,3 +146,173 @@ home:
     app_store: App Store에서 다운로드
     testflight: TestFlight 베타 사용해 보기
     support: 질문이 있나요? Support 보기
+  landing:
+    skip: 본문으로 이동
+    headline: 떠오른 생각을
+    headline_accent: 그다음으로.
+    lead: 생각을 기록하고 AI로 정리하며 다음으로 이어 가세요. 노트와 음성, 모은 자료를 활용할 수 있는 지식과 결과로 발전시키는 공간입니다.
+    see_guide: 사용법 보기
+    download_note: 무료 다운로드 · iOS AI는 Pro와 개인 AI 계정 필요
+    product_label: 하나의 생각에서 다음 단계로
+    capture_label: 어떤 형태의 생각이든, 한곳에
+    experience_eyebrow: "CAPTURE → CONNECT → CREATE"
+    experience_title: "하나의 노트에서,"
+    experience_accent: "더 많은 가능성으로."
+    scene_link: "자세한 사용법 보기"
+    guide_eyebrow: 사용 설명서
+    guide_title: 일상에 맞는 활용법을 찾아보세요.
+    guide_description: "첫 기록부터 회의, 연구와 일상 계획까지. 단계별 사용법과 활용 사례를 설명서에서 확인하세요."
+    faq_title: 시작 전에 알아두세요.
+    final_title: 다음 좋은 아이디어는
+    final_accent: 여기서 시작됩니다.
+    final_description: 지금 떠오른 생각을 남기고 AnyNotes와 함께 발전시켜 보세요.
+    capture_entries:
+    - icon: "✎"
+      text: 노트
+    - icon: "〰"
+      text: 음성
+    - icon: "▧"
+      text: 사진
+    - icon: "▤"
+      text: 파일
+    - icon: "↗"
+      text: 링크
+    scenes:
+    - tab: "생각 기록하기"
+      eyebrow: "01 / AI 받은편지함"
+      title: "먼저 기록하고,"
+      accent: "명확하게 정리하세요."
+      description: "음성 메모, 사진, 웹페이지를 정리된 노트로 만드세요. 원본과 AI 결과를 함께 보관하고 필요할 때 다시 확인할 수 있습니다."
+      points:
+      - "텍스트, 사진, PDF, 웹페이지 수집"
+      - "녹음, 전사와 실시간 정리"
+      - "노트에서 텍스트나 음성 대화 이어 가기"
+      anchor: "capture"
+      sticker: "흩어진 자료를 명확하게"
+    - tab: "자료 연결하기"
+      eyebrow: "02 / 주제"
+      title: "관련된 생각을"
+      accent: "하나의 흐름으로."
+      description: "프로젝트나 오래 탐구할 질문에 관한 노트를 모으세요. 현재 관점, 최근 변화와 다음 단계를 살피며 이해를 발전시키세요."
+      points:
+      - "관련 노트를 같은 주제로 모으기"
+      - "방향과 열린 질문 정리하기"
+      - "출처가 연결된 Wiki로 지식 쌓기"
+      anchor: "topics"
+      sticker: "조각들이 이어집니다"
+    - tab: "결과 만들기"
+      eyebrow: "03 / 이해에서 행동으로"
+      title: "생각한 내용을"
+      accent: "활용할 수 있는 결과로."
+      description: "주제 자료를 브리프, 작업 목록, 문서로 만드세요. AI Chat에서 파일과 이미지를 만들고 다음 작업을 확인한 뒤 실행할 수 있습니다."
+      points:
+      - "주제 결과물 생성 및 저장"
+      - "채팅에서 파일과 이미지 처리"
+      - "일정, 미리 알림, 앱 작업 확인"
+      anchor: "outputs"
+      sticker: "자료에서 결과로"
+    guide_routes:
+    - text: "녹음과 음성"
+      anchor: recording
+    - text: "연구와 주제"
+      anchor: topics
+    - text: "앱과 단축어"
+      anchor: app-tools
+    - text: "파일과 이미지"
+      anchor: outputs
+guide:
+  screens:
+    capture:
+      - file: "inbox-home"
+        title: "받은편지함"
+        caption: "AI 결과와 태그를 확인하고 아래에서 채팅, 가져오기, 녹음, 노트 작성을 시작하세요."
+      - file: "note-detail"
+        title: "노트 상세"
+        caption: "정리된 결과를 읽고 원본 텍스트, 이미지와 웹 출처를 확인하세요."
+    topics:
+      - file: "topic-home"
+        title: "토픽 개요"
+        caption: "진행 중인 토픽과 현재 판단, 최근 변화, 다음 단계를 확인합니다."
+      - file: "topic-detail"
+        title: "현재 이해 확인"
+        caption: "관련 메모를 모아 현재 판단을 확인하고 자료를 계속 추가합니다."
+      - file: "topic-wiki"
+        title: "Topic Wiki 축적"
+        caption: "지식 블록을 펼치고 출처를 확인하며 오래 쓸 지식을 쌓습니다."
+      - file: "topic-outcomes"
+        title: "토픽에서 결과물로"
+        caption: "요약, 작업 목록, 문서를 선택해 저장하고 편집할 결과물로 만듭니다."
+    recording:
+      - file: "recording"
+        title: "녹음하면서 정리"
+        caption: "요점, 열린 질문, 다음 단계를 확인합니다. 하단에서 일시 정지, 완료, 생각할 힌트를 선택합니다."
+      - file: "recording-transcript"
+        title: "전사 원문 확인"
+        caption: "전사 탭으로 전환해 실제 발언과 AI 정리 결과를 따로 확인합니다."
+    chat:
+      - file: "chat"
+        title: "맥락을 이어 가는 대화"
+        caption: "자료에 대해 구체적으로 묻고 후속 질문을 하세요. 필요한 대화는 메모로 저장합니다."
+    voice:
+      - file: "voice"
+        title: "자막과 함께하는 음성 대화"
+        caption: "답변 자막을 읽으며 하단에서 음소거, 일시 정지, 종료, 자막을 조절합니다."
+    device:
+      - file: "data-usage"
+        title: "출처별 데이터 허용"
+        caption: "AI와 오늘의 진행이 사용할 출처를 각각 관리합니다."
+      - file: "today"
+        title: "오늘의 진행"
+        caption: "토픽의 변화와 이어 할 일을 확인합니다. 토픽 내용은 전용 챕터에서 다룹니다."
+    apps:
+      - file: "app-tools"
+        title: "앱 도구 연결"
+        caption: "앱 도구나 .shortcut 파일을 가져오고 설정과 활성화 상태를 확인합니다."
+      - file: "shortcut"
+        title: "단축어 먼저 확인"
+        caption: "Apple 단축어에 있는 이름과 맞춘 뒤 분석합니다. 가져오기만으로 실행되지는 않습니다."
+    outputs:
+      - file: "files"
+        title: "결과 파일 미리보기"
+        caption: "생성한 파일을 열어 내용을 확인한 뒤 다른 앱으로 공유하거나 내보내세요."
+      - file: "skills"
+        title: "Skills 관리"
+        caption: "기기의 스킬을 확인하거나 ZIP, GitHub에서 재사용할 작업 지침을 가져옵니다."
+    storage:
+      - file: "sandbox"
+        title: "기기의 작업 공간 관리"
+        caption: "Sandbox와 파일 수를 확인하고 필요할 때 작업 공간 목록을 펼쳐 정리합니다."
+    practice-meetings:
+      - file: "practice-meeting-live"
+        title: "결정 사항과 후속 작업"
+        caption: "검색 개선을 먼저 출시합니다. 테스트 담당자는 정했고 도움말은 미정입니다."
+      - file: "practice-meeting-transcript"
+        title: "전사 원문 확인"
+        caption: "출시 범위, 테스트 기한, 담당자를 원래 발언과 대조하세요."
+    practice-research:
+      - file: "practice-research-wiki"
+        title: "지식 관리 도구 선택 Wiki"
+        caption: "팀의 기준과 시험 사용에서 확인할 질문을 모아 두세요."
+      - file: "practice-research-chat"
+        title: "후보 비교 이어 가기"
+        caption: "모은 자료로 두 후보를 비교하며 근거가 부족한 판단을 확인하세요."
+    practice-planning:
+      - file: "topic-detail"
+        title: "여행과 일상 계획"
+        caption: "해결할 질문과 판단 기준부터 정하기"
+      - file: "files"
+        title: "공유할 여행 일정"
+        caption: "일정 파일에서 날짜, 장소, 예약할 항목을 확인하세요."
+    practice-delivery:
+      - file: "practice-delivery-outcome"
+        title: "프로젝트 브리프 초안 저장"
+        caption: "검색 개선 브리프를 주제에 저장하고 나중에 수정하거나 완료로 표시하세요."
+      - file: "practice-delivery-file"
+        title: "공유할 파일 확인"
+        caption: "브리프를 열어 범위, 테스트 계획, 아직 정하지 않은 내용을 점검하세요."
+  title: "사용 가이드"
+  previous: "이전"
+  next: "다음"
+  navigation: "챕터 목록"
+  features_section: "기능 소개"
+  practice_section: "실전 가이드"
